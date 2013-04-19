@@ -251,7 +251,22 @@
 	<SolidColorBrush x:Key="MessageBorderError" Color="{StaticResource ColorError6}"/>
 	<SolidColorBrush x:Key="MessageBackgroundError" Color="{StaticResource ColorError8}"/>
 
-	<!-- Textbox -->
+    <!-- Alert success -->
+    <SolidColorBrush x:Key="AlertBorderSuccess" Color="{StaticResource ColorSuccess5}"/>
+    <SolidColorBrush x:Key="AlertIconBackgroundSuccess" Color="{StaticResource ColorSuccess1}"/>
+    <SolidColorBrush x:Key="AlertIconFillColorSuccess" Color="#FFFFFFFF"/>
+
+    <!-- Alert warning -->
+    <SolidColorBrush x:Key="AlertBorderWarning" Color="{StaticResource ColorWarning6}"/>
+    <SolidColorBrush x:Key="AlertIconBackgroundWarning" Color="{StaticResource ColorWarning2}"/>
+    <SolidColorBrush x:Key="AlertIconFillColorWarning" Color="#FFFFFFFF"/>
+
+    <!-- Alert error -->
+    <SolidColorBrush x:Key="AlertBorderError" Color="{StaticResource ColorError6}"/>
+    <SolidColorBrush x:Key="AlertIconBackgroundError" Color="{StaticResource ColorError2}"/>
+    <SolidColorBrush x:Key="AlertIconFillColorError" Color="#FFFFFFFF"/>
+
+    <!-- Textbox -->
 	<SolidColorBrush x:Key="TextboxBorder" Color="{StaticResource ColorCabGray}"/>
 	<SolidColorBrush x:Key="TextboxBackground" Color="#FFFFFFFF"/>
 	<SolidColorBrush x:Key="TextboxBorderHover" Color="{StaticResource ColorCabBlack7}"/>
@@ -296,4 +311,5 @@
 	<!-- ======================================================================
     END BRUSH DEFINITIONER
     =========================================================================== -->
+
 </ResourceDictionary>
