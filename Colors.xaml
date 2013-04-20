@@ -125,8 +125,23 @@
     <!-- MENU, MAIN -->
 	<SolidColorBrush x:Key="MenuMain" Color="{StaticResource ColorCabBlue}"/>
 
+    
+    <!-- ICONS -->
+    
+    <!-- Normal -->
+    <SolidColorBrush x:Key="IconBackgroundDark" Opacity="0.85" Color="{StaticResource ColorCabBlue}"/>
+    <SolidColorBrush x:Key="IconBackgroundLight" Opacity="0.85" Color="#FFFFFFFF"/>
+    <SolidColorBrush x:Key="IconFillColorDark" Opacity="0.85" Color="{StaticResource ColorCabBlue}"/>
+    <SolidColorBrush x:Key="IconFillColorLight" Opacity="0.85" Color="#FFFFFFFF"/>
 
-	<!-- TABS SLANTED -->
+    <!-- Hover -->
+    <SolidColorBrush x:Key="IconBackgroundDarkHover" Color="{StaticResource ColorCabBlue}"/>
+    <SolidColorBrush x:Key="IconBackgroundLightHover" Color="#FFFFFFFF"/>
+    <SolidColorBrush x:Key="IconFillColorDarkHover" Color="{StaticResource ColorCabBlue}"/>
+    <SolidColorBrush x:Key="IconFillColorLightHover" Color="#FFFFFFFF"/>
+
+    
+    <!-- TABS SLANTED -->
     
     <!-- Normal -->
     <SolidColorBrush x:Key="TabMainText" Color="#FFFFFFFF"/>
@@ -147,80 +162,67 @@
     <!-- TABS STANDARD -->
 
     <!-- Tab, border bottom line -->
-    <SolidColorBrush x:Key="TabHeaderBorderLine" Color="{StaticResource ColorCabBlue}"/>
+    <SolidColorBrush x:Key="TabHeaderBorderLine" Opacity="0.85" Color="{StaticResource ColorCabBlue}"/>
+
 
     <!-- Normal -->
+    <SolidColorBrush x:Key="TabBorder" Color="Transparent"/>
+    <SolidColorBrush x:Key="TabBackground" Color="#FFFFFFFF"/>
     <SolidColorBrush x:Key="TabText" Color="{StaticResource ColorCabBlue}"/>
 
     <!-- Hover -->
-    <SolidColorBrush x:Key="TabBackgroundHover" Color="{StaticResource ColorCabBlue}"/>
+    <SolidColorBrush x:Key="TabBorderHover" Color="Transparent"/>
+    <SolidColorBrush x:Key="TabBackgroundHover" Opacity="0.85" Color="{StaticResource ColorCabBlue}"/>
     <SolidColorBrush x:Key="TabTextHover" Color="{StaticResource ColorCabBlue}"/>
 
     <!-- Selected -->
-    <SolidColorBrush x:Key="TabBackgroundSelected" Opacity="0.8" Color="{StaticResource ColorCabBlue}"/>
+    <SolidColorBrush x:Key="TabBorderSelected" Color="Transparent"/>
+    <SolidColorBrush x:Key="TabBackgroundSelected" Opacity="0.85" Color="{StaticResource ColorCabBlue}"/>
     <SolidColorBrush x:Key="TabTextSelected" Color="#FFFFFFFF"/>
 
     <!-- Disabled -->
+    <SolidColorBrush x:Key="TabBorderDisabled" Color="Transparent"/>
     <SolidColorBrush x:Key="TabTextDisabled" Opacity="0.4" Color="{StaticResource ColorCabBlue}"/>
 
 
-    <!-- BUTTON -->
+    <!-- TYPOGRAPHY -->
+
+    <SolidColorBrush x:Key="Heading" Color="{StaticResource ColorCabBlue}"/>
+
+    <!-- Labels combined with form fields; the <Label> element -->
+    <SolidColorBrush x:Key="Label" Color="{StaticResource ColorCabBlack2}"/>
+
+    <!-- All other texts; reuse in all controls -->
+    <SolidColorBrush x:Key="Text" Color="{StaticResource ColorCabBlack2}"/>
+    <SolidColorBrush x:Key="TextDisabled" Color="{StaticResource ColorCabBlack5}"/>
+    <SolidColorBrush x:Key="TextReadonly" Color="{StaticResource ColorCabBlack2}"/>
+    <SolidColorBrush x:Key="TextMandatory" Color="{StaticResource ColorError1}"/>
+
     
-    <!-- Normal -->
-	<SolidColorBrush x:Key="ButtonBorder" Color="Transparent"/>
-	<SolidColorBrush x:Key="ButtonBorderHover" Color="Transparent"/>
-	<SolidColorBrush x:Key="ButtonBorderActive" Color="Transparent"/>
-	<SolidColorBrush x:Key="ButtonBorderDisabled" Color="Transparent"/>
-	<SolidColorBrush x:Key="ButtonText" Color="{StaticResource ColorCabBlack2}"/>
-	<!-- opacity 0.85 -->
-    <SolidColorBrush x:Key="ButtonBackground"  Opacity="0.85" Color="{StaticResource ColorCabBlack7}"/>
-	<!-- opacity 1 -->
-	<SolidColorBrush x:Key="ButtonBackgroundHover" Color="{StaticResource ColorCabBlack7}"/>
-	<!-- opacity 1 -->
-	<SolidColorBrush x:Key="ButtonBackgroundActive" Color="{StaticResource ColorCabBlack7}"/>
-	<!-- opacity 0.85 -->
-	<SolidColorBrush x:Key="ButtonBackgroundDisabled" Opacity="0.85" Color="{StaticResource ColorCabGray}"/>
-    <SolidColorBrush x:Key="ButtonTextDisabled" Opacity="0.85" Color="{StaticResource ColorCabBlack5}"/>
-
-	<!-- Button, default -->
-	<SolidColorBrush x:Key="ButtonBorderPrimary" Color="Transparent"/>
-	<SolidColorBrush x:Key="ButtonBorderPrimaryHover" Color="Transparent"/>
-	<SolidColorBrush x:Key="ButtonBorderPrimaryActive" Color="Transparent"/>
-	<SolidColorBrush x:Key="ButtonBorderPrimaryDisabled" Color="Transparent"/>
-	<SolidColorBrush x:Key="ButtonTextPrimary" Color="#FFFFFFFF"/>
-	<!-- opacity 0.85 -->
-	<SolidColorBrush x:Key="ButtonBackgroundPrimary" Opacity="0.85" Color="{StaticResource ColorCabBlue}"/>
-	<!-- opacity 1 -->
-	<SolidColorBrush x:Key="ButtonBackgroundPrimaryHover" Color="{StaticResource ColorCabBlue}"/>
-	<!-- opacity 1 -->
-	<SolidColorBrush x:Key="ButtonBackgroundPrimaryActive" Color="{StaticResource ColorCabBlue}"/>
-	<!-- opacity 0.5 -->
-    <SolidColorBrush x:Key="ButtonBackgroundPrimaryDisabled" Opacity="0.5" Color="#FFFFFFFF"/>
-
-	<!-- Typograhy -->
-	<SolidColorBrush x:Key="Heading" Color="{StaticResource ColorCabBlue}"/>
-	<SolidColorBrush x:Key="Label" Color="{StaticResource ColorCabBlack2}"/>
-	<SolidColorBrush x:Key="Text" Color="{StaticResource ColorCabBlack2}"/>
-	<SolidColorBrush x:Key="TextDisabled" Color="{StaticResource ColorCabBlack5}"/>
-	<SolidColorBrush x:Key="TextReadonly" Color="{StaticResource ColorCabBlack2}"/>
-	<SolidColorBrush x:Key="TextMandatory" Color="{StaticResource ColorError1}"/>
-
-	<!-- Messages -->
-	<SolidColorBrush x:Key="MessageTextInformation" Color="{StaticResource ColorInformation1}"/>
-	<SolidColorBrush x:Key="MessageBorderInformation" Color="{StaticResource ColorInformation6}"/>
+    <!-- MESSAGES -->
+	
+    <!-- Information -->
+    <SolidColorBrush x:Key="MessageBorderInformation" Color="{StaticResource ColorInformation6}"/>
 	<SolidColorBrush x:Key="MessageBackgroundInformation" Color="{StaticResource ColorInformation8}"/>
+    <SolidColorBrush x:Key="MessageTextInformation" Color="{StaticResource ColorInformation1}"/>
 
-	<SolidColorBrush x:Key="MessageTextSuccess" Color="{StaticResource ColorSuccess1}"/>
+    <!-- Success -->
 	<SolidColorBrush x:Key="MessageBorderSuccess" Color="{StaticResource ColorSuccess5}"/>
 	<SolidColorBrush x:Key="MessageBackgroundSuccess" Color="{StaticResource ColorSuccess7}"/>
+    <SolidColorBrush x:Key="MessageTextSuccess" Color="{StaticResource ColorSuccess1}"/>
 
-	<SolidColorBrush x:Key="MessageTextWarning" Color="{StaticResource ColorWarning1}"/>
+    <!-- Warning -->
 	<SolidColorBrush x:Key="MessageBorderWarning" Color="{StaticResource ColorWarning6}"/>
 	<SolidColorBrush x:Key="MessageBackgroundWarning" Color="{StaticResource ColorWarning9}"/>
+    <SolidColorBrush x:Key="MessageTextWarning" Color="{StaticResource ColorWarning1}"/>
 
-	<SolidColorBrush x:Key="MessageTextError" Color="{StaticResource ColorError1}"/>
+    <!-- Error -->
+    <SolidColorBrush x:Key="MessageTextError" Color="{StaticResource ColorError1}"/>
 	<SolidColorBrush x:Key="MessageBorderError" Color="{StaticResource ColorError6}"/>
 	<SolidColorBrush x:Key="MessageBackgroundError" Color="{StaticResource ColorError8}"/>
+
+    
+    <!-- ALERTS AND VALIDATION-->
 
     <!-- Alert success -->
     <SolidColorBrush x:Key="AlertBorderSuccess" Color="{StaticResource ColorSuccess5}"/>
@@ -237,50 +239,178 @@
     <SolidColorBrush x:Key="AlertIconBackgroundError" Color="{StaticResource ColorError2}"/>
     <SolidColorBrush x:Key="AlertIconFillColorError" Color="#FFFFFFFF"/>
 
-    <!-- Textbox -->
+
+    <!-- ======================================================================
+    COMMON BRUSHES 
+    ======================================================================= -->
+    
+    <!-- ROW -->
+
+    <!--Hover-->
+    <SolidColorBrush x:Key="RowBackgroundHover" Color="{StaticResource ColorCabOrange6}"/>
+    <SolidColorBrush x:Key="RowTextHover" Color="{StaticResource ColorCabBlack2}"/>
+
+    <!--Selected-->
+    <SolidColorBrush x:Key="RowBackgroundSelected" Color="{StaticResource ColorCabOrange}"/>
+    <SolidColorBrush x:Key="RowTextSelected" Color="#FFFFFFFF"/>
+    
+    
+    <!--FOCUS - DOTTED LINE-->
+
+    <SolidColorBrush x:Key="DotLine" Color="{StaticResource ColorCabOrange}"/>
+
+
+
+    <!-- ======================================================================
+    CONTROLS OUT-OF-THE-BOX 
+    ======================================================================= -->
+    
+
+    <!-- BUTTON CONTROL -->
+
+    <!-- Normal -->
+    <SolidColorBrush x:Key="ButtonBorder" Color="Transparent"/>
+    <SolidColorBrush x:Key="ButtonBackground"  Opacity="0.85" Color="{StaticResource ColorCabBlack7}"/>
+    <SolidColorBrush x:Key="ButtonText" Color="{StaticResource ColorCabBlack2}"/>
+
+    <!-- Hover -->
+    <SolidColorBrush x:Key="ButtonBorderHover" Color="Transparent"/>
+    <SolidColorBrush x:Key="ButtonBackgroundHover" Color="{StaticResource ColorCabBlack7}"/>
+
+    <!-- Active -->
+    <SolidColorBrush x:Key="ButtonBorderActive" Color="Transparent"/>
+    <SolidColorBrush x:Key="ButtonBackgroundActive" Color="{StaticResource ColorCabBlack7}"/>
+
+    <!-- Disabled -->
+    <SolidColorBrush x:Key="ButtonBorderDisabled" Color="Transparent"/>
+    <SolidColorBrush x:Key="ButtonBackgroundDisabled" Opacity="0.85" Color="{StaticResource ColorCabGray}"/>
+    <SolidColorBrush x:Key="ButtonTextDisabled" Opacity="0.85" Color="{StaticResource ColorCabBlack5}"/>
+
+    <!-- Button default, normal -->
+    <SolidColorBrush x:Key="ButtonBorderPrimary" Color="Transparent"/>
+    <SolidColorBrush x:Key="ButtonBackgroundPrimary" Opacity="0.85" Color="{StaticResource ColorCabBlue}"/>
+    <SolidColorBrush x:Key="ButtonTextPrimary" Color="#FFFFFFFF"/>
+
+    <!-- Button default, hover -->
+    <SolidColorBrush x:Key="ButtonBorderPrimaryHover" Color="Transparent"/>
+    <SolidColorBrush x:Key="ButtonBackgroundPrimaryHover" Color="{StaticResource ColorCabBlue}"/>
+
+    <!-- Button default, active -->
+    <SolidColorBrush x:Key="ButtonBorderPrimaryActive" Color="Transparent"/>
+    <SolidColorBrush x:Key="ButtonBackgroundPrimaryActive" Color="{StaticResource ColorCabBlue}"/>
+
+    <!-- Button default, disadled -->
+    <SolidColorBrush x:Key="ButtonBorderPrimaryDisabled" Color="Transparent"/>
+    <SolidColorBrush x:Key="ButtonBackgroundPrimaryDisabled" Opacity="0.5" Color="#FFFFFFFF"/>
+
+
+    <!--LINK BUTTON-->
+    
+    <!--Normal-->
+    <SolidColorBrush x:Key="LinkButtonText" Color="{StaticResource ColorCabBlue}"/>
+
+    <!--Hover-->
+    <SolidColorBrush x:Key="LinkButtonTextHover" Color="{StaticResource ColorCabGray}"/>
+
+    <!-- TEXTBOX CONTROL -->
+    
+    <!-- Normal -->
 	<SolidColorBrush x:Key="TextboxBorder" Color="{StaticResource ColorCabGray}"/>
 	<SolidColorBrush x:Key="TextboxBackground" Color="#FFFFFFFF"/>
-	<SolidColorBrush x:Key="TextboxBorderHover" Color="{StaticResource ColorCabBlack7}"/>
+	
+    <!-- Hover -->
+    <SolidColorBrush x:Key="TextboxBorderHover" Color="{StaticResource ColorCabBlack7}"/>
 	<SolidColorBrush x:Key="TextboxBackgroundHover" Color="#FFFFFFFF"/>
-	<SolidColorBrush x:Key="TextboxBorderFocus" Color="{StaticResource ColorCabOrange7}"/>
+	
+    <!-- Focus -->
+    <SolidColorBrush x:Key="TextboxBorderFocus" Color="{StaticResource ColorCabOrange7}"/>
 	<SolidColorBrush x:Key="TextboxBackgroundFocus" Color="{StaticResource ColorCabOrange5}"/>
-	<SolidColorBrush x:Key="TextboxBorderDisabled" Color="{StaticResource ColorCabGray3}"/>
+	
+    <!-- Disabled -->
+    <SolidColorBrush x:Key="TextboxBorderDisabled" Color="{StaticResource ColorCabGray3}"/>
 	<SolidColorBrush x:Key="TextboxBackgroundDisabled" Color="{StaticResource ColorCabGray5}"/>
-	<SolidColorBrush x:Key="TextboxBorderReadonly" Color="Transparent"/>
-	<SolidColorBrush x:Key="TextboxBorderReadonlyHover" Color="{StaticResource ColorCabBlack7}"/>
+	
+    <!-- Readonly -->
+    <SolidColorBrush x:Key="TextboxBorderReadonly" Color="Transparent"/>
+    <SolidColorBrush x:Key="TextboxBorderReadonlyHover" Color="{StaticResource ColorCabBlack7}"/>
 	<SolidColorBrush x:Key="TextboxBackgroundReadonly" Color="Transparent"/>
 
-	<!-- Groupbox Header-->
+
+    <!-- COMBO BOX CONTROL -->
+
+    <!-- Normal -->
+    <SolidColorBrush x:Key="ComboBoxBorder" Color="{StaticResource ColorCabGray}"/>
+    <SolidColorBrush x:Key="ComboBoxBackground" Color="#FFFFFFFF"/>
+
+    <!-- Hover -->
+    <SolidColorBrush x:Key="ComboBoxBorderHover" Color="{StaticResource ColorCabBlack7}"/>
+    <SolidColorBrush x:Key="ComboBoxBackgroundHover" Color="#FFFFFFFF"/>
+
+    <!-- Disabled -->
+    <SolidColorBrush x:Key="ComboBoxBorderDisabled" Color="{StaticResource ColorCabGray3}"/>
+    <SolidColorBrush x:Key="ComboBoxBackgroundDisabled" Color="{StaticResource ColorCabGray5}"/>
+
+
+
+    <!-- GROUPBOX CONTROL -->
+    
+    <!-- Header -->
 	<SolidColorBrush x:Key="GroupboxHeaderBorder" Color="Transparent"/>
 	<SolidColorBrush x:Key="GroupboxHeaderBackground" Color="{StaticResource ColorCabBlue6}"/>
 	<SolidColorBrush x:Key="GroupboxHeaderText" Color="{StaticResource ColorCabBlue}"/>
 	<SolidColorBrush x:Key="GroupboxHeaderTextDisabled" Color="{StaticResource ColorCabBlue3}"/>
 
-	<!-- Groupbox HeaderTransparent-->
+	<!-- HeaderTransparent, used as nested Groupbox in Groupbox -->
 	<SolidColorBrush x:Key="GroupboxHeaderTransparentBackground" Color="Transparent"/>
 	<SolidColorBrush x:Key="GroupboxHeaderTransparentText" Color="{StaticResource ColorCabBlack2}"/>
 	<SolidColorBrush x:Key="GroupboxHeaderTransparentTextDisabled" Color="{StaticResource ColorCabBlack5}"/>
 
-	<!-- Groupbox, Area -->
-	<SolidColorBrush x:Key="GroupboxAreaBorder" Color="{StaticResource ColorCabGray1}"/>
+	<!-- Groupbox, Area (the whole content of the Groupbox, maybe a better name is "Content"? -->
+	<SolidColorBrush x:Key="GroupboxAreaBorder" Color="#FFFFFFFF"/>
 	<SolidColorBrush x:Key="GroupboxAreaBackground" Color="#FFFFFFFF"/>
 
-	<!-- Groupbox InnerGroup -->
+	<!-- Groupbox InnerGroup, to create small sub-groups with new grid context -->
 	<SolidColorBrush x:Key="GroupboxInnerGroupBorder" Color="{StaticResource ColorCabGray5}"/>
 	<SolidColorBrush x:Key="GroupboxInnerGroupBackground" Color="{StaticResource ColorCabGray7}"/>
 
-	<!-- Icons -->
-	<!-- opacity 0.85 -->
-	<SolidColorBrush x:Key="IconBackgroundDark" Color="{StaticResource ColorCabBlue}"/>
-	<SolidColorBrush x:Key="IconBackgroundLight" Color="#FFFFFFFF"/>
-	<SolidColorBrush x:Key="IconFillColorDark" Color="{StaticResource ColorCabBlue}"/>
-	<SolidColorBrush x:Key="IconFillColorLight" Color="#FFFFFFFF"/>
 
-	<!-- ALL - Hover and Active/Click: opacity 1 -->
-	<!-- ALL - Disabled: opacity 0.5 -->
+    <!--GRID VIEW COLUMN HEADER-->
+    
+    <!--Normal -->
+    <SolidColorBrush x:Key="GridViewColumnHeaderBorder" Color="Transparent"/>
+    <SolidColorBrush x:Key="GridViewColumnHeaderBackground" Opacity="0.85" Color="{StaticResource ColorCabBlue}"/>
+    <SolidColorBrush x:Key="GridViewColumnHeaderText" Color="#FFFFFFFF"/>
+    
+    <!--Hover --> 
+    <SolidColorBrush x:Key="GridViewColumnHeaderBorderHover" Color="Transparent"/>
+    <SolidColorBrush x:Key="GridViewColumnHeaderBackgroundHover" Color="{StaticResource ColorCabBlue}"/>
+    <SolidColorBrush x:Key="GridViewColumnHeaderTextHover" Color="#FFFFFFFF"/>
+    
+    <!--Selected -->
+    <SolidColorBrush x:Key="GridViewColumnHeaderBorderSelected" Color="Transparent"/>
+    <SolidColorBrush x:Key="GridViewColumnHeaderBackgroundSelected" Color="{StaticResource ColorCabBlue}"/>
+    <SolidColorBrush x:Key="GridViewColumnHeaderTextSelected" Color="#FFFFFFFF"/>
 
-	<!-- ======================================================================
-    END BRUSH DEFINITIONER
-    =========================================================================== -->
+
+    <!-- ======================================================================
+    CUSTOM CONTROLS
+    ======================================================================= -->
+
+    <!-- PROCESS BUTTONS (was "Fish button") -->
+    
+    <!--Normal-->
+    <SolidColorBrush x:Key="ProcessButtonBorder" Opacity="0.75" Color="{StaticResource ColorCabBlue6}"/>
+    <SolidColorBrush x:Key="ProcessButtonBackground" Opacity="0.75" Color="{StaticResource ColorCabBlue6}"/>
+    <SolidColorBrush x:Key="ProcessButtonText" Color="{StaticResource ColorCabBlack2}"/>
+
+    <!--Hover-->
+    <SolidColorBrush x:Key="ProcessButtonBorderHover" Color="{StaticResource ColorCabBlue6}"/>
+    <SolidColorBrush x:Key="ProcessButtonBackgroundHover" Color="{StaticResource ColorCabBlue6}"/>
+    <SolidColorBrush x:Key="ProcessButtonTextHover" Color="{StaticResource ColorCabBlack2}"/>
+
+    <!--Selected-->
+    <SolidColorBrush x:Key="ProcessButtonBorderSelected" Color="{StaticResource ColorCabOrange}"/>
+    <SolidColorBrush x:Key="ProcessButtonBackgroundSelected" Color="{StaticResource ColorCabOrange}"/>
+    <SolidColorBrush x:Key="ProcessButtonTextSelected" Color="#FFFFFFFF"/>
 
 </ResourceDictionary>

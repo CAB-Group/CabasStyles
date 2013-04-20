@@ -1,0 +1,81 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="Colors.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+
+    <Style x:Key="ButtonFocusVisual">
+        <Setter Property="Control.Template">
+            <Setter.Value>
+                <ControlTemplate>
+                    <Rectangle Margin="0" SnapsToDevicePixels="true" Stroke="#0C536D" StrokeThickness="1" StrokeDashArray="1 2"/>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+    <!--<LinearGradientBrush x:Key="ButtonNormalBackground" EndPoint="0,1" StartPoint="0,0">
+        <GradientStop Color="#F3F3F3" Offset="0"/>
+        <GradientStop Color="#EBEBEB" Offset="0.5"/>
+        <GradientStop Color="#DDDDDD" Offset="0.5"/>
+        <GradientStop Color="#CDCDCD" Offset="1"/>
+    </LinearGradientBrush>-->
+
+    
+    <!--<SolidColorBrush x:Key="ButtonNormalBorder" Color="#FF707070"/>-->
+
+    <Style x:Key="EstimateHeaderFishButtonStyle" TargetType="{x:Type ToggleButton}">
+        <Setter Property="FocusVisualStyle" Value="{StaticResource ButtonFocusVisual}"/>
+        <Setter Property="Background" Value="{StaticResource ProcessButtonBackground}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource ProcessButtonBorder}"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="Foreground" Value="{StaticResource ProcessButtonText}"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"></Setter>
+        <Setter Property="Padding" Value="10,5,10,5"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type ToggleButton}">
+                    <Grid>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+                            <Path Grid.Column="1" Stretch="Fill" Data="M0,0 0,10L10,5z" Fill="{TemplateBinding Background}" />
+                            <DockPanel Background="{TemplateBinding Background}">
+                                <ContentPresenter Grid.Column="0" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
+                                                      Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" 
+                                                      SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                            </DockPanel>
+                        </Grid>
+
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsChecked" Value="true">
+                            <Setter Property="Background" Value="{StaticResource ProcessButtonBackgroundSelected}"/>
+                            <Setter Property="BorderBrush" Value="{StaticResource ProcessButtonBorderSelected}"/>
+                            <Setter Property="Foreground" Value="{StaticResource ProcessButtonTextSelected}"/>
+                            <Setter Property="TextBlock.FontWeight" Value="Bold"/>
+                        </Trigger>
+                        <Trigger Property="IsChecked" Value="False">
+                            <Setter Property="Background" Value="{StaticResource ProcessButtonBackground}"/>
+                            <Setter Property="BorderBrush" Value="{StaticResource ProcessButtonBorder}"/>
+                            <Setter Property="BorderThickness" Value="1"/>
+                            <Setter Property="Foreground" Value="{StaticResource ProcessButtonText}"/>
+                        </Trigger>
+                        <Trigger Property="IsMouseOver" Value="true">
+                            <Setter Property="Background" Value="{StaticResource ProcessButtonBackgroundHover}"/>
+                            <Setter Property="BorderBrush" Value="{StaticResource ProcessButtonBorderHover}"/>
+                            <Setter Property="BorderThickness" Value="1"/>
+                            <Setter Property="Foreground" Value="{StaticResource ProcessButtonTextHover}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+</ResourceDictionary>
