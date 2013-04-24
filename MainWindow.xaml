@@ -63,6 +63,7 @@
                 <Button Content="{StaticResource EstimateSend}" ToolTip="EstimateSend"/>
                 <Button Content="{StaticResource EuroDone}" ToolTip="EuroDone"/>
                 <Button Content="{StaticResource Flag}" ToolTip="Flag"/>
+                <Button Content="{StaticResource InsuranceBuilding}" ToolTip="InsuranceBuilding"/>
                 <Button Content="{StaticResource Home}" ToolTip="Home"/>
                 <Button Content="{StaticResource Messages}" ToolTip="Messages"/>
                 <Button Content="{StaticResource Note}" ToolTip="Note"/>
