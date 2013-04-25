@@ -97,16 +97,33 @@
         Height="112"
         Width="112">
             <Path
-            Margin="74.95716094970703,84.28680419921875,0,0"
-            HorizontalAlignment="Left"
-            VerticalAlignment="Top"
-            Height="9.61773681640625"
-            Width="19.23607635498047"
-            Stretch="Fill"
-            Opacity="1"
-            Data="M 94.1932373046875,84.28680419921875 C94.1932373046875,84.28680419921875 84.57543182373047,93.904541015625 84.57543182373047,93.904541015625 84.57543182373047,93.904541015625 74.95716094970703,84.28680419921875 74.95716094970703,84.28680419921875 74.95716094970703,84.28680419921875 74.95716094970703,84.28680419921875 74.95716094970703,84.28680419921875 "
-            Stroke="{StaticResource IconBackgroundDark}"
-            StrokeThickness="3" />
+              Margin="78,89,0,0"
+              HorizontalAlignment="Left"
+              VerticalAlignment="Top"
+              Height="18"
+              Width="28"
+              Stretch="Fill"
+              Opacity="1"
+              Data="M 82,89 C82,89 78,93 78,93 78,93 88,103 88,103 88,103 92,107 92,107 92,107 96,103 96,103 96,103 106,93 106,93 106,93 102,89 102,89 102,89 92,99 92,99 92,99 82,89 82,89 z"
+              Fill="{StaticResource IconFillColorLight}" />
+        </Grid>
+    </Viewbox>
+    <Viewbox x:Key="ArrowMenuInverted" x:Shared="False">
+        <Grid
+        x:Name="ArrowMenuInverted"
+        Background="Transparent"
+        Height="112"
+        Width="112">
+            <Path
+              Margin="78,89,0,0"
+              HorizontalAlignment="Left"
+              VerticalAlignment="Top"
+              Height="18"
+              Width="28"
+              Stretch="Fill"
+              Opacity="1"
+              Data="M 82,89 C82,89 78,93 78,93 78,93 88,103 88,103 88,103 92,107 92,107 92,107 96,103 96,103 96,103 106,93 106,93 106,93 102,89 102,89 102,89 92,99 92,99 92,99 82,89 82,89 z"
+              Fill="{StaticResource IconFillColorDark}" />
         </Grid>
     </Viewbox>
     <Viewbox x:Key="Attachment" x:Shared="false">
@@ -161,16 +178,15 @@
                     Fill="{StaticResource IconFillColorLight}" />
             </Grid>
             <Path
-                Margin="74.95716094970703,84.28680419921875,0,0"
-                HorizontalAlignment="Left"
-                VerticalAlignment="Top"
-                Height="9.61773681640625"
-                Width="19.23607635498047"
-                Stretch="Fill"
-                Opacity="1"
-                Data="M 94.1932373046875,84.28680419921875 C94.1932373046875,84.28680419921875 84.57543182373047,93.904541015625 84.57543182373047,93.904541015625 84.57543182373047,93.904541015625 74.95716094970703,84.28680419921875 74.95716094970703,84.28680419921875 74.95716094970703,84.28680419921875 74.95716094970703,84.28680419921875 74.95716094970703,84.28680419921875 "
-                Stroke="{StaticResource IconFillColorLight}"
-                StrokeThickness="3" />
+              Margin="78,89,0,0"
+              HorizontalAlignment="Left"
+              VerticalAlignment="Top"
+              Height="18"
+              Width="28"
+              Stretch="Fill"
+              Opacity="1"
+              Data="M 82,89 C82,89 78,93 78,93 78,93 88,103 88,103 88,103 92,107 92,107 92,107 96,103 96,103 96,103 106,93 106,93 106,93 102,89 102,89 102,89 92,99 92,99 92,99 82,89 82,89 z"
+              Fill="{StaticResource IconFillColorLight}" />
         </Grid>
     </Viewbox>
     <Viewbox x:Key="Calculate" x:Shared="false">
@@ -454,55 +470,185 @@
             Height="112"
             Width="112">
             <Path
-              Margin="22,17,0,0"
+              Margin="26,17,0,0"
               HorizontalAlignment="Left"
               VerticalAlignment="Top"
               Height="78"
-              Width="68"
+              Width="60"
               Stretch="Fill"
               Opacity="1"
-              Data="M 22,17 C22,17 90,17 90,17 90,17 90,95 90,95 90,95 22,95 22,95 22,95 22,17 22,17 z"
+              Data="M 26,17 C26,17 26,95 26,95 26,95 74,95 74,95 74,95 74,90 74,90 74,90 63,90 63,90 63,90 63,74 63,74 63,74 49,74 49,74 49,74 49,90 49,90 49,90 31,90 31,90 31,90 31,28 31,28 31,28 81,28 81,28 81,28 81,85 81,85 81,85 86,85 86,85 86,85 86,17 86,17 86,17 26,17 26,17 z"
+              Fill="{StaticResource IconFillColorLight}" />
+            <Rectangle
+              Opacity="1"
+              HorizontalAlignment="Stretch"
+              VerticalAlignment="Stretch"
+              Margin="36,74,66,30"
+              Fill="{StaticResource IconFillColorLight}" />
+            <Rectangle
+              Opacity="1"
+              HorizontalAlignment="Stretch"
+              VerticalAlignment="Stretch"
+              Margin="36,60,66,44"
+              Fill="{StaticResource IconFillColorLight}" />
+            <Rectangle
+              Opacity="1"
+              HorizontalAlignment="Stretch"
+              VerticalAlignment="Stretch"
+              Margin="36,46,66,58"
+              Fill="{StaticResource IconFillColorLight}" />
+            <Rectangle
+              Opacity="1"
+              HorizontalAlignment="Stretch"
+              VerticalAlignment="Stretch"
+              Margin="36,32,66,72"
+              Fill="{StaticResource IconFillColorLight}" />
+            <Rectangle
+              Opacity="1"
+              HorizontalAlignment="Stretch"
+              VerticalAlignment="Stretch"
+              Margin="66,74,36,30"
+              Fill="{StaticResource IconFillColorLight}" />
+            <Rectangle
+              Opacity="1"
+              HorizontalAlignment="Stretch"
+              VerticalAlignment="Stretch"
+              Margin="66,60,36,44"
+              Fill="{StaticResource IconFillColorLight}" />
+            <Rectangle
+              Opacity="1"
+              HorizontalAlignment="Stretch"
+              VerticalAlignment="Stretch"
+              Margin="66,46,36,58"
+              Fill="{StaticResource IconFillColorLight}" />
+            <Rectangle
+              Opacity="1"
+              HorizontalAlignment="Stretch"
+              VerticalAlignment="Stretch"
+              Margin="66,32,36,72"
+              Fill="{StaticResource IconFillColorLight}" />
+            <Rectangle
+              Opacity="1"
+              HorizontalAlignment="Stretch"
+              VerticalAlignment="Stretch"
+              Margin="51,32,51,72"
+              Fill="{StaticResource IconFillColorLight}" />
+            <Rectangle
+              Opacity="1"
+              HorizontalAlignment="Stretch"
+              VerticalAlignment="Stretch"
+              Margin="51,46,51,58"
+              Fill="{StaticResource IconFillColorLight}" />
+            <Rectangle
+              Opacity="1"
+              HorizontalAlignment="Stretch"
+              VerticalAlignment="Stretch"
+              Margin="51,60,51,44"
               Fill="{StaticResource IconFillColorLight}" />
             <Path
-              Margin="31,28,0,0"
+              Margin="78,89,0,0"
               HorizontalAlignment="Left"
               VerticalAlignment="Top"
-              Height="59"
-              Width="50"
+              Height="18"
+              Width="28"
               Stretch="Fill"
               Opacity="1"
-              Data="M 31,28 C31,28 81,28 81,28 81,28 81,87 81,87 81,87 31,87 31,87 31,87 31,28 31,28 z"
-              Fill="{StaticResource IconBackgroundDark}" />
+              Data="M 82,89 C82,89 78,93 78,93 78,93 88,103 88,103 88,103 92,107 92,107 92,107 96,103 96,103 96,103 106,93 106,93 106,93 102,89 102,89 102,89 92,99 92,99 92,99 82,89 82,89 z"
+              Fill="{StaticResource IconFillColorLight}" />
+        </Grid>
+    </Viewbox>
+    <Viewbox x:Key="InsuranceBuildingInverted"  x:Shared="False">
+        <Grid
+            x:Name="InsuranceBuildingInverted"
+            Background="Transparent"
+            Height="112"
+            Width="112">
+            <Path
+              Margin="26,17,0,0"
+              HorizontalAlignment="Left"
+              VerticalAlignment="Top"
+              Height="78"
+              Width="60"
+              Stretch="Fill"
+              Opacity="1"
+              Data="M 26,17 C26,17 26,95 26,95 26,95 74,95 74,95 74,95 74,90 74,90 74,90 63,90 63,90 63,90 63,74 63,74 63,74 49,74 49,74 49,74 49,90 49,90 49,90 31,90 31,90 31,90 31,28 31,28 31,28 81,28 81,28 81,28 81,85 81,85 81,85 86,85 86,85 86,85 86,17 86,17 86,17 26,17 26,17 z"
+              Fill="{StaticResource IconFillColorDark}" />
             <Rectangle
               Opacity="1"
               HorizontalAlignment="Stretch"
               VerticalAlignment="Stretch"
-              Margin="48,72,47,20"
-              Fill="{StaticResource IconFillColorLight}" />
+              Margin="36,74,66,30"
+              Fill="{StaticResource IconFillColorDark}" />
             <Rectangle
               Opacity="1"
               HorizontalAlignment="Stretch"
               VerticalAlignment="Stretch"
-              Margin="36,33,59,64"
-              Fill="{StaticResource IconFillColorLight}" />
+              Margin="36,60,66,44"
+              Fill="{StaticResource IconFillColorDark}" />
             <Rectangle
               Opacity="1"
               HorizontalAlignment="Stretch"
               VerticalAlignment="Stretch"
-              Margin="36,53,59,44"
-              Fill="{StaticResource IconFillColorLight}" />
+              Margin="36,46,66,58"
+              Fill="{StaticResource IconFillColorDark}" />
             <Rectangle
               Opacity="1"
               HorizontalAlignment="Stretch"
               VerticalAlignment="Stretch"
-              Margin="60,33,35,64"
-              Fill="{StaticResource IconFillColorLight}" />
+              Margin="36,32,66,72"
+              Fill="{StaticResource IconFillColorDark}" />
             <Rectangle
               Opacity="1"
               HorizontalAlignment="Stretch"
               VerticalAlignment="Stretch"
-              Margin="60,53,35,44"
-              Fill="{StaticResource IconFillColorLight}" />
+              Margin="66,74,36,30"
+              Fill="{StaticResource IconFillColorDark}" />
+            <Rectangle
+              Opacity="1"
+              HorizontalAlignment="Stretch"
+              VerticalAlignment="Stretch"
+              Margin="66,60,36,44"
+              Fill="{StaticResource IconFillColorDark}" />
+            <Rectangle
+              Opacity="1"
+              HorizontalAlignment="Stretch"
+              VerticalAlignment="Stretch"
+              Margin="66,46,36,58"
+              Fill="{StaticResource IconFillColorDark}" />
+            <Rectangle
+              Opacity="1"
+              HorizontalAlignment="Stretch"
+              VerticalAlignment="Stretch"
+              Margin="66,32,36,72"
+              Fill="{StaticResource IconFillColorDark}" />
+            <Rectangle
+              Opacity="1"
+              HorizontalAlignment="Stretch"
+              VerticalAlignment="Stretch"
+              Margin="51,32,51,72"
+              Fill="{StaticResource IconFillColorDark}" />
+            <Rectangle
+              Opacity="1"
+              HorizontalAlignment="Stretch"
+              VerticalAlignment="Stretch"
+              Margin="51,46,51,58"
+              Fill="{StaticResource IconFillColorDark}" />
+            <Rectangle
+              Opacity="1"
+              HorizontalAlignment="Stretch"
+              VerticalAlignment="Stretch"
+              Margin="51,60,51,44"
+              Fill="{StaticResource IconFillColorDark}" />
+            <Path
+              Margin="78,89,0,0"
+              HorizontalAlignment="Left"
+              VerticalAlignment="Top"
+              Height="18"
+              Width="28"
+              Stretch="Fill"
+              Opacity="1"
+              Data="M 82,89 C82,89 78,93 78,93 78,93 88,103 88,103 88,103 92,107 92,107 92,107 96,103 96,103 96,103 106,93 106,93 106,93 102,89 102,89 102,89 92,99 92,99 92,99 82,89 82,89 z"
+              Fill="{StaticResource IconFillColorDark}" />
         </Grid>
     </Viewbox>
     <Viewbox x:Key="Home" x:Shared="false">
@@ -867,7 +1013,16 @@
     <Viewbox x:Key="Share" x:Shared="false">
         <Grid x:Name="Share" Background="{StaticResource IconBackgroundDark}" Height="112" Width="112">
             <Path Margin="17.354331970214844,32.97038650512695,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="42.40555191040039" Width="73.1347885131836" Stretch="Fill" Opacity="1" Data="M 17.354331970214844,75.37593841552734 C17.354331970214844,75.37593841552734 18.275861740112305,45.41544723510742 67.74956512451172,43.264400482177734 67.74956512451172,43.264400482177734 67.74956512451172,32.97038650512695 67.74956512451172,32.97038650512695 67.74956512451172,32.97038650512695 90.48912048339844,55.24869155883789 90.48912048339844,55.24869155883789 90.48912048339844,55.24869155883789 67.44206237792969,75.37593841552734 67.44206237792969,75.37593841552734 67.44206237792969,75.37593841552734 67.44206237792969,63.85289001464844 67.44206237792969,63.85289001464844 24.882278442382812,52.63638687133789 17.354331970214844,75.37593841552734 17.354331970214844,75.37593841552734 z" Fill="{StaticResource IconFillColorLight}"/>
-            <Path Margin="75.7892074584961,83.99630737304688,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="9.618278503417969" Width="19.236068725585938" Stretch="Fill" Opacity="1" Data="M 95.02527618408203,83.99630737304688 C95.02527618408203,83.99630737304688 85.40748596191406,93.61458587646484 85.40748596191406,93.61458587646484 85.40748596191406,93.61458587646484 75.7892074584961,83.99630737304688 75.7892074584961,83.99630737304688 75.7892074584961,83.99630737304688 75.7892074584961,83.99630737304688 75.7892074584961,83.99630737304688 " Stroke="{StaticResource IconFillColorLight}"  StrokeThickness="3"/>
+            <Path
+              Margin="78,89,0,0"
+              HorizontalAlignment="Left"
+              VerticalAlignment="Top"
+              Height="18"
+              Width="28"
+              Stretch="Fill"
+              Opacity="1"
+              Data="M 82,89 C82,89 78,93 78,93 78,93 88,103 88,103 88,103 92,107 92,107 92,107 96,103 96,103 96,103 106,93 106,93 106,93 102,89 102,89 102,89 92,99 92,99 92,99 82,89 82,89 z"
+              Fill="{StaticResource IconFillColorLight}" />
         </Grid>
     </Viewbox>
     <Viewbox x:Key="Technician" x:Shared="False">

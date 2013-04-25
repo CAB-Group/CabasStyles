@@ -21,6 +21,7 @@
             <RowDefinition Height="40" />
             <RowDefinition Height="40" />
             <RowDefinition Height="40" />
+            <RowDefinition Height="55" />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
@@ -34,6 +35,7 @@
                 <Button Content="{StaticResource AlertSuccess}" ToolTip="AlertSuccess"/>
                 <Button Content="{StaticResource AlertWarning}" ToolTip="AlertWarning"/>
                 <Button Content="{StaticResource ArrowMenu}" ToolTip="ArrowMenu"/>
+                <Button Content="{StaticResource ArrowMenuInverted}" ToolTip="ArrowMenuInverted"/>
                 <Button Content="{StaticResource Attachment}" ToolTip="Attachment"/>
                 <Button Content="{StaticResource CabIcon}" ToolTip="CabIcon"/>
                 <Button Content="{StaticResource Calculate}" ToolTip="Calculate"/>
@@ -63,18 +65,11 @@
                 <Button Content="{StaticResource EstimateSend}" ToolTip="EstimateSend"/>
                 <Button Content="{StaticResource EuroDone}" ToolTip="EuroDone"/>
                 <Button Content="{StaticResource Flag}" ToolTip="Flag"/>
-                <Button Content="{StaticResource InsuranceBuilding}" ToolTip="InsuranceBuilding"/>
                 <Button Content="{StaticResource Home}" ToolTip="Home"/>
                 <Button Content="{StaticResource Messages}" ToolTip="Messages"/>
                 <Button Content="{StaticResource Note}" ToolTip="Note"/>
-                <Button Content="{StaticResource Paintshop}" ToolTip="Paintshop"/>
-                <Button Content="{StaticResource PaintshopInverted}" ToolTip="PaintshopInverted"/>
-                <Button Content="{StaticResource Person}" ToolTip="Person"/>
-                <Button Content="{StaticResource PersonInverted}" ToolTip="PersonInverted"/>
                 <Button Content="{StaticResource Phone}" ToolTip="Phone"/>
                 <Button Content="{StaticResource Plan}" ToolTip="Plan"/>
-                <Button Content="{StaticResource Plasticshop}" ToolTip="Plasticshop"/>
-                <Button Content="{StaticResource PlasticshopInverted}" ToolTip="PlasticshopInverted"/>
                 <Button Content="{StaticResource Print}" ToolTip="Print"/>
                 <Button Content="{StaticResource Save}" ToolTip="Save"/>
                 <Button Content="{StaticResource SendEuro}" ToolTip="SendEuro"/>
@@ -83,15 +78,87 @@
         <ToolBarPanel Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" Background="Transparent" Height="40" >
             <ToolBar Height="40">
                 <Button Content="{StaticResource Share}" ToolTip="Share"/>
-                <Button Content="{StaticResource Technician}" ToolTip="Technician"/>
-                <Button Content="{StaticResource TechnicianInverted}" ToolTip="TechnicianInverted"/>
                 <Button Content="{StaticResource Tools}" ToolTip="Tools"/>
-                <Button Content="{StaticResource Workshop}" ToolTip="Workshop"/>
-                <Button Content="{StaticResource WorkshopInverted}" ToolTip=""/>
+            </ToolBar>
+        </ToolBarPanel>
+        <ToolBarPanel Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" Background="Transparent" Height="55" >
+            <ToolBar Height="55">
+                <Button ToolTip="PaintshopInverted">
+                    <Grid>
+                        <ContentPresenter Content="{StaticResource PaintshopInverted}"/>
+                        <ContentPresenter Content="{StaticResource ArrowMenuInverted}"/>
+                    </Grid>
+                </Button>
+                <Button ToolTip="PersonInverted">
+                    <Grid>
+                        <ContentPresenter Content="{StaticResource PersonInverted}"/>
+                        <ContentPresenter Content="{StaticResource ArrowMenuInverted}"/>
+                    </Grid>
+                </Button>
+                <Button ToolTip="PlasticshopInverted">
+                    <Grid>
+                        <ContentPresenter Content="{StaticResource PlasticshopInverted}"/>
+                        <ContentPresenter Content="{StaticResource ArrowMenuInverted}"/>
+                    </Grid>
+                </Button>
+                <Button ToolTip="TechnicianInverted">
+                    <Grid>
+                        <ContentPresenter Content="{StaticResource TechnicianInverted}"/>
+                        <ContentPresenter Content="{StaticResource ArrowMenuInverted}"/>
+                    </Grid>
+                </Button>
+                <Button ToolTip="WorkshopInverted">
+                    <Grid>
+                        <ContentPresenter Content="{StaticResource WorkshopInverted}"/>
+                        <ContentPresenter Content="{StaticResource ArrowMenuInverted}"/>
+                    </Grid>
+                </Button>
+                <Button ToolTip="InsuranceBuildingInverted">
+                    <Grid>
+                        <ContentPresenter Content="{StaticResource InsuranceBuildingInverted}"/>
+                        <ContentPresenter Content="{StaticResource ArrowMenuInverted}"/>
+                    </Grid>
+                </Button>
+                <Button ToolTip="Paintshop">
+                    <Grid>
+                        <ContentPresenter Content="{StaticResource Paintshop}"/>
+                        <ContentPresenter Content="{StaticResource ArrowMenu}"/>
+                    </Grid>
+                </Button>
+                <Button ToolTip="Person">
+                    <Grid>
+                        <ContentPresenter Content="{StaticResource Person}"/>
+                        <ContentPresenter Content="{StaticResource ArrowMenu}"/>
+                    </Grid>
+                </Button>
+                <Button ToolTip="Plasticshop">
+                    <Grid>
+                        <ContentPresenter Content="{StaticResource Plasticshop}"/>
+                        <ContentPresenter Content="{StaticResource ArrowMenu}"/>
+                    </Grid>
+                </Button>
+                <Button ToolTip="Technician">
+                    <Grid>
+                        <ContentPresenter Content="{StaticResource Technician}"/>
+                        <ContentPresenter Content="{StaticResource ArrowMenu}"/>
+                    </Grid>
+                </Button>
+                <Button ToolTip="Workshop">
+                    <Grid>
+                        <ContentPresenter Content="{StaticResource Workshop}"/>
+                        <ContentPresenter Content="{StaticResource ArrowMenu}"/>
+                    </Grid>
+                </Button>
+                <Button ToolTip="InsuranceBuilding">
+                    <Grid>
+                        <ContentPresenter Content="{StaticResource InsuranceBuilding}"/>
+                        <ContentPresenter Content="{StaticResource ArrowMenu}"/>
+                    </Grid>
+                </Button>
             </ToolBar>
         </ToolBarPanel>
 
-        <StackPanel Grid.Row="3" Grid.Column="1" Margin="10, 0, 10, 0">
+        <StackPanel Grid.Row="4" Grid.Column="1" Margin="10, 0, 10, 0">
             <TabControl Height="40" Margin="0,10,0,0">
                 <TabItem Header="TabItem 1"/>
                 <TabItem Header="TabItem 2"/>
@@ -115,7 +182,7 @@
             </ListView>
         </StackPanel>
 
-        <StackPanel Grid.Row="3" Grid.Column="0" Orientation="Vertical" Grid.IsSharedSizeScope="True" Margin="20,0,10,0">
+        <StackPanel Grid.Row="4" Grid.Column="0" Orientation="Vertical" Grid.IsSharedSizeScope="True" Margin="20,0,10,0">
             <GroupBox Grid.Row="0" Grid.Column="0" Header="GroupBox" Margin="0,10,0,0" Padding="10">
                 <Grid>
                     <Grid.RowDefinitions>
@@ -178,7 +245,7 @@
             </StackPanel>
         </StackPanel>
 
-        <StackPanel Grid.Row="3" Grid.Column="2" Margin="10,0,20,0">
+        <StackPanel Grid.Row="4" Grid.Column="2" Margin="10,0,20,0">
             <TextBlock Foreground="{StaticResource Heading}" Margin="0,10,0,5" Name="Heading1" Text="Detta är en rubrik" VerticalAlignment="Top" FontFamily="Calibri" FontSize="22" />
             <Border BorderThickness="1" BorderBrush="{StaticResource MessageBorderInformation}" Background="{StaticResource MessageBackgroundInformation}" Margin="0 5" Padding="10" VerticalAlignment="Top">
                 <TextBlock Foreground="{StaticResource MessageTextInformation}" Name="TextBlock1" Text="Detta är ett informationsmeddelande" VerticalAlignment="Top" FontFamily="Calibri" FontSize="13" />
