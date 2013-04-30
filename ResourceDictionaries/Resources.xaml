@@ -1,0 +1,23 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+						  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="pack://application:,,,/CAB.CSP.Common.Client;component/Windows/Styles/UserControl.xaml"/>
+		<ResourceDictionary Source="pack://application:,,,/CAB.CSP.Common.Client;component/Windows/Styles/Toggle.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/CAB.CSP.Common.Client;component/Windows/Styles/Button.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/CAB.CSP.Common.Client;component/Windows/Styles/ImageButton.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/CAB.CSP.Common.Client;component/Windows/Styles/TextBox.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/CAB.CSP.Common.Client;component/Windows/Styles/TabControl.xaml"/>        
+        <ResourceDictionary Source="pack://application:,,,/CAB.CSP.Common.Client;component/Windows/Styles/CheckBox.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/CAB.CSP.Common.Client;component/Windows/Styles/DatePicker.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/CAB.CSP.Common.Client;component/Windows/Styles/GridSplitter.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/CAB.CSP.Common.Client;component/Windows/Styles/CabExpander.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/CAB.CSP.Common.Client;component/Windows/Styles/GroupBox.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/CAB.CSP.Common.Client;component/Windows/Styles/ListView.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/CAB.CSP.Common.Client;component/Windows/Styles/ListBox.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/CAB.CSP.Common.Client;component/Windows/Styles/DataGrid.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/CAB.CSP.Common.Client;component/Windows/Styles/HeaderedContentControl.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/CAB.CSP.Common.Client;component/Windows/Styles/Image.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/CAB.CSP.Common.Client;component/Windows/Styles/GridViewColumnHeader.xaml"/>
+        <ResourceDictionary Source="pack://application:,,,/CAB.CSP.Common.Client;component/Windows/Styles/CabDecimalUpDown.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>
