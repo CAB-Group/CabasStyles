@@ -2,12 +2,12 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
     <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="Colors.xaml"/>
+        <ResourceDictionary Source="..\ResourceDictionaries\Colors.xaml"/>
     </ResourceDictionary.MergedDictionaries>
 
     <ControlTemplate x:Key="ButtonTemplate" TargetType="{x:Type ButtonBase}">
-        <Border HorizontalAlignment="{TemplateBinding HorizontalAlignment}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1" Background="{TemplateBinding Background}" x:Name="ButtonBorder">
-            <Grid Margin="5,3" MinWidth="60">
+        <Border Margin="2" HorizontalAlignment="{TemplateBinding HorizontalAlignment}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1" Background="{TemplateBinding Background}" x:Name="ButtonBorder">
+            <Grid Margin="5,2" MinWidth="60">
                 <ContentPresenter IsHitTestVisible="True" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
             </Grid>
         </Border>
@@ -30,7 +30,6 @@
         <Setter Property="Background" Value="{StaticResource ButtonBackground}"/>
         <Setter Property="BorderBrush" Value="{StaticResource ButtonBorder}"/>
         <Setter Property="Foreground" Value="{StaticResource ButtonText}"/>
-        <Setter Property="Padding" Value="10,5,10,5"/>
         <Setter Property="ToolTipService.ShowOnDisabled" Value="True"/>
         <Style.Triggers>
             <MultiTrigger>
@@ -71,8 +70,7 @@
                 <MultiTrigger.Setters>
                     <Setter Property="Background" Value="{StaticResource ButtonBackgroundPrimary}"/>
                     <Setter Property="BorderBrush" Value="{StaticResource ButtonBorderPrimary}"/>
-                    <Setter Property="Foreground" Value="{StaticResource ButtonTextPrimary}"/>
-                    <Setter Property="TextBlock.FontWeight" Value="Bold"/>
+                    <Setter Property="Foreground" Value="{StaticResource ButtonTextPrimary}"/>                    
                 </MultiTrigger.Setters>
             </MultiTrigger>
             <MultiTrigger>
@@ -118,8 +116,7 @@
                     <Condition Property="IsEnabled" Value="True"/>
                 </MultiTrigger.Conditions>
                 <MultiTrigger.Setters>
-                    <Setter Property="Background" Value="{StaticResource ButtonBackground}"/>
-                    <Setter Property="TextBlock.FontWeight" Value="Bold"/>
+                    <Setter Property="Background" Value="{StaticResource ButtonBackground}"/>                    
                 </MultiTrigger.Setters>
             </MultiTrigger>
         </Style.Triggers>
@@ -134,8 +131,7 @@
                     <Condition Property="IsEnabled" Value="True"/>
                 </MultiTrigger.Conditions>
                 <MultiTrigger.Setters>
-                    <Setter Property="BorderBrush" Value="{StaticResource ButtonBackgroundActive}"/>
-                    <Setter Property="TextBlock.FontWeight" Value="Bold"/>
+                    <Setter Property="BorderBrush" Value="{StaticResource ButtonBackgroundActive}"/>                    
                 </MultiTrigger.Setters>
             </MultiTrigger>
         </Style.Triggers>

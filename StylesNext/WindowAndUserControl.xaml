@@ -3,7 +3,7 @@
                     xmlns:system="clr-namespace:System;assembly=mscorlib">
 
     <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="pack://application:,,,/CAB.CSP.Common.Client;component/Windows/ResourceDictionaries/Colors.xaml"/>
+        <ResourceDictionary Source="..\ResourceDictionaries\Colors.xaml"/>
     </ResourceDictionary.MergedDictionaries>
 
     <system:Double x:Key="DefaultFontSize">13</system:Double>
