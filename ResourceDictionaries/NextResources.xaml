@@ -1,20 +1,39 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 						  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <ResourceDictionary.MergedDictionaries>
-        <!-- Versioned files -->
         <ResourceDictionary Source="Colors.xaml"/>
         <ResourceDictionary Source="Icons.xaml"/>
-        <!-- /Versioned files -->
 
-        <ResourceDictionary Source="WindowAndUserControl.xaml"/>        
-        <ResourceDictionary Source="Button.xaml"/>
-        <ResourceDictionary Source="TextBox.xaml"/>
-        <ResourceDictionary Source="TabControl.xaml"/>                        
-        <ResourceDictionary Source="GroupBox.xaml"/>
-        <ResourceDictionary Source="ListView.xaml"/>
-        <ResourceDictionary Source="ListBox.xaml"/>
-        <ResourceDictionary Source="DataGrid.xaml"/>
-        <ResourceDictionary Source="ComboBox.xaml"/>
-        <ResourceDictionary Source="EstimateHeaderFishButtonStyle.xaml"/>
+        <ResourceDictionary Source="..\StylesNext\Button.xaml"/>
+
+        <ResourceDictionary Source="..\StylesNext\CabDecimalUpDown.xaml"/>
+        <ResourceDictionary Source="..\StylesNext\CheckBox.xaml"/>
+        <ResourceDictionary Source="..\StylesNext\ComboBox.xaml"/>
+        <ResourceDictionary Source="..\StylesNext\ComboBoxWithFilter.xaml"/>
+
+        <ResourceDictionary Source="..\StylesNext\DataGrid.xaml"/>        
+
+        <ResourceDictionary Source="..\StylesNext\GridSplitter.xaml"/>
+        <ResourceDictionary Source="..\StylesNext\GridViewColumnHeader.xaml"/>
+        <ResourceDictionary Source="..\StylesNext\GroupBox.xaml"/>
+
+        <ResourceDictionary Source="..\StylesNext\Label.xaml"/>
+        <ResourceDictionary Source="..\StylesNext\ListView.xaml"/>
+        <ResourceDictionary Source="..\StylesNext\ListBox.xaml"/>
+
+        <ResourceDictionary Source="..\StylesNext\ProcessButtonStyle.xaml"/>
+
+        <ResourceDictionary Source="..\StylesNext\TextBox.xaml"/>
+        <ResourceDictionary Source="..\StylesNext\TextBlock.xaml"/>
+        <ResourceDictionary Source="..\StylesNext\TabControl.xaml"/>       
+                                                                             
+        <ResourceDictionary Source="..\StylesNext\RadioButton.xaml"/>   
+        
+        <ResourceDictionary Source="..\StylesNext\WindowAndUserControl.xaml"/>
+
+        <ResourceDictionary Source="..\Styles\Toggle.xaml"/>
+        <ResourceDictionary Source="..\Styles\Image.xaml"/>
+        <ResourceDictionary Source="..\Styles\DatePicker.xaml"/>
+        
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>

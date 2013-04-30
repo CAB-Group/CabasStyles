@@ -70,7 +70,7 @@
                 <MultiTrigger.Setters>
                     <Setter Property="Background" Value="{StaticResource ButtonBackgroundPrimary}"/>
                     <Setter Property="BorderBrush" Value="{StaticResource ButtonBorderPrimary}"/>
-                    <Setter Property="Foreground" Value="{StaticResource ButtonTextPrimary}"/>                    
+                    <Setter Property="Foreground" Value="{StaticResource ButtonTextPrimary}"/>
                 </MultiTrigger.Setters>
             </MultiTrigger>
             <MultiTrigger>
@@ -85,13 +85,13 @@
             </MultiTrigger>
             <MultiTrigger>
                 <MultiTrigger.Conditions>
-                    <Condition Property="IsDefault" Value="True"/>                    
+                    <Condition Property="IsDefault" Value="True"/>
                     <Condition Property="IsEnabled" Value="True"/>
                     <Condition Property="IsMouseOver" Value="True"/>
                 </MultiTrigger.Conditions>
                 <MultiTrigger.Setters>
                     <Setter Property="Background" Value="{StaticResource ButtonBackgroundPrimaryHover}"/>
-                    <Setter Property="BorderBrush" Value="{StaticResource ButtonBorderPrimaryHover}"/>                    
+                    <Setter Property="BorderBrush" Value="{StaticResource ButtonBorderPrimaryHover}"/>
                 </MultiTrigger.Setters>
             </MultiTrigger>
             <MultiTrigger>
@@ -116,7 +116,7 @@
                     <Condition Property="IsEnabled" Value="True"/>
                 </MultiTrigger.Conditions>
                 <MultiTrigger.Setters>
-                    <Setter Property="Background" Value="{StaticResource ButtonBackground}"/>                    
+                    <Setter Property="Background" Value="{StaticResource ButtonBackground}"/>
                 </MultiTrigger.Setters>
             </MultiTrigger>
         </Style.Triggers>
@@ -131,7 +131,7 @@
                     <Condition Property="IsEnabled" Value="True"/>
                 </MultiTrigger.Conditions>
                 <MultiTrigger.Setters>
-                    <Setter Property="BorderBrush" Value="{StaticResource ButtonBackgroundActive}"/>                    
+                    <Setter Property="BorderBrush" Value="{StaticResource ButtonBackgroundActive}"/>
                 </MultiTrigger.Setters>
             </MultiTrigger>
         </Style.Triggers>
@@ -155,8 +155,9 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="Button">
-                    <TextBlock TextDecorations="Underline" Foreground="{StaticResource LinkButtonText}" Text="{TemplateBinding Content}">
-                    </TextBlock>
+                    <Grid VerticalAlignment="Center">
+                        <TextBlock TextDecorations="Underline" Foreground="{StaticResource LinkButtonText}" Text="{TemplateBinding Content}"/>
+                    </Grid>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>

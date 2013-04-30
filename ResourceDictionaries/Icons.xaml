@@ -1,6 +1,10 @@
 <ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
-    <SolidColorBrush x:Key="IconBackgroundDark" Color="{DynamicResource ColorCabBlue}"/>
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="..\ResourceDictionaries\Colors.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+
+<SolidColorBrush x:Key="IconBackgroundDark" Color="{DynamicResource ColorCabBlue}"/>
     <SolidColorBrush x:Key="IconBackgroundLight" Color="#FFFFFFFF"/>
     <SolidColorBrush x:Key="IconFillColorDark" Color="{DynamicResource ColorCabBlue}"/>
     <SolidColorBrush x:Key="IconFillColorLight" Color="#FFFFFFFF"/>
@@ -98,6 +102,25 @@
             Opacity="1"
             Data="M 94.1932373046875,84.28680419921875 C94.1932373046875,84.28680419921875 84.57543182373047,93.904541015625 84.57543182373047,93.904541015625 84.57543182373047,93.904541015625 74.95716094970703,84.28680419921875 74.95716094970703,84.28680419921875 74.95716094970703,84.28680419921875 74.95716094970703,84.28680419921875 74.95716094970703,84.28680419921875 "
             Stroke="{StaticResource IconBackgroundDark}"
+            StrokeThickness="3" />
+        </Grid>
+    </Viewbox>
+    <Viewbox x:Key="ArrowMenuInverted" x:Shared="False">
+        <Grid
+        x:Name="ArrowMenuInverted"
+        Background="Transparent"
+        Height="112"
+        Width="112">
+            <Path
+            Margin="74.95716094970703,84.28680419921875,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Height="9.61773681640625"
+            Width="19.23607635498047"
+            Stretch="Fill"
+            Opacity="1"
+            Data="M 94.1932373046875,84.28680419921875 C94.1932373046875,84.28680419921875 84.57543182373047,93.904541015625 84.57543182373047,93.904541015625 84.57543182373047,93.904541015625 74.95716094970703,84.28680419921875 74.95716094970703,84.28680419921875 74.95716094970703,84.28680419921875 74.95716094970703,84.28680419921875 74.95716094970703,84.28680419921875 "
+            Stroke="{StaticResource IconBackgroundLight}"
             StrokeThickness="3" />
         </Grid>
     </Viewbox>

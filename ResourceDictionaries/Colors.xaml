@@ -272,6 +272,7 @@
     <SolidColorBrush x:Key="ButtonBorder" Color="Transparent"/>
     <SolidColorBrush x:Key="ButtonBackground"  Opacity="0.85" Color="{StaticResource ColorCabBlack7}"/>
     <SolidColorBrush x:Key="ButtonText" Color="{StaticResource ColorCabBlack2}"/>
+    <SolidColorBrush x:Key="ButtonBackgroundChecked"  Opacity="0.4" Color="{StaticResource ColorCabBlack7}"/>
 
     <!-- Hover -->
     <SolidColorBrush x:Key="ButtonBorderHover" Color="Transparent"/>
