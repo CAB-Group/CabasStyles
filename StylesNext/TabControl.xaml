@@ -75,6 +75,7 @@
                             <Setter Property="Height" TargetName="RowDefinition0" Value="*"/>
                             <Setter Property="Height" TargetName="RowDefinition1" Value="0"/>
                             <Setter Property="Margin" TargetName="HeaderPanel" Value="2,2,0,2"/>
+                            <Setter TargetName="HeaderPanelBorder" Property="BorderThickness" Value="0"/>
                         </Trigger>
                         <Trigger Property="TabStripPlacement" Value="Right">
                             <Setter Property="Grid.Row" TargetName="HeaderPanel" Value="0"/>
@@ -86,6 +87,7 @@
                             <Setter Property="Height" TargetName="RowDefinition0" Value="*"/>
                             <Setter Property="Height" TargetName="RowDefinition1" Value="0"/>
                             <Setter Property="Margin" TargetName="HeaderPanel" Value="0,2,2,2"/>
+                            <Setter TargetName="HeaderPanelBorder" Property="BorderThickness" Value="0"/>
                         </Trigger>
                         <Trigger Property="IsEnabled" Value="false">
                             <Setter Property="Foreground" Value="{StaticResource TextDisabled}"/>
@@ -159,4 +161,5 @@
         <!--Tror inte denna behövs längre nu när vi gör om alla styles så därför låter jag den tillsvidare bara ärva från defaultstyles /Johan-->
     </Style>
 
+    
 </ResourceDictionary>

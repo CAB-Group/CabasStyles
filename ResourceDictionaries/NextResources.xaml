@@ -27,13 +27,17 @@
         <ResourceDictionary Source="..\StylesNext\TextBlock.xaml"/>
         <ResourceDictionary Source="..\StylesNext\TabControl.xaml"/>       
                                                                              
-        <ResourceDictionary Source="..\StylesNext\RadioButton.xaml"/>   
-        
+        <ResourceDictionary Source="..\StylesNext\RadioButton.xaml"/>
+
+        <ResourceDictionary Source="..\StylesNext\VerticalTabItem.xaml"/>
+
         <ResourceDictionary Source="..\StylesNext\WindowAndUserControl.xaml"/>
 
         <ResourceDictionary Source="..\Styles\Toggle.xaml"/>
         <ResourceDictionary Source="..\Styles\Image.xaml"/>
         <ResourceDictionary Source="..\Styles\DatePicker.xaml"/>
+        
+        
         
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>

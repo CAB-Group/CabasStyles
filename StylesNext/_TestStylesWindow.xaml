@@ -182,6 +182,14 @@
                     </GridView>
                 </ListView.View>
             </ListView>
+            
+            <TabControl TabStripPlacement="Left" ItemContainerStyle="{StaticResource VerticalTabItem}">
+                <TabItem Header="Selected Vertical item 1" IsSelected="False"/>
+                <TabItem Header="Normal Vertical item 2"/>
+                <TabItem Header="Disabled Vertical item 3" IsEnabled="False"/>
+                <TabItem Header="Short"></TabItem>
+            </TabControl>
+            
         </StackPanel>
 
         <StackPanel Grid.Row="4" Grid.Column="0" Orientation="Vertical" Grid.IsSharedSizeScope="True" Margin="20,0,10,0">
