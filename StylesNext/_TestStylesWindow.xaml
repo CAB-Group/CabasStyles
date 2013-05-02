@@ -251,7 +251,7 @@
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
                 <ToggleButton Style="{StaticResource ProcessButtonStyle}" Margin="5" IsChecked="True">Step 1 Selected</ToggleButton>
                 <ToggleButton Style="{StaticResource ProcessButtonStyle}" Margin="5">Step 2</ToggleButton>
-                <ToggleButton Style="{StaticResource ProcessButtonStyle}" Margin="5">Step 3</ToggleButton>
+                <ToggleButton Style="{StaticResource ProcessButtonEndStyle}" Margin="5">Step 3</ToggleButton>
             </StackPanel>
         </StackPanel>
 

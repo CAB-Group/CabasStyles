@@ -101,7 +101,7 @@
 
     <!-- Normal TabItem for Selected State -->
     <ControlTemplate x:Key="NormalTabItemSelectedTemplate" TargetType="{x:Type TabItem}">
-        <Grid Margin="15,0" SnapsToDevicePixels="True">
+        <Grid Margin="10,0" SnapsToDevicePixels="True">
             <Grid.FocusVisualStyle>
                 <Style>
                     <Setter Property="Control.Template" Value="{StaticResource TabItemFocusVisualTemplate}"/>
@@ -112,8 +112,7 @@
                     x:Name="content" 
                     ContentSource="Header"
                     TextBlock.Foreground="{StaticResource TabTextSelected}" 
-                    TextBlock.FontSize="12" 
-                    TextBlock.FontWeight="Bold"
+                    TextBlock.FontSize="12"                     
                     HorizontalAlignment="Center" 
                     VerticalAlignment="Center" 
                     Margin="15,4" 
@@ -130,23 +129,24 @@
 
     <!-- Normal TabItem for Normal State -->
     <ControlTemplate x:Key="NormalTabItemTemplate" TargetType="{x:Type TabItem}">
-        <Grid Margin="5, 0, 5, 0" x:Name="main" SnapsToDevicePixels="True">
+        <Grid Margin="10,0" x:Name="main" SnapsToDevicePixels="True" Background="{StaticResource TabBackground}">
             <Grid.FocusVisualStyle>
                 <Style>
                     <Setter Property="Control.Template" Value="{StaticResource TabItemFocusVisualTemplate}"/>
                 </Style>
             </Grid.FocusVisualStyle>
-            <StackPanel Background="{StaticResource TabBackground}">
-                <ContentPresenter TextBlock.Foreground="{StaticResource TabText}" TextBlock.FontSize="12" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="15,5" x:Name="content" ContentSource="Header"/>
+            <StackPanel>
+                <ContentPresenter TextBlock.Foreground="{StaticResource TabText}" 
+                                  TextBlock.FontSize="12" HorizontalAlignment="Center" 
+                                  VerticalAlignment="Center" Margin="15,4" 
+                                  x:Name="content" 
+                                  ContentSource="Header"/>
             </StackPanel>
         </Grid>
         <ControlTemplate.Triggers>
             <Trigger SourceName="main" Property="IsMouseOver" Value="true">
-                <Setter Property="TextBlock.Foreground"  TargetName="content" Value="{StaticResource TabTextHover}"/>
-                
-                <!-- TODO: Den här är felkodad/ger inte den effekt jag önskar, tab (bakgrunden) ska få TabBackgroundHover är det tänkt /=oa -->
-                <Setter Property="TextBlock.Background" TargetName="content" Value="{StaticResource TabBackgroundHover}"/>
-                
+                <Setter Property="TextBlock.Foreground"  TargetName="content" Value="{StaticResource TabTextHover}"/>                                
+                <Setter Property="Background" TargetName="main" Value="{StaticResource TabBackgroundHover}"/>                
             </Trigger>
             <Trigger Property="IsEnabled" Value="false">
                 <Setter Property="TextBlock.Foreground" TargetName="content" Value="{StaticResource TabTextDisabled}"/>

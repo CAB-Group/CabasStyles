@@ -172,7 +172,7 @@
 
     <!-- Hover -->
     <SolidColorBrush x:Key="TabBorderHover" Color="Transparent"/>
-    <SolidColorBrush x:Key="TabBackgroundHover" Opacity="0.85" Color="{StaticResource ColorCabBlue}"/>
+    <SolidColorBrush x:Key="TabBackgroundHover" Opacity="0.15" Color="{StaticResource ColorCabBlue}"/>
     <SolidColorBrush x:Key="TabTextHover" Color="{StaticResource ColorCabBlue}"/>
 
     <!-- Selected -->

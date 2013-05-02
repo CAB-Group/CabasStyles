@@ -34,7 +34,7 @@
                                 <ColumnDefinition />
                                 <ColumnDefinition />
                             </Grid.ColumnDefinitions>
-                            <Path Grid.Column="1" Stretch="Fill" Data="M0,0 0,10L10,5z" Fill="{TemplateBinding Background}" />
+                            <Path Name="Arrow" Grid.Column="1" Stretch="Fill" Data="M0,0 0,10L10,5z" Fill="{TemplateBinding Background}" />
                             <DockPanel Background="{TemplateBinding Background}">
                                 <ContentPresenter Grid.Column="0" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
                                                       Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" 
@@ -49,6 +49,54 @@
                             <Setter Property="Background" Value="{StaticResource ProcessButtonBackgroundSelected}"/>
                             <Setter Property="BorderBrush" Value="{StaticResource ProcessButtonBorderSelected}"/>
                             <Setter Property="Foreground" Value="{StaticResource ProcessButtonTextSelected}"/>                            
+                        </Trigger>
+                        <Trigger Property="IsChecked" Value="False">
+                            <Setter Property="Background" Value="{StaticResource ProcessButtonBackground}"/>
+                            <Setter Property="BorderBrush" Value="{StaticResource ProcessButtonBorder}"/>
+                            <Setter Property="BorderThickness" Value="1"/>
+                            <Setter Property="Foreground" Value="{StaticResource ProcessButtonText}"/>
+                        </Trigger>
+                        <Trigger Property="IsMouseOver" Value="true">
+                            <Setter Property="Background" Value="{StaticResource ProcessButtonBackgroundHover}"/>
+                            <Setter Property="BorderBrush" Value="{StaticResource ProcessButtonBorderHover}"/>
+                            <Setter Property="BorderThickness" Value="1"/>
+                            <Setter Property="Foreground" Value="{StaticResource ProcessButtonTextHover}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="ProcessButtonEndStyle" TargetType="{x:Type ToggleButton}">
+        <Setter Property="FocusVisualStyle" Value="{StaticResource ButtonFocusVisual}"/>
+        <Setter Property="Background" Value="{StaticResource ProcessButtonBackground}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource ProcessButtonBorder}"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="Foreground" Value="{StaticResource ProcessButtonText}"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"></Setter>
+        <Setter Property="Padding" Value="10,4,10,4"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type ToggleButton}">
+                    <Grid>
+                        <Grid>
+                            <DockPanel Background="{TemplateBinding Background}">
+                                <ContentPresenter Grid.Column="0" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
+                                                      Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" 
+                                                      SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" 
+                                                      VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                            </DockPanel>
+                        </Grid>
+
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsChecked" Value="true">
+                            <Setter Property="Background" Value="{StaticResource ProcessButtonBackgroundSelected}"/>
+                            <Setter Property="BorderBrush" Value="{StaticResource ProcessButtonBorderSelected}"/>
+                            <Setter Property="Foreground" Value="{StaticResource ProcessButtonTextSelected}"/>
                         </Trigger>
                         <Trigger Property="IsChecked" Value="False">
                             <Setter Property="Background" Value="{StaticResource ProcessButtonBackground}"/>
