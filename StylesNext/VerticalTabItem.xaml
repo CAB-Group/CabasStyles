@@ -36,12 +36,12 @@
                             <Setter TargetName="ContentSite" Property="TextBlock.Foreground" Value="White" />
                         </Trigger>
                         <Trigger Property="IsSelected" Value="False">
-                            <Setter TargetName="Arrow" Property="Visibility" Value="Hidden"/>
+                            <Setter TargetName="Arrow" Property="Visibility" Value="Collapsed"/>
                             <Setter TargetName="TabItemBorder" Property="Background" Value="White" />
                             <Setter TargetName="ContentSite" Property="TextBlock.Foreground" Value="{StaticResource Heading}"/>
                         </Trigger>
                         <Trigger Property="IsEnabled" Value="False">
-                            <Setter TargetName="Arrow" Property="Visibility" Value="Hidden"/>
+                            <Setter TargetName="Arrow" Property="Visibility" Value="Collapsed"/>
                             <Setter TargetName="TabItemBorder" Property="Background" Value="White" />
                             <Setter TargetName="ContentSite" Property="TextBlock.Foreground" Value="{StaticResource TabTextDisabled}"/>
                         </Trigger>

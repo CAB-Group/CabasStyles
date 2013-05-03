@@ -4,19 +4,22 @@
         <ResourceDictionary Source="..\ResourceDictionaries\Colors.xaml"/>
     </ResourceDictionary.MergedDictionaries>
     
+    <Style TargetType="{x:Type ListView}">
+        <Setter Property="Margin" Value="2"/>
+    </Style>
+    
     <Style TargetType="{x:Type ListViewItem}" x:Key="ListViewBaseStyle">
         <Setter Property="Background" Value="#ffffff" />
         <Setter Property="HorizontalContentAlignment" Value="Left" />
         <Setter Property="VerticalContentAlignment" Value="Center" />
-        <Setter Property="Foreground" Value="{StaticResource Text}" />
-        <Setter Property="Margin" Value="2" />
-        <Setter Property="Padding" Value="5,2"/>
+        <Setter Property="Foreground" Value="{StaticResource Text}" />        
+        <Setter Property="Padding" Value="4,2"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type ListViewItem}">
                     <Grid x:Name="Bd" Background="{TemplateBinding Background}" SnapsToDevicePixels="true">
                         <Rectangle x:Name="dotLine" StrokeDashArray="1.0 2.0" Stroke="Transparent" StrokeThickness="1"/>
-                        <GridViewRowPresenter VerticalAlignment="{TemplateBinding VerticalContentAlignment}" Margin="5" />
+                        <GridViewRowPresenter VerticalAlignment="{TemplateBinding VerticalContentAlignment}" Margin="1" />
                     </Grid>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsMouseOver" Value="true">

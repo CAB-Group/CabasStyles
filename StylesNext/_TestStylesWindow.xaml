@@ -204,6 +204,7 @@
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="Auto" SharedSizeGroup="Label"/>
@@ -216,7 +217,7 @@
                     <Label Grid.Row="2" Grid.Column="0">Label</Label>
                     <TextBox Grid.Row="2" Grid.Column="1" IsEnabled="False">TextBox, disabled</TextBox>
                     <Label Grid.Row="3" Grid.Column="0">Label</Label>
-                    <TextBox Grid.Row="3" Grid.Column="1" IsReadOnly="True">TextBox, read-only</TextBox>
+                    <TextBox Grid.Row="3" Grid.Column="1" IsReadOnly="True">TextBox, read-only</TextBox>                                        
 
                     <Label Grid.Row="4" Grid.Column="0">Label</Label>
                     <ComboBox Grid.Row="4" Grid.Column="1" SelectedIndex="0">
@@ -233,6 +234,9 @@
 
                     <Label Grid.Row="6" Grid.Column="0">Label</Label>
                     <Button Grid.Row="6" Grid.Column="1" Style="{StaticResource LinkButtonStyle}">johan.roman@cab.se</Button>
+                    
+                    <Label Grid.Row="7" Grid.Column="0">DatePicker</Label>
+                    <DatePicker Grid.Row="7" Grid.Column="1"/>
 
                 </Grid>
             </GroupBox>

@@ -11,7 +11,8 @@
         <ResourceDictionary Source="..\StylesNext\ComboBox.xaml"/>
         <ResourceDictionary Source="..\StylesNext\ComboBoxWithFilter.xaml"/>
 
-        <ResourceDictionary Source="..\StylesNext\DataGrid.xaml"/>        
+        <ResourceDictionary Source="..\StylesNext\DataGrid.xaml"/>
+        <ResourceDictionary Source="..\StylesNext\DatePicker.xaml"/>
 
         <ResourceDictionary Source="..\StylesNext\GridSplitter.xaml"/>
         <ResourceDictionary Source="..\StylesNext\GridViewColumnHeader.xaml"/>
@@ -34,10 +35,7 @@
         <ResourceDictionary Source="..\StylesNext\WindowAndUserControl.xaml"/>
 
         <ResourceDictionary Source="..\Styles\Toggle.xaml"/>
-        <ResourceDictionary Source="..\Styles\Image.xaml"/>
-        <ResourceDictionary Source="..\Styles\DatePicker.xaml"/>
-        
-        
+        <ResourceDictionary Source="..\Styles\Image.xaml"/>                        
         
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>

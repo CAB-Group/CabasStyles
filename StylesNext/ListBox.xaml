@@ -5,19 +5,22 @@
         <ResourceDictionary Source="..\ResourceDictionaries\Colors.xaml"/>
     </ResourceDictionary.MergedDictionaries>
 
+    <Style TargetType="{x:Type ListBox}">
+        <Setter Property="Margin" Value="2"/>
+    </Style>
+    
     <Style TargetType="{x:Type ListBoxItem}">
         <Setter Property="Background" Value="Transparent"/>
         <Setter Property="HorizontalContentAlignment" Value="{Binding HorizontalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"/>
         <Setter Property="VerticalContentAlignment" Value="{Binding VerticalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"/>
-        <Setter Property="Padding" Value="5,2"/>
-        <Setter Property="Margin" Value="2"/>
+        <Setter Property="Padding" Value="4,2"/>        
         <Setter Property="Foreground" Value="{StaticResource Text}" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type ListBoxItem}">
                     <Grid x:Name="Bd" Background="{TemplateBinding Background}" SnapsToDevicePixels="true">
                         <Rectangle x:Name="dotLine" StrokeDashArray="1.0 2.0" Stroke="Transparent" StrokeThickness="1"/>
-                        <ContentPresenter Margin="5" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        <ContentPresenter Margin="1" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
                     </Grid>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsMouseOver" Value="true">
