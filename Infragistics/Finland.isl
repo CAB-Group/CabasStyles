@@ -5,7 +5,7 @@
     <copyright>CAB AB</copyright>
     <description>A Style Library with Windows 8-like style. introduced for Cabas Finland 2013. It's aimed to harmonized the visual interface of both Cabas and Cab Plan.</description>
     <version>0.1</version>
-    <lastModified>2013-05-06T19:33:20</lastModified>
+    <lastModified>2013-05-07T19:36:27</lastModified>
   </annotation>
   <styleSets defaultStyleSet="Default">
     <styleSet name="Default" useOsThemes="False" useFlatMode="True">
@@ -64,7 +64,7 @@
         </componentStyle>
         <componentStyle name="UltraListView" headerStyle="Standard">
           <properties>
-            <property name="DefaultImage" colorCategory="{Default}">AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAnwEAAAKJUE5HDQoaCgAAAA1JSERSAAAARgAAABgIBgAAAEeqiwMAAAABc1JHQgCuzhzpAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsMAAALDAE/QCLIAAABCElEQVRYR+3VvypGcRzHcTdgMroAmQ3KZrAqrkAuwKJcgE1GFsNZpPCYnkippwwsRKbHn3oGETGIkpTl6/359evUOZ07OJ/hVb8+5ze9O50zFBF/eLGKH4X5xT36ltzhU2G+cY1zSy7xpjBfOMWRJT08KcwHTrBjySEGCvMOldqwpIO+wrxiD6uWFLhRmGfsY9mSLVwozCMOsGjJJs4UZoBtzFmyhp7CPGAX05YozLHC3KKLCUvW0VWYK+hLrLNFLKHQQWH0+tQvtNUCyjArebSIeThMg0oY/b/rF9pqBmWY2TxaxCQcpkElzFQeLWIcZZixPFrEKBymQSXMSB4tYhhlmPrDloviH4ONiGtfns0CAAAAAElFTkSuQmCCCwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</property>
+            <property name="DefaultImage" colorCategory="{Default}">AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAA+gAAAAKJUE5HDQoaCgAAAA1JSERSAAAAEAAAABAIBgAAAB/z/2EAAAADc0JJVAgICNvhT+AAAAABc1JHQgCuzhzpAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAAABZ0RVh0Q3JlYXRpb24gVGltZQAxMy0wNS0wNwRp7ZcAAAAcdEVYdFNvZnR3YXJlAEFkb2JlIEZpcmV3b3JrcyBDUzVxteM2AAAANklEQVQ4T6XIsREAIAADIfdfOi5A4Z8FDWfbF2bBLJgFs2AWzIJZMAtmwSyYBbNgFsyC+W7nAsWt/R/ojsvuAAAAAElFTkSuQmCCCwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</property>
           </properties>
         </componentStyle>
         <componentStyle name="UltraTabbedMdiManager">
@@ -177,9 +177,6 @@
                 <name>_Alert</name>
               </resources>
             </state>
-            <state name="Selected">
-              <imageBackground>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAA5wAAAAKJUE5HDQoaCgAAAA1JSERSAAAADAAAABYIAgAAAHta6k0AAAABc1JHQgCuzhzpAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsMAAALDAE/QCLIAAAAUElEQVQ4T43RIQ6AQAxE0X9FzsW9eg4ciCWLIEEQFkx1+c+MazJTZoFb4BLoAodAE9gFdymzxCKwCmyCa5ejljgF9+DMEo/AEHgFJoH4FfEBYCa/q5KmpBMAAAAASUVORK5CYIILAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</imageBackground>
-            </state>
           </states>
         </style>
         <style role="DockControlPaneContentArea">
@@ -265,6 +262,7 @@
                 <name>CabBlue_Active</name>
               </resources>
             </state>
+            <state name="Expanded" foreColor="White" />
           </states>
         </style>
         <style role="ExplorerBarGroupItemAreaInner">
@@ -387,11 +385,7 @@
         </style>
         <style role="GridRowSelector">
           <states>
-            <state name="Normal" backColor="WhiteSmoke" borderColor="WhiteSmoke" imageHAlign="Right" imageVAlign="Middle" backGradientStyle="None">
-              <resources>
-                <name>_ActiveForeground</name>
-              </resources>
-            </state>
+            <state name="Normal" borderColor="WhiteSmoke" imageHAlign="Right" imageVAlign="Middle" />
             <state name="RowHotTracked">
               <resources>
                 <name>SelectedHover</name>
@@ -414,11 +408,6 @@
             <state name="Normal" backColor="White" backGradientStyle="None" backHatchStyle="None" />
           </states>
         </style>
-        <style role="Header">
-          <states>
-            <state name="Normal" backColor="Transparent" foreColor="Black" fontBold="True" backGradientStyle="None" backHatchStyle="None" />
-          </states>
-        </style>
         <style role="Link">
           <states>
             <state name="VisitedLink" foreColor="45, 45, 45" />
@@ -426,11 +415,7 @@
         </style>
         <style role="ListViewColumnHeader">
           <states>
-            <state name="Normal" foreColor="White" textHAlign="Left" imageBackgroundStyle="Stretched" textTrimming="EllipsisCharacter">
-              <resources>
-                <name>CabBlue_Normal</name>
-              </resources>
-            </state>
+            <state name="Normal" foreColor="2, 65, 91" borderColor="150, 150, 150" textHAlign="Left" fontBold="True" textTrimming="EllipsisCharacter" />
           </states>
         </style>
         <style role="ListViewControlArea">
