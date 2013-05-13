@@ -35,16 +35,30 @@
                             <Setter TargetName="TabItemBorder" Property="Background" Value="{StaticResource ProcessButtonBackgroundSelected}" />
                             <Setter TargetName="ContentSite" Property="TextBlock.Foreground" Value="White" />
                         </Trigger>
-                        <Trigger Property="IsSelected" Value="False">
-                            <Setter TargetName="Arrow" Property="Visibility" Value="Collapsed"/>
-                            <Setter TargetName="TabItemBorder" Property="Background" Value="White" />
-                            <Setter TargetName="ContentSite" Property="TextBlock.Foreground" Value="{StaticResource Heading}"/>
-                        </Trigger>
                         <Trigger Property="IsEnabled" Value="False">
                             <Setter TargetName="Arrow" Property="Visibility" Value="Collapsed"/>
                             <Setter TargetName="TabItemBorder" Property="Background" Value="White" />
                             <Setter TargetName="ContentSite" Property="TextBlock.Foreground" Value="{StaticResource TabTextDisabled}"/>
                         </Trigger>
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="IsMouseOver" Value="True"/>
+                                <Condition Property="IsSelected" Value="False"/>
+                            </MultiTrigger.Conditions>
+                            <Setter TargetName="Arrow" Property="Visibility" Value="Visible"/>
+                            <Setter TargetName="Arrow" Property="Fill" Value="{StaticResource ProcessButtonBackgroundHover}"/>
+                            <Setter TargetName="TabItemBorder" Property="Background" Value="{StaticResource ProcessButtonBackgroundHover}" />
+                            <Setter TargetName="ContentSite" Property="TextBlock.Foreground" Value="{StaticResource ProcessButtonTextHover}" />
+                        </MultiTrigger>
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="IsMouseOver" Value="False"/>
+                                <Condition Property="IsSelected" Value="False"/>
+                            </MultiTrigger.Conditions>
+                            <Setter TargetName="Arrow" Property="Visibility" Value="Collapsed"/>
+                            <Setter TargetName="TabItemBorder" Property="Background" Value="White" />
+                            <Setter TargetName="ContentSite" Property="TextBlock.Foreground" Value="{StaticResource Heading}"/>
+                        </MultiTrigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Setter.Value>

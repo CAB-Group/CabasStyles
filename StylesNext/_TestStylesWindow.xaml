@@ -32,7 +32,7 @@
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
         <ToolBarPanel Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Background="Transparent" Height="40" >
-            <ToolBar Height="40" Background="{StaticResource MenuMain}">
+            <ToolBar Height="40">
                 <Button Content="{StaticResource AlertError}" ToolTip="AlertError"/>
                 <Button Content="{StaticResource AlertSuccess}" ToolTip="AlertSuccess"/>
                 <Button Content="{StaticResource AlertWarning}" ToolTip="AlertWarning"/>
@@ -46,41 +46,38 @@
                 <Button Content="{StaticResource Car}" ToolTip="Car"/>
                 <Button Content="{StaticResource CarAbove}" ToolTip="CarAbove"/>
                 <Button Content="{StaticResource CarInverted}" ToolTip="CarInverted"/>
-                <Button Content="{StaticResource Collosion}" ToolTip="Collosion"/>
-                <Button Content="{StaticResource CheckAgreement}" ToolTip="CheckAgreement"/>
+                <Button Content="{StaticResource Collosion}" ToolTip="Collosion"/>                
                 <Button Content="{StaticResource EstimateClose}" ToolTip="EstimateClose"/>
                 <Button Content="{StaticResource EstimateDelete}" ToolTip="EstimateDelete"/>
                 <Button Content="{StaticResource EstimatePreview}" ToolTip="EstimatePreview"/>
                 <Button Content="{StaticResource EstimateAdd}" ToolTip="EstimateAdd"/>
                 <Button Content="{StaticResource EstimateCompare}" ToolTip="EstimateCompare"/>
-                <Button Content="{StaticResource EstimateCreateWorking}" ToolTip="EstimateCreateWorking"/>
                 <Button Content="{StaticResource EstimateDownload}" ToolTip="EstimateDownload"/>
                 <Button Content="{StaticResource EstimateDownload2}" ToolTip="EstimateDownload2"/>
                 <Button Content="{StaticResource EstimateDuplicate}" ToolTip="EstimateDuplicate"/>
             </ToolBar>
         </ToolBarPanel>
         <ToolBarPanel Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" Background="Transparent" Height="40" >
-            <ToolBar Height="40" Background="{StaticResource MenuMain}">
+            <ToolBar Height="40">
                 <Button Content="{StaticResource EstimateHistory}" ToolTip="EstimateHistory"/>
-                <Button Content="{StaticResource EstimateInvoiced}" ToolTip="EstimateInvoiced"/>
-                <Button Content="{StaticResource EstimateNotReady}" ToolTip="EstimateNotReady"/>
                 <Button Content="{StaticResource EstimateReady}" ToolTip="EstimateReady"/>
                 <Button Content="{StaticResource EstimateReply}" ToolTip="EstimateReply"/>
                 <Button Content="{StaticResource EstimateReply2}" ToolTip="EstimateReply2"/>
                 <Button Content="{StaticResource EstimateSend}" ToolTip="EstimateSend"/>
+                <Button Content="{StaticResource EuroDone}" ToolTip="EuroDone"/>
                 <Button Content="{StaticResource Flag}" ToolTip="Flag"/>
+                <Button Content="{StaticResource FlagChecked}" ToolTip="Flag"/>
                 <Button Content="{StaticResource Home}" ToolTip="Home"/>
-                <Button Content="{StaticResource Integration}" ToolTip="Integration"/>
                 <Button Content="{StaticResource Messages}" ToolTip="Messages"/>
                 <Button Content="{StaticResource Note}" ToolTip="Note"/>
-                <Button Content="{StaticResource Phone}" ToolTip="Phone"/>
+                <Button Content="{StaticResource Phone}" ToolTip="Phone"/>                
                 <Button Content="{StaticResource Print}" ToolTip="Print"/>
                 <Button Content="{StaticResource Save}" ToolTip="Save"/>
                 <Button Content="{StaticResource SendEuro}" ToolTip="SendEuro"/>
             </ToolBar>
         </ToolBarPanel>
         <ToolBarPanel Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" Background="Transparent" Height="40" >
-            <ToolBar Height="40" Background="{StaticResource MenuMain}">
+            <ToolBar Height="40">
                 <Button Content="{StaticResource Share}" ToolTip="Share"/>
                 <Button Content="{StaticResource Tools}" ToolTip="Tools"/>
             </ToolBar>
@@ -163,19 +160,19 @@
         </ToolBarPanel>
 
         <StackPanel Grid.Row="4" Grid.Column="1" Margin="10, 0, 10, 0">
-            <TabControl Height="40" Margin="0,10,0,0">
-                <TabItem Header="TabItem 1"/>
-                <TabItem Header="TabItem 2"/>
+            <TabControl Height="60" Margin="0,10,0,0">
+                <TabItem Header="Item 1" IsSelected="True"/>
+                <TabItem Header="Item 2"/>
                 <TabItem Header="Disabled" IsEnabled="False"/>
             </TabControl>
 
-            <ListBox>
+            <ListBox SelectedIndex="0">
                 <ListBoxItem Content="Listbox Item1"/>
                 <ListBoxItem Content="Listbox Item2"/>
                 <ListBoxItem Content="Listbox Item3"/>
             </ListBox>
 
-            <ListView Margin="0,10,0,0" ItemsSource="{StaticResource ListOfStrings}">
+            <ListView Margin="0,10,0,0" ItemsSource="{StaticResource ListOfStrings}" SelectedIndex="0">
                 <ListView.View>
                     <GridView>
                         <GridViewColumn  Width="120" Header="A" DisplayMemberBinding="{Binding}" />
@@ -206,6 +203,7 @@
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="Auto" SharedSizeGroup="Label"/>
@@ -218,7 +216,7 @@
                     <Label Grid.Row="2" Grid.Column="0">Label</Label>
                     <TextBox Grid.Row="2" Grid.Column="1" IsEnabled="False">TextBox, disabled</TextBox>
                     <Label Grid.Row="3" Grid.Column="0">Label</Label>
-                    <TextBox Grid.Row="3" Grid.Column="1" IsReadOnly="True">TextBox, read-only</TextBox>
+                    <TextBox Grid.Row="3" Grid.Column="1" IsReadOnly="True">TextBox, read-only</TextBox>                                        
 
                     <Label Grid.Row="4" Grid.Column="0">Label</Label>
                     <ComboBox Grid.Row="4" Grid.Column="1" SelectedIndex="0">
@@ -235,6 +233,9 @@
 
                     <Label Grid.Row="6" Grid.Column="0">Label</Label>
                     <Button Grid.Row="6" Grid.Column="1" Style="{StaticResource LinkButtonStyle}">johan.roman@cab.se</Button>
+                    
+                    <Label Grid.Row="7" Grid.Column="0">DatePicker</Label>
+                    <DatePicker Grid.Row="7" Grid.Column="1"/>
 
                 </Grid>
             </GroupBox>

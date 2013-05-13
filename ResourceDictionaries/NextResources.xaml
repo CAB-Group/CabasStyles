@@ -18,16 +18,20 @@
         <ResourceDictionary Source="..\StylesNext\GridViewColumnHeader.xaml"/>
         <ResourceDictionary Source="..\StylesNext\GroupBox.xaml"/>
 
+        <ResourceDictionary Source="..\StylesNext\Image.xaml"/>
+
         <ResourceDictionary Source="..\StylesNext\Label.xaml"/>
         <ResourceDictionary Source="..\StylesNext\ListView.xaml"/>
         <ResourceDictionary Source="..\StylesNext\ListBox.xaml"/>
 
         <ResourceDictionary Source="..\StylesNext\ProcessButtonStyle.xaml"/>
 
+        <ResourceDictionary Source="..\StylesNext\TabControl.xaml"/>
         <ResourceDictionary Source="..\StylesNext\TextBox.xaml"/>
         <ResourceDictionary Source="..\StylesNext\TextBlock.xaml"/>
-        <ResourceDictionary Source="..\StylesNext\TabControl.xaml"/>       
-                                                                             
+        
+        <ResourceDictionary Source="..\StylesNext\ToolBar.xaml"/>
+
         <ResourceDictionary Source="..\StylesNext\RadioButton.xaml"/>
 
         <ResourceDictionary Source="..\StylesNext\VerticalTabItem.xaml"/>
@@ -35,7 +39,6 @@
         <ResourceDictionary Source="..\StylesNext\WindowAndUserControl.xaml"/>
 
         <ResourceDictionary Source="..\Styles\Toggle.xaml"/>
-        <ResourceDictionary Source="..\Styles\Image.xaml"/>                        
         
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>
