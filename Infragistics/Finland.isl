@@ -5,7 +5,7 @@
     <copyright>CAB AB</copyright>
     <description>A Style Library with Windows 8-like style. introduced for Cabas Finland 2013. It's aimed to harmonized the visual interface of both Cabas and Cab Plan.</description>
     <version>0.1</version>
-    <lastModified>2013-05-07T19:36:27</lastModified>
+    <lastModified>2013-05-17T14:00:06</lastModified>
   </annotation>
   <styleSets defaultStyleSet="Default">
     <styleSet name="Default" useOsThemes="False" useFlatMode="True">
@@ -64,7 +64,7 @@
         </componentStyle>
         <componentStyle name="UltraListView" headerStyle="Standard">
           <properties>
-            <property name="DefaultImage" colorCategory="{Default}">AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAA+gAAAAKJUE5HDQoaCgAAAA1JSERSAAAAEAAAABAIBgAAAB/z/2EAAAADc0JJVAgICNvhT+AAAAABc1JHQgCuzhzpAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAAABZ0RVh0Q3JlYXRpb24gVGltZQAxMy0wNS0wNwRp7ZcAAAAcdEVYdFNvZnR3YXJlAEFkb2JlIEZpcmV3b3JrcyBDUzVxteM2AAAANklEQVQ4T6XIsREAIAADIfdfOi5A4Z8FDWfbF2bBLJgFs2AWzIJZMAtmwSyYBbNgFsyC+W7nAsWt/R/ojsvuAAAAAElFTkSuQmCCCwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</property>
+            <property name="DefaultImage" colorCategory="{Default}">AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAA+gAAAAKJUE5HDQoaCgAAAA1JSERSAAAAEAAAABAIBgAAAB/z/2EAAAADc0JJVAgICNvhT+AAAAABc1JHQgCuzhzpAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwQAADsEBuJFr7QAAABZ0RVh0Q3JlYXRpb24gVGltZQAxMy0wNS0wNwRp7ZcAAAAcdEVYdFNvZnR3YXJlAEFkb2JlIEZpcmV3b3JrcyBDUzVxteM2AAAANklEQVQ4T6XIsREAIAADIfdfOi5A4Z8FDWfbF2bBLJgFs2AWzIJZMAtmwSyYBbNgFsyC+W7nAsWt/R/ojsvuAAAAAElFTkSuQmCCCwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</property>
           </properties>
         </componentStyle>
         <componentStyle name="UltraTabbedMdiManager">
@@ -315,7 +315,7 @@
         </style>
         <style role="GridColumnHeader">
           <states>
-            <state name="Normal">
+            <state name="Normal" fontBold="False">
               <resources>
                 <name>CabBlue_Normal</name>
               </resources>
@@ -376,7 +376,7 @@
                 <name>SelectedHover</name>
               </resources>
             </state>
-            <state name="Active" foreColor="53, 53, 53" imageBackgroundStyle="Stretched" fontBold="True" imageBackgroundStretchMargins="3, 3, 3, 3">
+            <state name="Active" foreColor="White" imageBackgroundStyle="Stretched" fontBold="True" imageBackgroundStretchMargins="3, 3, 3, 3">
               <resources>
                 <name>Selected</name>
               </resources>
@@ -1351,9 +1351,14 @@
     </styleSet>
     <styleSet name="TabStripStartPage" basedOn="TabStripPrimary">
       <styles>
+        <style role="TabItem">
+          <states>
+            <state name="Normal" foreColor="White" />
+          </states>
+        </style>
         <style role="TabItemArea">
           <states>
-            <state name="Normal" backColor="White" imageBackgroundStyle="Tiled" backGradientStyle="None" backHatchStyle="None" />
+            <state name="Normal" imageBackgroundStyle="Tiled" backColor2="2, 65, 91" backGradientStyle="Circular" backGradientAlignment="Form" />
           </states>
         </style>
       </styles>
@@ -1398,12 +1403,12 @@
     <resource name="CabBlue_Active" backColor="2, 65, 91" foreColor="White" imageBackgroundStyle="Stretched" foreColorDisabled="128, 160, 173" fontBold="True" backGradientStyle="None" backHatchStyle="None" />
     <resource name="CabBlue_HotTracked" backColor="34, 89, 112" foreColor="White" imageBackgroundStyle="Stretched" foreColorDisabled="160, 184, 193" fontBold="True" backGradientStyle="None" backHatchStyle="None" />
     <resource name="CabBlue_Normal" backColor="2, 65, 91" foreColor="White" imageBackgroundStyle="Stretched" foreColorDisabled="128, 160, 173" fontBold="True" backGradientStyle="None" backHatchStyle="None" />
-    <resource name="Selected" backColor="223, 196, 67" foreColor="53, 53, 53" borderColor="210, 210, 210" fontBold="True" backGradientStyle="None" backHatchStyle="None" />
-    <resource name="SelectedHover" backColor="239, 226, 161" foreColor="53, 53, 53" borderColor="210, 210, 210" backGradientStyle="None" backHatchStyle="None" />
+    <resource name="Selected" backColor="255, 133, 0" foreColor="White" borderColor="210, 210, 210" fontBold="True" backGradientStyle="None" backHatchStyle="None" />
+    <resource name="SelectedHover" backColor="255, 209, 159" foreColor="53, 53, 53" borderColor="210, 210, 210" backGradientStyle="None" backHatchStyle="None" />
     <resource name="TabHorizontalTop_HotTracked" backColor="204, 217, 222" foreColor="2, 65, 91" borderColor="Transparent" imageBackgroundStyle="Stretched" imageBackgroundAlpha="UseAlphaLevel" fontSize="11" backGradientStyle="None" borderColor3DBase="Transparent" themedElementAlpha="UseAlphaLevel" backHatchStyle="None" imageBackgroundStretchMargins="10, 6, 10, 3" borderColor2="Transparent" />
     <resource name="TabHorizontalTop_Normal" backColor="Transparent" foreColor="2, 65, 91" borderColor="Transparent" imageBackgroundStyle="Stretched" borderAlpha="UseAlphaLevel" fontSize="11" backGradientStyle="None" borderColor3DBase="Transparent" backHatchStyle="None" imageBackgroundStretchMargins="10, 6, 10, 3" borderColor2="Transparent" />
     <resource name="TabHorizontalTop_Selected" backColor="2, 65, 91" foreColor="White" borderColor="Transparent" imageBackgroundStyle="Stretched" imageBackgroundAlpha="UseAlphaLevel" borderAlpha="UseAlphaLevel" foreColorDisabled="192, 207, 214" backColorDisabled="128, 160, 173" fontSize="11" backGradientStyle="None" borderColor3DBase="Transparent" themedElementAlpha="UseAlphaLevel" backHatchStyle="None" imageBackgroundStretchMargins="10, 6, 10, 3" borderColor2="Transparent" />
-    <resource name="ToolbarBg" backColor="34, 89, 112" foreColor="White" imageBackgroundStyle="Stretched" foreColorDisabled="128, 160, 173" backGradientStyle="None" backHatchStyle="None" imageBackgroundStretchMargins="0, 3, 0, 3" />
+    <resource name="ToolbarBg" backColor="2, 65, 91" foreColor="White" imageBackgroundStyle="Stretched" foreColorDisabled="128, 160, 173" backGradientStyle="None" backHatchStyle="None" imageBackgroundStretchMargins="0, 3, 0, 3" />
     <resource name="ToolbarItemBg_HotTracked" backColor="65, 113, 132" foreColor="White" borderColor="Transparent" backGradientStyle="None" backHatchStyle="None" />
     <resource name="ToolbarItemBg_Normal" backColor="Transparent" foreColor="White" borderColor="Transparent" imageBackgroundStyle="Stretched" foreColorDisabled="128, 160, 173" backGradientStyle="None" backHatchStyle="None" />
   </resources>
