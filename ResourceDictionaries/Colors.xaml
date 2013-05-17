@@ -119,8 +119,10 @@
             </GradientStopCollection>
         </RadialGradientBrush.GradientStops>
     </RadialGradientBrush>
-    <SolidColorBrush x:Key="CabBackgroundFlat" Color="{StaticResource ColorCabBlue}"/>
+    <SolidColorBrush x:Key="CabBackgroundFlat" Color="{StaticResource ColorCabBlue5}"/>
 
+    <!-- MENU, APPLICATION -->
+    <SolidColorBrush x:Key="MenuApplication" Color="#002c3d"/>
 
     <!-- MENU, MAIN -->
     <SolidColorBrush x:Key="MenuMain" Color="{StaticResource ColorCabBlue}"/>
@@ -129,18 +131,23 @@
     <!-- ICONS -->
     
     <!-- Normal -->
-    <SolidColorBrush x:Key="IconBackgroundDark" Opacity="0.85" Color="{StaticResource ColorCabBlue}"/>
-    <SolidColorBrush x:Key="IconBackgroundLight" Opacity="0.85" Color="#FFFFFFFF"/>
-    <SolidColorBrush x:Key="IconFillColorDark" Opacity="0.85" Color="{StaticResource ColorCabBlue}"/>
-    <SolidColorBrush x:Key="IconFillColorLight" Opacity="0.85" Color="#FFFFFFFF"/>
+    <SolidColorBrush x:Key="IconBackgroundDark" Color="{StaticResource ColorCabBlue}"/>
+    <SolidColorBrush x:Key="IconBackgroundLight" Color="#FFFFFFFF"/>
+    <SolidColorBrush x:Key="IconFillColorDark" Color="{StaticResource ColorCabBlue}"/>
+    <SolidColorBrush x:Key="IconFillColorLight" Color="#FFFFFFFF"/>
+    <SolidColorBrush x:Key="IconBorder" Color="{StaticResource ColorCabBlue}"/>
 
     <!-- Hover -->
     <SolidColorBrush x:Key="IconBackgroundDarkHover" Color="{StaticResource ColorCabBlue}"/>
     <SolidColorBrush x:Key="IconBackgroundLightHover" Color="#FFFFFFFF"/>
     <SolidColorBrush x:Key="IconFillColorDarkHover" Color="{StaticResource ColorCabBlue}"/>
     <SolidColorBrush x:Key="IconFillColorLightHover" Color="#FFFFFFFF"/>
+    <SolidColorBrush x:Key="IconBorderHover" Color="{StaticResource ColorCabBlue3}"/>
 
-    
+    <!-- Selected -->
+    <SolidColorBrush x:Key="IconBorderSelected" Color="{StaticResource ColorCabBlue5}"/>
+
+
     <!-- TABS SLANTED -->
     
     <!-- Normal -->
@@ -172,7 +179,7 @@
 
     <!-- Hover -->
     <SolidColorBrush x:Key="TabBorderHover" Color="Transparent"/>
-    <SolidColorBrush x:Key="TabBackgroundHover" Opacity="0.15" Color="{StaticResource ColorCabBlue}"/>
+    <SolidColorBrush x:Key="TabBackgroundHover" Opacity="0.2" Color="{StaticResource ColorCabBlue}"/>
     <SolidColorBrush x:Key="TabTextHover" Color="{StaticResource ColorCabBlue}"/>
 
     <!-- Selected -->
@@ -183,6 +190,11 @@
     <!-- Disabled -->
     <SolidColorBrush x:Key="TabBorderDisabled" Color="Transparent"/>
     <SolidColorBrush x:Key="TabTextDisabled" Opacity="0.4" Color="{StaticResource ColorCabBlue}"/>
+
+    <!-- Disabled Hover -->
+    <SolidColorBrush x:Key="TabBorderDisabledHover" Color="Transparent"/>
+    <SolidColorBrush x:Key="TabBackgroundDisabledHover" Opacity="0" Color="{StaticResource ColorCabBlue}"/>
+    <SolidColorBrush x:Key="TabTextDisabledHover" Opacity="0.4" Color="{StaticResource ColorCabBlue}"/>
 
 
     <!-- TYPOGRAPHY -->
