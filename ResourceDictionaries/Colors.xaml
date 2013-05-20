@@ -252,6 +252,24 @@
     <SolidColorBrush x:Key="AlertIconFillColorError" Color="#FFFFFFFF"/>
 
 
+    <!-- COMPARE-->
+
+    <!-- Compare Added -->
+    <SolidColorBrush x:Key="CompareBorderAdded" Color="{StaticResource ColorSuccess5}"/>
+    <SolidColorBrush x:Key="CompareIconBackgroundAdded" Color="{StaticResource ColorSuccess1}"/>
+    <SolidColorBrush x:Key="CompareIconFillColorAdded" Color="#FFFFFFFF"/>
+
+    <!-- Compare Changed -->
+    <SolidColorBrush x:Key="CompareBorderChanged" Color="{StaticResource ColorWarning6}"/>
+    <SolidColorBrush x:Key="CompareIconBackgroundChanged" Color="{StaticResource ColorWarning2}"/>
+    <SolidColorBrush x:Key="CompareIconFillColorChanged" Color="#FFFFFFFF"/>
+
+    <!-- Compare Deleted -->
+    <SolidColorBrush x:Key="CompareBorderDeleted" Color="{StaticResource ColorError6}"/>
+    <SolidColorBrush x:Key="CompareIconBackgroundDeleted" Color="{StaticResource ColorError2}"/>
+    <SolidColorBrush x:Key="CompareIconFillColorDeleted" Color="#FFFFFFFF"/>
+
+
     <!-- ======================================================================
     COMMON BRUSHES 
     ======================================================================= -->
