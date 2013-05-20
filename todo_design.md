@@ -11,6 +11,7 @@
 	~~* Mellanrummet mellan meny och "flikarna"~~
 7. ~~Färger i Compare-vyn~~
 8. ~~Se över tabellhuvuden, trångt med fet stil i lackvyn~~
+9. ~~Flik som är disabled, hur ska den se ut?~~
 4. Design: Flik "Försäljningsinformation" (man kommer till den från vyn "Inlösen"
 5  ~~Underlag för ändingar av färger i CabPlan~~
 6. Stora flikar: placering av text och ikonen
@@ -21,7 +22,6 @@
 
 **pgn (24px):**
 
-* Flagga, med möjlighet att lägga färg i
 * ~~Compare: Added~~
 * ~~Compare: Changed~~
 * ~~Compare: Deleted~~
@@ -34,12 +34,12 @@
 **XAML:**
 
 * ~~Paint/"Autolack" (finns?) > utropstecken~~
-* Flagga, med möjlighet att lägga färg i
-* Compare: Added
-* Compare: Changed
-* Compare: Deleted
-* Document open
-* Document add
-* Document rename
-* Save as > Download
-* Document delete
+* ~~Flagga, med möjlighet att lägga färg i~~
+* ~~Compare: Added~~
+* ~~Compare: Changed~~
+* ~~Compare: Deleted~~
+* ~~Document open~~
+* ~~Document add~~
+* ~~Document rename~~
+* ~~Save as > Download~~
+* ~~Document delete~~
