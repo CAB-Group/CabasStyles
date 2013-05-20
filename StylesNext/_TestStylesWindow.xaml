@@ -201,6 +201,10 @@
                 </ListView.View>
             </ListView>
             
+            <DataGrid ItemsSource="{StaticResource ListOfStrings}" AutoGenerateColumns="True">
+
+            </DataGrid>
+            
             <TabControl TabStripPlacement="Left" ItemContainerStyle="{StaticResource VerticalTabItem}">
                 <TabItem Header="Selected Vertical item 1" IsSelected="False"/>
                 <TabItem Header="Normal Vertical item 2"/>

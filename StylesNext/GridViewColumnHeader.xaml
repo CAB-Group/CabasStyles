@@ -5,7 +5,7 @@
         <ResourceDictionary Source="..\ResourceDictionaries\Colors.xaml"/>
     </ResourceDictionary.MergedDictionaries>
 
-    <Style TargetType="{x:Type GridViewColumnHeader}">
+    <Style TargetType="{x:Type ContentControl}" x:Key="ColumnHeaderStyle">
         <Setter Property="Background" Value="{StaticResource GridViewColumnHeaderBackground}"/>
         <Setter Property="Foreground" Value="{StaticResource GridViewColumnHeaderText}"/>
         <Setter Property="HorizontalContentAlignment" Value="Left"/>
@@ -40,9 +40,10 @@
                 <Setter Property="Foreground" Value="{StaticResource GridViewColumnHeaderTextHover}"/>
                 <Setter Property="Background" Value="{StaticResource GridViewColumnHeaderBackgroundHover}"/>
             </Trigger>
-        </Style.Triggers>
-    
-    
+        </Style.Triggers>        
     </Style>
+
+    <Style TargetType="{x:Type GridViewColumnHeader}" BasedOn="{StaticResource ColumnHeaderStyle}"/>
+    <Style TargetType="{x:Type DataGridColumnHeader}" BasedOn="{StaticResource ColumnHeaderStyle}"/>
 
 </ResourceDictionary>

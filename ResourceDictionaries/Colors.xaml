@@ -422,6 +422,10 @@
     <SolidColorBrush x:Key="GridViewColumnHeaderBackgroundSelected" Color="{StaticResource ColorCabBlue}"/>
     <SolidColorBrush x:Key="GridViewColumnHeaderTextSelected" Color="#FFFFFFFF"/>
 
+    <!-- CHECKBOX -->
+
+    <!-- Normal -->
+    <SolidColorBrush x:Key="ToolBarCheckboxForeGround" Color="{StaticResource ColorCabBlue7}"/>
 
     <!-- ======================================================================
     CUSTOM CONTROLS
@@ -443,5 +447,10 @@
     <SolidColorBrush x:Key="ProcessButtonBorderSelected" Color="{StaticResource ColorCabOrange}"/>
     <SolidColorBrush x:Key="ProcessButtonBackgroundSelected" Color="{StaticResource ColorCabOrange}"/>
     <SolidColorBrush x:Key="ProcessButtonTextSelected" Color="#FFFFFFFF"/>
+
+    <!-- Compare   -->
+    <SolidColorBrush x:Key="Compare1" Color="{StaticResource ColorSuccess7}"/>
+    <SolidColorBrush x:Key="Compare2" Color="{StaticResource ColorWarning8}"/>
+
 
 </ResourceDictionary>

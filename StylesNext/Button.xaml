@@ -6,9 +6,20 @@
     </ResourceDictionary.MergedDictionaries>
 
     <ControlTemplate x:Key="ButtonTemplate" TargetType="{x:Type ButtonBase}">
-        <Border Margin="2" HorizontalAlignment="{TemplateBinding HorizontalAlignment}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1" Background="{TemplateBinding Background}" x:Name="ButtonBorder">
+        <Border Margin="2" 
+                HorizontalAlignment="{TemplateBinding HorizontalAlignment}" 
+                BorderBrush="{TemplateBinding BorderBrush}" 
+                BorderThickness="1" 
+                Background="{TemplateBinding Background}" 
+                x:Name="ButtonBorder">
             <Grid Margin="5,2" MinWidth="60">
-                <ContentPresenter IsHitTestVisible="True" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                <ContentPresenter 
+                    IsHitTestVisible="True" 
+                    HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
+                    Margin="{TemplateBinding Padding}" 
+                    RecognizesAccessKey="True" 
+                    SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" 
+                    VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
             </Grid>
         </Border>
     </ControlTemplate>
