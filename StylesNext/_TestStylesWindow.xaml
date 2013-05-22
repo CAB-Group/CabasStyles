@@ -52,32 +52,19 @@
                 <Button Content="{StaticResource Car}" ToolTip="Car"/>
                 <Button Content="{StaticResource CarAbove}" ToolTip="CarAbove"/>
                 <Button Content="{StaticResource CarInverted}" ToolTip="CarInverted"/>
-                <Button Content="{StaticResource Collosion}" ToolTip="Collosion"/>
-                <Button Content="{StaticResource DocumentAdd}" ToolTip="DocumentAdd"/>
-                <Button Content="{StaticResource DocumentAddInverted}" ToolTip="DocumentAddInverted"/>
-                <Button Content="{StaticResource DocumentDelete}" ToolTip="DocumentDelete"/>
-                <Button Content="{StaticResource DocumentDeleteInverted}" ToolTip="DocumentDeleteInverted"/>
-                <Button Content="{StaticResource DocumentDownload}" ToolTip="DocumentDownload"/>
-                <Button Content="{StaticResource DocumentDownloadInverted}" ToolTip="DocumentDownloadInverted"/>
-                <Button Content="{StaticResource DocumentOpen}" ToolTip="DocumentOpen"/>
-                <Button Content="{StaticResource DocumentOpenInverted}" ToolTip="DocumentOpenInverted"/>
-                <Button Content="{StaticResource DocumentRename}" ToolTip="DocumentRename"/>
-                <Button Content="{StaticResource DocumentRenameInverted}" ToolTip="DocumentRenameInverted"/>
+                <Button Content="{StaticResource Collosion}" ToolTip="Collosion"/>                
                 <Button Content="{StaticResource EstimateClose}" ToolTip="EstimateClose"/>
                 <Button Content="{StaticResource EstimateDelete}" ToolTip="EstimateDelete"/>
                 <Button Content="{StaticResource EstimatePreview}" ToolTip="EstimatePreview"/>
                 <Button Content="{StaticResource EstimateAdd}" ToolTip="EstimateAdd"/>
+                <Button Content="{StaticResource EstimateCompare}" ToolTip="EstimateCompare"/>
+                <Button Content="{StaticResource EstimateDownload}" ToolTip="EstimateDownload"/>
+                <Button Content="{StaticResource EstimateDownload2}" ToolTip="EstimateDownload2"/>
+                <Button Content="{StaticResource EstimateDuplicate}" ToolTip="EstimateDuplicate"/>
             </ToolBar>
         </ToolBarPanel>
         <ToolBarPanel Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" Background="Transparent" Height="40" >
             <ToolBar Height="40" Background="#02415b">
-                <Button Content="{StaticResource EstimateCompare}" ToolTip="EstimateCompare"/>
-                <Button Content="{StaticResource CompareAdded}" ToolTip="CompareAdded"/>
-                <Button Content="{StaticResource CompareChanged}" ToolTip="CompareChanged"/>
-                <Button Content="{StaticResource CompareDeleted}" ToolTip="CompareDeleted"/>
-                <Button Content="{StaticResource EstimateDownload}" ToolTip="EstimateDownload"/>
-                <Button Content="{StaticResource EstimateDownload2}" ToolTip="EstimateDownload2"/>
-                <Button Content="{StaticResource EstimateDuplicate}" ToolTip="EstimateDuplicate"/>
                 <Button Content="{StaticResource EstimateHistory}" ToolTip="EstimateHistory"/>
                 <Button Content="{StaticResource EstimateReady}" ToolTip="EstimateReady"/>
                 <Button Content="{StaticResource EstimateReply}" ToolTip="EstimateReply"/>

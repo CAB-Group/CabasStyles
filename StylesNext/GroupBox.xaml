@@ -38,7 +38,7 @@
 
 	<Style x:Key="ChildGroupBox" TargetType="{x:Type GroupBox}">
 		<Setter Property="BorderThickness" Value="0"/>
-		<Setter Property="Margin" Value="0,3,0,0" />
+		<Setter Property="Margin" Value="0,9,0,0" />
 		<Setter Property="Padding" Value="0,3"/>        
 		<Setter Property="Template">
 			<Setter.Value>
@@ -49,7 +49,7 @@
 							<RowDefinition Height="*"/>
 						</Grid.RowDefinitions>
 						<Border Grid.Row="0" BorderThickness="{TemplateBinding BorderThickness}" BorderBrush="{TemplateBinding BorderBrush}" Background="{StaticResource GroupboxHeaderTransparentBackground}">
-							<ContentPresenter VerticalAlignment="Center" TextElement.Foreground="{StaticResource GroupboxHeaderTransparentText}" TextElement.FontSize="12" Margin="3,0,0,0" TextElement.FontWeight="SemiBold" ContentSource="Header" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
+							<ContentPresenter VerticalAlignment="Center" TextElement.Foreground="{StaticResource GroupboxHeaderTransparentText}" TextElement.FontSize="13" Margin="0,0,0,0" TextElement.FontWeight="SemiBold" ContentSource="Header" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
 						</Border>
 						<ContentPresenter Grid.Row="1" Margin="{TemplateBinding Padding}" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
 					</Grid>

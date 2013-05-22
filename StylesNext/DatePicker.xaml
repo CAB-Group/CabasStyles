@@ -3,6 +3,7 @@
 
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="..\ResourceDictionaries\Colors.xaml"/>
+        <ResourceDictionary Source="..\ResourceDictionaries\Icons.xaml"/>
     </ResourceDictionary.MergedDictionaries>
 
     <ControlTemplate x:Key="DatePickerTemplate" TargetType="{x:Type DatePicker}">
@@ -10,8 +11,7 @@
 			<Grid.Resources>
 				<ControlTemplate x:Key="DropDownButtonTemplate" TargetType="{x:Type Button}">
 					<Grid>
-						<Image Width="16" Height="16" HorizontalAlignment="Center" VerticalAlignment="Center" 
-                               Source="pack://application:,,,/CAB.CSP.Common.Client;component/Resources/CalendarIcon.png"/>
+                        <ContentPresenter Height="16" Width="16" HorizontalAlignment="Center" VerticalAlignment="Center" Content="{StaticResource Calendar2}" />
 					</Grid>
 				</ControlTemplate>
 			</Grid.Resources>
