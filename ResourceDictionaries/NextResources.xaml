@@ -29,7 +29,8 @@
         <ResourceDictionary Source="..\StylesNext\TabControl.xaml"/>
         <ResourceDictionary Source="..\StylesNext\TextBox.xaml"/>
         <ResourceDictionary Source="..\StylesNext\TextBlock.xaml"/>
-        
+        <ResourceDictionary Source="..\StylesNext\Toggle.xaml"/>
+
         <ResourceDictionary Source="..\StylesNext\ToolBar.xaml"/>
 
         <ResourceDictionary Source="..\StylesNext\RadioButton.xaml"/>
@@ -38,8 +39,7 @@
 
         <ResourceDictionary Source="..\StylesNext\WindowAndUserControl.xaml"/>
 
-        <ResourceDictionary Source="..\Styles\ImageButton.xaml"/>
-        <ResourceDictionary Source="..\Styles\Toggle.xaml"/>
+        <ResourceDictionary Source="..\Styles\ImageButton.xaml"/>       
         <ResourceDictionary Source="..\Styles\CabExpander.xaml"/>        
 
     </ResourceDictionary.MergedDictionaries>

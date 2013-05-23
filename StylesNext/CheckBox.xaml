@@ -5,36 +5,8 @@
         <Setter Property="Margin" Value="2"/>
     </Style>
 
-    <ControlTemplate x:Key="CheckBoxTemplate" TargetType="{x:Type CheckBox}">
-        <StackPanel Orientation="Horizontal" MinHeight="20" Height="{TemplateBinding Height}" VerticalAlignment="{TemplateBinding VerticalAlignment}">
-            <StackPanel Width="18" VerticalAlignment="Center">
-                <Rectangle Visibility="Collapsed" Margin="1,0,0,0" x:Name="border" VerticalAlignment="Center" Width="11" Height="11" Stroke="#8E8F8F" StrokeThickness="1" Fill="{TemplateBinding Background}" />
-                <Image Margin="1,0,0,0" VerticalAlignment="Center" x:Name="check" Height="14" Width="17" Source="pack://application:,,,/CAB.CSP.Common.Client;component/Resources/GreenCheck.png" />
-            </StackPanel>
-            <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
-        </StackPanel>
-        <ControlTemplate.Triggers>
-            <Trigger Property="IsChecked" Value="True">
-                <Setter TargetName="border" Property="Visibility" Value="Collapsed"/>
-                <Setter TargetName="check" Property="Visibility" Value="Visible"/>
-            </Trigger>
-            <Trigger Property="IsChecked" Value="False">
-                <Setter TargetName="border" Property="Visibility" Value="Visible"/>
-                <Setter TargetName="check" Property="Visibility" Value="Collapsed"/>
-            </Trigger>
-            <Trigger Property="IsEnabled" Value="false">
-                <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
-                <Setter TargetName="check" Property="Source" Value="pack://application:,,,/CAB.CSP.Common.Client;component/Resources/GrayCheck.png"/>
-            </Trigger>
-        </ControlTemplate.Triggers>
-    </ControlTemplate>
-
-    <Style x:Key="GreenCheckBox" TargetType="{x:Type CheckBox}">
-        <Setter Property="Background" Value="#ffffff"/>
-        <Setter Property="BorderBrush" Value="#8E8F8F"/>
-        <Setter Property="BorderThickness" Value="1"/>
-        <Setter Property="Height" Value="20"/>
-        <Setter Property="Template" Value="{DynamicResource CheckBoxTemplate}"/>
+    <Style x:Key="GreenCheckBox" TargetType="{x:Type CheckBox}" BasedOn="{StaticResource {x:Type CheckBox}}">
+        <!-- we use normal checkboxes with the new styles -->
     </Style>
 
 </ResourceDictionary>
