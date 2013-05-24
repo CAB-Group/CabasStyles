@@ -277,12 +277,12 @@
     <!-- ROW -->
 
     <!--Hover-->
-    <SolidColorBrush x:Key="RowBackgroundHover" Color="{StaticResource ColorCabOrange6}"/>
+    <SolidColorBrush x:Key="RowBackgroundHover" Color="{StaticResource ColorCabOrange7}"/>
     <SolidColorBrush x:Key="RowTextHover" Color="{StaticResource ColorCabBlack2}"/>
 
     <!--Selected-->
-    <SolidColorBrush x:Key="RowBackgroundSelected" Color="{StaticResource ColorCabOrange}"/>
-    <SolidColorBrush x:Key="RowTextSelected" Color="#FFFFFFFF"/>
+    <SolidColorBrush x:Key="RowBackgroundSelected" Color="{StaticResource ColorCabOrange2}"/>
+    <SolidColorBrush x:Key="RowTextSelected" Color="{StaticResource ColorCabBlack2}"/>
     
     
     <!--FOCUS - DOTTED LINE-->
