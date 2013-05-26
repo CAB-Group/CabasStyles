@@ -13,16 +13,16 @@
 8. ~~Se över tabellhuvuden, trångt med fet stil i lackvyn~~
 9. ~~Flik som är disabled, hur ska den se ut?~~
 5  ~~Underlag för ändingar av färger i CabPlan~~
-4. Design: Flik "Försäljningsinformation" (man kommer till den från vyn "Inlösen"
-6. Stora flikar: placering av text och ikonen
+4. ~~Design: Flik "Försäljningsinformation" (man kommer till den från vyn "Inlösen"~~
+6. ~~Stora flikar: placering av text och ikonen~~
 7. Guidelines för tangenbordsnavigering
 
 ## Ikoner att göra
 
 **pgn (24px):**
 
-* Mark as unread
-* Mark as read
+* ~~Mark as unread~~
+* ~~Mark as read~~
 * ~~Compare: Added~~
 * ~~Compare: Changed~~
 * ~~Compare: Deleted~~
@@ -34,9 +34,9 @@
 
 **XAML:**
 
-* "Show/hide messages between external organisations", toggle-knapp
-* Mark as unread
-* Mark as read
+* ~~"Show/hide messages between external organisations", toggle-knapp~~
+* ~~Mark as unread~~
+* ~~Mark as read~~
 * ~~Paint/"Autolack" (finns?) > utropstecken~~
 * ~~Flagga, med möjlighet att lägga färg i~~
 * ~~Compare: Added~~
