@@ -176,6 +176,7 @@
                         <ContentPresenter Content="{StaticResource ArrowMenu}"/>
                     </Grid>
                 </Button>
+                <Button Content="{StaticResource ArrowUpDown}" ToolTip="ArrowUpDown"/>
             </ToolBar>
         </ToolBarPanel>
         <ToolBarPanel Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="3" Background="Transparent" Height="30" >
