@@ -15,6 +15,9 @@
 5  ~~Underlag för ändingar av färger i CabPlan~~
 4. ~~Design: Flik "Försäljningsinformation" (man kommer till den från vyn "Inlösen"~~
 6. ~~Stora flikar: placering av text och ikonen~~
+7. Dokumentfönstret: ikonerna är otydliga
+8. Dokumentfönstret: listan tar för stro plats
+9. DMS jämför, gör förslag på design och interaktioner
 7. Guidelines för tangenbordsnavigering
 
 ## Ikoner att göra
@@ -47,3 +50,4 @@
 * ~~Document rename~~
 * ~~Save as > Download~~
 * ~~Document delete~~
+* Datumväljare, pilar för upp-ner
