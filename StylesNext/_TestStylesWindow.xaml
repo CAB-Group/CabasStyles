@@ -25,6 +25,7 @@
             <RowDefinition Height="40" />
             <RowDefinition Height="40" />
             <RowDefinition Height="55" />
+            <RowDefinition Height="30" />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
@@ -51,20 +52,32 @@
                 <Button Content="{StaticResource Camera}" ToolTip="Camera"/>
                 <Button Content="{StaticResource Car}" ToolTip="Car"/>
                 <Button Content="{StaticResource CarAbove}" ToolTip="CarAbove"/>
-                <Button Content="{StaticResource CarInverted}" ToolTip="CarInverted"/>
-                <Button Content="{StaticResource Collosion}" ToolTip="Collosion"/>                
+                <Button Content="{StaticResource Collosion}" ToolTip="Collosion"/>
+                <Button Content="{StaticResource DocumentAdd}" ToolTip="DocumentAdd"/>
+                <Button Content="{StaticResource DocumentAddInverted}" ToolTip="DocumentAddInverted"/>
+                <Button Content="{StaticResource DocumentDelete}" ToolTip="DocumentDelete"/>
+                <Button Content="{StaticResource DocumentDeleteInverted}" ToolTip="DocumentDeleteInverted"/>
+                <Button Content="{StaticResource DocumentDownload}" ToolTip="DocumentDownload"/>
+                <Button Content="{StaticResource DocumentDownloadInverted}" ToolTip="DocumentDownloadInverted"/>
+                <Button Content="{StaticResource DocumentOpen}" ToolTip="DocumentOpen"/>
+                <Button Content="{StaticResource DocumentOpenInverted}" ToolTip="DocumentOpenInverted"/>
+                <Button Content="{StaticResource DocumentRename}" ToolTip="DocumentRename"/>
+                <Button Content="{StaticResource DocumentRenameInverted}" ToolTip="DocumentRenameInverted"/>
                 <Button Content="{StaticResource EstimateClose}" ToolTip="EstimateClose"/>
                 <Button Content="{StaticResource EstimateDelete}" ToolTip="EstimateDelete"/>
                 <Button Content="{StaticResource EstimatePreview}" ToolTip="EstimatePreview"/>
                 <Button Content="{StaticResource EstimateAdd}" ToolTip="EstimateAdd"/>
-                <Button Content="{StaticResource EstimateCompare}" ToolTip="EstimateCompare"/>
-                <Button Content="{StaticResource EstimateDownload}" ToolTip="EstimateDownload"/>
-                <Button Content="{StaticResource EstimateDownload2}" ToolTip="EstimateDownload2"/>
-                <Button Content="{StaticResource EstimateDuplicate}" ToolTip="EstimateDuplicate"/>
             </ToolBar>
         </ToolBarPanel>
         <ToolBarPanel Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" Background="Transparent" Height="40" >
             <ToolBar Height="40" Background="#02415b">
+                <Button Content="{StaticResource EstimateCompare}" ToolTip="EstimateCompare"/>
+                <Button Content="{StaticResource CompareAdded}" ToolTip="CompareAdded"/>
+                <Button Content="{StaticResource CompareChanged}" ToolTip="CompareChanged"/>
+                <Button Content="{StaticResource CompareDeleted}" ToolTip="CompareDeleted"/>
+                <Button Content="{StaticResource EstimateDownload}" ToolTip="EstimateDownload"/>
+                <Button Content="{StaticResource EstimateDownload2}" ToolTip="EstimateDownload2"/>
+                <Button Content="{StaticResource EstimateDuplicate}" ToolTip="EstimateDuplicate"/>
                 <Button Content="{StaticResource EstimateHistory}" ToolTip="EstimateHistory"/>
                 <Button Content="{StaticResource EstimateReady}" ToolTip="EstimateReady"/>
                 <Button Content="{StaticResource EstimateReply}" ToolTip="EstimateReply"/>
@@ -165,8 +178,15 @@
                 </Button>
             </ToolBar>
         </ToolBarPanel>
-
-        <StackPanel Grid.Row="5" Grid.Column="1" Margin="10, 0, 10, 0">
+        <ToolBarPanel Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="3" Background="Transparent" Height="30" >
+            <ToolBar Height="30">
+                <Button Content="{StaticResource CarInverted}" ToolTip="CarInverted"/>
+                <Button Content="{StaticResource CollosionInverted}" ToolTip="Save"/>
+                <Button Content="{StaticResource ToolsInverted}" ToolTip="Tools"/>
+                <Button Content="{StaticResource RedemptionInverted}" ToolTip="Save"/>
+            </ToolBar>
+        </ToolBarPanel>
+        <StackPanel Grid.Row="6" Grid.Column="1" Margin="10, 0, 10, 0">
             <TabControl Height="60" Margin="0,10,0,0">
                 <TabItem Header="Item 1" IsSelected="True"/>
                 <TabItem Header="Item 2"/>
@@ -189,10 +209,6 @@
                 </ListView.View>
             </ListView>
             
-            <DataGrid ItemsSource="{StaticResource ListOfStrings}" AutoGenerateColumns="True">
-
-            </DataGrid>
-            
             <TabControl TabStripPlacement="Left" ItemContainerStyle="{StaticResource VerticalTabItem}">
                 <TabItem Header="Selected Vertical item 1" IsSelected="False"/>
                 <TabItem Header="Normal Vertical item 2"/>
@@ -202,7 +218,7 @@
             
         </StackPanel>
 
-        <StackPanel Grid.Row="5" Grid.Column="0" Orientation="Vertical" Grid.IsSharedSizeScope="True" Margin="20,0,10,0">
+        <StackPanel Grid.Row="6" Grid.Column="0" Orientation="Vertical" Grid.IsSharedSizeScope="True" Margin="20,0,10,0">
             <GroupBox Grid.Row="0" Grid.Column="0" Header="GroupBox" Margin="0,10,0,0" Padding="10">
                 <Grid>
                     <Grid.RowDefinitions>
@@ -269,7 +285,7 @@
             </StackPanel>
         </StackPanel>
 
-        <StackPanel Grid.Row="5" Grid.Column="2" Margin="10,0,20,0">
+        <StackPanel Grid.Row="6" Grid.Column="2" Margin="10,0,20,0">
             <TextBlock Foreground="{StaticResource Heading}" Margin="0,10,0,5" Name="Heading1" Text="Detta är en rubrik" VerticalAlignment="Top" FontFamily="Calibri" FontSize="22" />
             <Border BorderThickness="1" BorderBrush="{StaticResource MessageBorderInformation}" Background="{StaticResource MessageBackgroundInformation}" Margin="0 5" Padding="10" VerticalAlignment="Top">
                 <TextBlock Foreground="{StaticResource MessageTextInformation}" Name="TextBlock1" Text="Detta är ett informationsmeddelande" VerticalAlignment="Top" FontFamily="Calibri" FontSize="13" />
