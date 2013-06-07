@@ -1,0 +1,170 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+	<LinearGradientBrush x:Key="TopGradientColor" StartPoint="0.2820711298778509,0.010416666666666666" EndPoint="0.2820711298778509,0.9131978352864584">
+		<GradientStop Color="#e5ffffff" Offset="0" />
+		<GradientStop Color="#33ffffff" Offset="1" />
+	</LinearGradientBrush>
+	<LinearGradientBrush x:Key="BottomGradientColor" StartPoint="0.2820711298778509,0.010416666666666666" EndPoint="0.2820711298778509,0.9131978352864584">
+		<GradientStop Color="#33666666" Offset="0" />
+		<GradientStop Color="#19ffffff" Offset="1" />
+	</LinearGradientBrush>
+	<LinearGradientBrush x:Key="ArrowColor" StartPoint="0,0.5" EndPoint="1.28125,0.5">
+		<GradientStop Color="#ccffffff" Offset="0" />
+		<GradientStop Color="#54ffffff" Offset="1" />
+	</LinearGradientBrush>
+	
+	<ControlTemplate x:Key="ImageButtonTemplate" TargetType="{x:Type ButtonBase}">
+		<Border HorizontalAlignment="{TemplateBinding HorizontalAlignment}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1" Background="{TemplateBinding Background}" x:Name="ImageButtonBorder" CornerRadius="3">
+			<Grid>
+				<Grid.RowDefinitions>
+					<RowDefinition/>
+					<RowDefinition/>
+					<RowDefinition Height="1"/>
+				</Grid.RowDefinitions>
+				<Rectangle x:Name="ImageButtonTop" Grid.Row="0" Fill="{StaticResource TopGradientColor}" />
+				<Rectangle x:Name="ImageButtonBottom" Grid.Row="1" Margin="0,0,0,-1" Fill="{StaticResource BottomGradientColor}" />
+				<Path x:Name="ImageButtonBottomLine"
+						Grid.Row="2"
+						Margin="1,0,1,0"
+						Stretch="Fill"
+						Opacity="0.25"
+						Data="M 3.732666015625,24.375 C3.732666015625,24.375 1,24.375 1,24.375 "
+						Stroke="#ffffff"
+						StrokeThickness="1" />
+				<Path x:Name="ImageButtonLeftArrow"
+						Grid.RowSpan="3"
+                  HorizontalAlignment="Left"
+                  Width="2"
+                  Stretch="Fill"
+                  Data="M 1,1 C1,1 2,1 2,1 2,1 3,13.0625 3,13.0625 3,13.0625 2,25 2,25 2,25 1,25 1,25 1,25 1,1 1,1 z"
+                  Fill="{StaticResource ArrowColor}" />
+				<Path x:Name="ImageButtonRightArrow"
+                  Grid.RowSpan="3"
+                  HorizontalAlignment="Right"
+                  Width="2"
+                  Stretch="Fill"
+                  Data="M 99,25 C99,25 98,25 98,25 98,25 97,12.9375 97,12.9375 97,12.9375 98,1 98,1 98,1 99,1 99,1 99,1 99,25 99,25 z"
+                  Fill="{StaticResource ArrowColor}" />
+                <ContentPresenter  
+                              HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
+							  Grid.RowSpan="3" 						  
+							  VerticalAlignment="Center" 
+							  Margin="5,0">
+                </ContentPresenter>
+			</Grid>
+		</Border>
+	</ControlTemplate>
+
+    <Style x:Key="ImageButtonStyle" TargetType="{x:Type ButtonBase}">
+        <Setter Property="Template" Value="{DynamicResource ImageButtonTemplate}"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="HorizontalAlignment" Value="Stretch"/>
+        <Setter Property="Background" Value="#d9dddf"/>
+        <Setter Property="BorderBrush" Value="#9a9a9a"/>
+        <Setter Property="Foreground" Value="#333333"/>
+        <Style.Triggers>
+            <MultiTrigger>
+                <MultiTrigger.Conditions>
+                    <Condition Property="IsMouseOver" Value="True"/>
+                    <Condition Property="IsEnabled" Value="True"/>
+                </MultiTrigger.Conditions>
+                <MultiTrigger.Setters>
+                    <Setter Property="Background" Value="#ffff00"/>
+                </MultiTrigger.Setters>
+            </MultiTrigger>
+            <Trigger Property="IsEnabled" Value="False">
+                <Setter Property="Background" Value="#ffb2b2b2"/>
+                <Setter Property="Foreground" Value="Gray"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style TargetType="{x:Type Button}" x:Key="ImageButton" BasedOn="{StaticResource ImageButtonStyle}">
+        <Style.Triggers>
+            <MultiTrigger>
+                <MultiTrigger.Conditions>
+                    <Condition Property="IsDefault" Value="True"/>
+                    <Condition Property="IsEnabled" Value="True"/>
+                </MultiTrigger.Conditions>
+                <MultiTrigger.Setters>
+                    <Setter Property="Background" Value="#8CEF64"/>
+                </MultiTrigger.Setters>
+            </MultiTrigger>
+            <Trigger Property="IsEnabled" Value="False">
+                <Setter Property="Background" Value="#ffb2b2b2"/>
+                <Setter Property="Foreground" Value="Gray"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+   <!--Todo: ImageToggleButton -->
+    
+    <!--Style for a ToggleButton made for Editing and change of Background Color by Parent Control - Default = Gray -->
+    <Style TargetType="{x:Type ToggleButton}" x:Key="EditToggleButtonGrayStyle" BasedOn="{StaticResource ImageButtonStyle}">
+        <Setter Property="Background">
+            <Setter.Value>
+                <LinearGradientBrush StartPoint="0.5,0.125" EndPoint="0.5,1.015625">
+                    <GradientStop Color="#FFffffff" Offset="0" />
+                    <GradientStop Color="#FFa3b0c2" Offset="1" />
+                </LinearGradientBrush>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate>
+                    <Grid Height="16" Width="16">
+                        <Border CornerRadius="3.5" BorderThickness="1" BorderBrush="#a3b0c2" Background="{TemplateBinding Background}">
+                            <Grid>
+                                <Path Margin="2,-2,0,0" Height="10.090725898742676" Width="10.13766860961914" Stretch="Fill" Fill="#445c7c" Data="M 29.01708984375,4.031768798828125 C29.01708984375,4.031768798828125 30.604248046875,5.58001708984375 30.0015869140625,6.182586669921875 30.0015869140625,6.182586669921875 24.182861328125,12.001373291015625 24.182861328125,12.001373291015625 24.182861328125,12.001373291015625 20.00048828125,7.81903076171875 20.00048828125,7.81903076171875 20.00048828125,7.81903076171875 25.8193359375,2.000244140625 25.8193359375,2.000244140625 26.421875,1.397674560546875 29.01708984375,4.031768798828125 29.01708984375,4.031768798828125 z"/>
+                                <Path Margin="-5.5,5.5,0,0" Height="4.501" Width="4.501" Stretch="Fill" Fill="#000000" Data="M 23.5009765625,12.68328857421875 C23.5009765625,12.68328857421875 19.0003662109375,13.001495361328125 19.0003662109375,13.001495361328125 19.0003662109375,13.001495361328125 19.318603515625,8.500946044921875 19.318603515625,8.500946044921875 19.318603515625,8.500946044921875 23.5009765625,12.68328857421875 23.5009765625,12.68328857421875 z"/>
+                                <Path Margin="4,-.7,0,0" Height="7.000762939453125" Width="7.000732421875" Stretch="Fill" Stroke="#ffffff" StrokeThickness="1" Data="M 22.5008544921875,11.001251220703125 C22.5008544921875,11.001251220703125 29.5015869140625,4.00048828125 29.5015869140625,4.00048828125 "/>
+                            </Grid>
+                        </Border>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <Trigger Property="IsChecked" Value="True">
+                <Setter Property="Content" Value="IsChecked='True'" />
+            </Trigger>
+            <Trigger Property="IsChecked" Value="False">
+                <Setter Property="Content" Value="IsChecked='False'" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <!--Style for a ToggleButton made for Editing - Green -->
+    <Style TargetType="{x:Type ToggleButton}" x:Key="EditToggleButtonGreenStyle">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate>
+                    <Grid Height="16" Width="16">
+                        <Border CornerRadius="3.5" BorderThickness="1" BorderBrush="DarkGreen">
+                            <Border.Background>
+                                <LinearGradientBrush StartPoint="0.5,0.125" EndPoint="0.5,1.015625">
+                                    <GradientStop Color="LightGreen" Offset="0" />
+                                    <GradientStop Color="DarkGreen" Offset="1" />
+                                </LinearGradientBrush>
+                            </Border.Background>
+                            <Grid>
+                                <Path Margin="2,-2,0,0" Height="10.090725898742676" Width="10.13766860961914" Stretch="Fill" Fill="#445c7c" Data="M 29.01708984375,4.031768798828125 C29.01708984375,4.031768798828125 30.604248046875,5.58001708984375 30.0015869140625,6.182586669921875 30.0015869140625,6.182586669921875 24.182861328125,12.001373291015625 24.182861328125,12.001373291015625 24.182861328125,12.001373291015625 20.00048828125,7.81903076171875 20.00048828125,7.81903076171875 20.00048828125,7.81903076171875 25.8193359375,2.000244140625 25.8193359375,2.000244140625 26.421875,1.397674560546875 29.01708984375,4.031768798828125 29.01708984375,4.031768798828125 z"/>
+                                <Path Margin="-5.5,5.5,0,0" Height="4.501" Width="4.501" Stretch="Fill" Fill="#000000" Data="M 23.5009765625,12.68328857421875 C23.5009765625,12.68328857421875 19.0003662109375,13.001495361328125 19.0003662109375,13.001495361328125 19.0003662109375,13.001495361328125 19.318603515625,8.500946044921875 19.318603515625,8.500946044921875 19.318603515625,8.500946044921875 23.5009765625,12.68328857421875 23.5009765625,12.68328857421875 z"/>
+                                <Path Margin="4,-.7,0,0" Height="7.000762939453125" Width="7.000732421875" Stretch="Fill" Stroke="#ffffff" StrokeThickness="1" Data="M 22.5008544921875,11.001251220703125 C22.5008544921875,11.001251220703125 29.5015869140625,4.00048828125 29.5015869140625,4.00048828125 "/>
+                            </Grid>
+                        </Border>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <Trigger Property="IsChecked" Value="True">
+                <Setter Property="Content" Value="IsChecked='True'" />
+            </Trigger>
+            <Trigger Property="IsChecked" Value="False">
+                <Setter Property="Content" Value="IsChecked='False'" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+</ResourceDictionary>

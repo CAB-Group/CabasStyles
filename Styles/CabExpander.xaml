@@ -1,0 +1,111 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib"
+                    xmlns:wpfControls="clr-namespace:CAB.CSP.Common.Client.WPFControlLibrary">
+
+    <Style TargetType="{x:Type wpfControls:CabExpander}">
+        <Setter Property="SnapsToDevicePixels" Value="True"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type wpfControls:CabExpander}">
+                    <ControlTemplate.Resources>
+                        <sys:Double x:Key="ThumbWidth">10</sys:Double>
+
+                        <Style x:Key="GridSplitterStyle" TargetType="{x:Type Thumb}">
+                            <Style.Triggers>
+                                <DataTrigger Binding="{Binding LayoutOrientation, RelativeSource={RelativeSource AncestorType={x:Type wpfControls:CabExpander}}}" Value="Horizontal">
+                                    <Setter Property="Template" Value="{DynamicResource HorizontalToggle}"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding LayoutOrientation, RelativeSource={RelativeSource AncestorType={x:Type wpfControls:CabExpander}}}" Value="Vertical">
+                                    <Setter Property="Template" Value="{DynamicResource VerticalToggle}"/>
+                                </DataTrigger>
+                            </Style.Triggers>
+                        </Style>
+
+                    </ControlTemplate.Resources>
+                    <Grid Background="{TemplateBinding Background}">
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="ExpanderStates">
+                                <VisualState x:Name="ExpandedState">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="content">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="CollapsedState">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="content">
+                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Collapsed}"/>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition x:Name="firstColumn" />
+                            <ColumnDefinition x:Name="secondColumn" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition x:Name="firstRow" />
+                            <RowDefinition x:Name="secondRow" />
+                        </Grid.RowDefinitions>
+                        <ContentPresenter x:Name="content" Content="{TemplateBinding Content}" RenderTransformOrigin="0,0.5"/>
+                        <Grid x:Name="toggleButton" Visibility="{Binding SplitterVisibility, RelativeSource={RelativeSource AncestorType={x:Type wpfControls:CabExpander}}}">
+                            <Thumb x:Name="PART_GridSplitter" HorizontalAlignment="Stretch" RenderTransformOrigin=".5,.5" Cursor="SizeWE" 
+							 Style="{StaticResource GridSplitterStyle}" >
+                                <Thumb.RenderTransform>
+                                    <ScaleTransform/>
+                                </Thumb.RenderTransform>
+                            </Thumb>
+                        </Grid>
+                    </Grid>
+
+                    <ControlTemplate.Triggers>
+                        <DataTrigger Binding="{Binding LayoutOrientation, RelativeSource={RelativeSource Mode=Self}}" Value="Horizontal">
+                            <Setter TargetName="content" Property="Grid.ColumnSpan" Value="2"/>
+                            <Setter TargetName="toggleButton" Property="Grid.ColumnSpan" Value="2"/>
+                            <Setter TargetName="PART_GridSplitter" Property="Cursor" Value="SizeNS"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding LayoutOrientation, RelativeSource={RelativeSource Mode=Self}}" Value="Vertical">
+                            <Setter TargetName="content" Property="Grid.RowSpan" Value="2"/>
+                            <Setter TargetName="toggleButton" Property="Grid.RowSpan" Value="2"/>
+                            <Setter TargetName="PART_GridSplitter" Property="Cursor" Value="SizeWE"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding ExpandDirection, RelativeSource={RelativeSource Mode=Self}}" Value="Up">
+                            <Setter TargetName="firstRow" Property="Height" Value="Auto"/>
+                            <Setter TargetName="content" Property="Grid.Row" Value="1"/>
+                            <Setter TargetName="toggleButton" Property="Grid.Row" Value="0"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding ExpandDirection, RelativeSource={RelativeSource Mode=Self}}" Value="Down">
+                            <Setter TargetName="secondRow" Property="Height" Value="Auto"/>
+                            <Setter TargetName="toggleButton" Property="Grid.Row" Value="1"/>
+                            <Setter TargetName="content" Property="Grid.Row" Value="0"/>
+                            <Setter TargetName="PART_GridSplitter" Property="RenderTransform">
+                                <Setter.Value>
+                                    <ScaleTransform ScaleY="-1"/>
+                                </Setter.Value>
+                            </Setter>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding ExpandDirection, RelativeSource={RelativeSource Mode=Self}}" Value="Left">
+                            <Setter TargetName="firstColumn" Property="Width" Value="Auto"/>
+                            <Setter TargetName="content" Property="Grid.Column" Value="1"/>
+                            <Setter TargetName="toggleButton" Property="Grid.Column" Value="0"/>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding ExpandDirection, RelativeSource={RelativeSource Mode=Self}}" Value="Right">
+                            <Setter TargetName="secondColumn" Property="Width" Value="Auto"/>
+                            <Setter TargetName="content" Property="Grid.Column" Value="0"/>
+                            <Setter TargetName="toggleButton" Property="Grid.Column" Value="1"/>
+                            <Setter TargetName="PART_GridSplitter" Property="RenderTransform">
+                                <Setter.Value>
+                                    <ScaleTransform ScaleX="-1"/>
+                                </Setter.Value>
+                            </Setter>
+                        </DataTrigger>
+                    </ControlTemplate.Triggers>
+
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
