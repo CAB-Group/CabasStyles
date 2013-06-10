@@ -18,6 +18,8 @@
 7. Dokumentfönstret: ikonerna är otydliga
 8. Dokumentfönstret: listan tar för stro plats
 9. DMS jämför, gör förslag på design och interaktioner
+10. "Undrar om det går att styla i infragistics så att det inte är en rosa ram runt valda checkboxar"
+11. "Kanske om det går att göra något åt hur de ser ut när de är utgråade?"
 7. Guidelines för tangenbordsnavigering
 
 ## Ikoner att göra
@@ -34,6 +36,10 @@
 * ~~Document rename~~
 * ~~Save as > Download~~
 * ~~Document delete~~
+* EstimateBgGradient.png
+* NewEstimateEuro.png
+* NewFlag.png (green)
+* NewHandshake.png
 
 **XAML:**
 
