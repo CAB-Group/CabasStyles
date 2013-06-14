@@ -3,6 +3,7 @@
 
     <Style TargetType="{x:Type CheckBox}">
         <Setter Property="Margin" Value="2"/>
+		 <Setter Property="VerticalContentAlignment" Value="Center"></Setter>
     </Style>
 
     <Style x:Key="GreenCheckBox" TargetType="{x:Type CheckBox}" BasedOn="{StaticResource {x:Type CheckBox}}">

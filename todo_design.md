@@ -14,7 +14,7 @@
 9. ~~Flik som är disabled, hur ska den se ut?~~
 5  ~~Underlag för ändingar av färger i CabPlan~~
 6. ~~Stora flikar: placering av text och ikonen~~
-7. Cab Plan: design av ikoner för Cab:s produkter
+6. Ikoner för gammelcabas7. Cab Plan: design av ikoner för Cab:s produkter
 4. Design: Flik "Försäljningsinformation", uppdateringar efter kommentarer från Jörgen
 5. Design av ny dialog - Markering av B-delar
 6. Nya ikoner för att skicka meddelande med B-delar

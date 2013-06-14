@@ -3,9 +3,10 @@
     
     <Style TargetType="{x:Type TextBlock}">
         <Setter Property="HorizontalAlignment" Value="Stretch" />
-        <Setter Property="HorizontalAlignment" Value="Stretch" />
         <Setter Property="VerticalAlignment" Value="Center" />
-        <Setter Property="Margin" Value="2" />
+        <Setter Property="Padding" Value="2"/>
+        <!--<Setter Property="Margin" Value="2" />
+         Using padding instead, Setting margin makes popups and animations behave weird-->
     </Style>
     
 </ResourceDictionary>
