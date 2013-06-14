@@ -16,6 +16,9 @@
 6. ~~Stora flikar: placering av text och ikonen~~
 7. Cab Plan: design av ikoner för Cab:s produkter
 4. Design: Flik "Försäljningsinformation", uppdateringar efter kommentarer från Jörgen
+5. Design av ny dialog - Markering av B-delar
+6. Nya ikoner för att skicka meddelande med B-delar
+7. Design av Aktörsregistret (finns mockups att utgå ifrån idag)
 7. Dokumentfönstret: ikonerna är otydliga
 8. Dokumentfönstret: listan tar för stor plats
 9. DMS jämför, gör förslag på design och interaktioner
