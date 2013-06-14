@@ -13,14 +13,15 @@
 8. ~~Se över tabellhuvuden, trångt med fet stil i lackvyn~~
 9. ~~Flik som är disabled, hur ska den se ut?~~
 5  ~~Underlag för ändingar av färger i CabPlan~~
-4. ~~Design: Flik "Försäljningsinformation" (man kommer till den från vyn "Inlösen"~~
 6. ~~Stora flikar: placering av text och ikonen~~
+7. Cab Plan: design av ikoner för Cab:s produkter
+4. Design: Flik "Försäljningsinformation", uppdateringar efter kommentarer från Jörgen
 7. Dokumentfönstret: ikonerna är otydliga
-8. Dokumentfönstret: listan tar för stro plats
+8. Dokumentfönstret: listan tar för stor plats
 9. DMS jämför, gör förslag på design och interaktioner
 10. "Undrar om det går att styla i infragistics så att det inte är en rosa ram runt valda checkboxar"
 11. "Kanske om det går att göra något åt hur de ser ut när de är utgråade?"
-7. Guidelines för tangenbordsnavigering
+1. Guidelines för tangenbordsnavigering
 
 ## Ikoner att göra
 
@@ -57,3 +58,4 @@
 * ~~Save as > Download~~
 * ~~Document delete~~
 * Datumväljare, pilar för upp-ner
+* Byt kalender mot den som Andreas hittat?
