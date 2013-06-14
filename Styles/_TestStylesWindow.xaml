@@ -42,6 +42,7 @@
             <ToolBar Height="40" Background="#02415b">
                 <Button Content="{StaticResource AlertError}" ToolTip="AlertError"/>
                 <Button Content="{StaticResource AlertSuccess}" ToolTip="AlertSuccess"/>
+                <Button Content="{StaticResource AlertSuccessInverted}" ToolTip="GreenCheck"/>
                 <Button Content="{StaticResource AlertWarning}" ToolTip="AlertWarning"/>
                 <Button Content="{StaticResource ArrowMenu}" ToolTip="ArrowMenu"/>
                 <Button Content="{StaticResource ArrowMenuInverted}" ToolTip="ArrowMenuInverted"/>
@@ -49,6 +50,7 @@
                 <Button Content="{StaticResource CabIcon}" ToolTip="CabIcon"/>
                 <Button Content="{StaticResource Calculate}" ToolTip="Calculate"/>
                 <Button Content="{StaticResource Calendar}" ToolTip="Calendar"/>
+                <Button Content="{StaticResource Calendar2}" ToolTip="Calendar2"/>
                 <Button Content="{StaticResource Camera}" ToolTip="Camera"/>
                 <Button Content="{StaticResource Car}" ToolTip="Car"/>
                 <Button Content="{StaticResource CarAbove}" ToolTip="CarAbove"/>
@@ -100,6 +102,13 @@
             <ToolBar Height="40" Background="#02415b">
                 <Button Content="{StaticResource Share}" ToolTip="Share"/>
                 <Button Content="{StaticResource Tools}" ToolTip="Tools"/>
+                <Button Content="{StaticResource Mail}" ToolTip="Mail"/>
+                <Button Background="{StaticResource IconFillColorLight}" Content="{StaticResource MailInverted}" ToolTip="MailInverted"/>
+                <Button Content="{StaticResource MailOpen}" ToolTip="MailOpen"/>
+                <Button Background="{StaticResource IconFillColorLight}" Content="{StaticResource MailOpenInverted}" ToolTip="MailOpenInverted"/>
+                <Button Content="{StaticResource ExternalMessages}" ToolTip="ExternalMessages"/>
+                <Button Background="{StaticResource IconFillColorLight}" Content="{StaticResource ExternalMessagesInverted}" ToolTip="ExternalMessagesInverted"/>
+                <Button Content="{StaticResource ArrowUpDown}" ToolTip="ArrowUpDown"/>
             </ToolBar>
         </ToolBarPanel>
         <ToolBarPanel Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3" Background="Transparent" Height="55" >
