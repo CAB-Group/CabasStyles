@@ -25,6 +25,10 @@
 9. DMS jämför, gör förslag på design och interaktioner
 10. "Undrar om det går att styla i infragistics så att det inte är en rosa ram runt valda checkboxar"
 11. "Kanske om det går att göra något åt hur de ser ut när de är utgråade?"
+12. GUI för "Falsförsegling" (vid Beräkna)
+13. *Aktörsregistret* Förslag på interaktionsflöden, vyer och design
+14. *B-delar* Förslag på interaktionsflöden, vyer och design
+15. *CAB Plan* Översyn av alla vyerna, vad är prioriterat att ändra till release 6 september?
 1. Guidelines för tangenbordsnavigering
 
 ## Ikoner att göra
@@ -61,5 +65,6 @@
 * ~~Document rename~~
 * ~~Save as > Download~~
 * ~~Document delete~~
+* Ikon för CAB Plan
 * Datumväljare, pilar för upp-ner
 * Byt kalender mot den som Andreas hittat?
