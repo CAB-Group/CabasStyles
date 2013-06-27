@@ -17,18 +17,18 @@
 6. ~~Ikoner för gammelcabas~~
 7. ~~Cab Plan: design av ikoner för Cab:s produkter~~
 4. ~~Design: Flik "Försäljningsinformation", uppdateringar efter kommentarer från Jörgen~~
-5. Design av ny dialog - Markering av B-delar
+5. GUI för "Falsförsegling" (vid Beräkna)
+15. **CAB Plan:** Översyn av alla vyerna, vad är prioriterat att ändra till release 6 september?
+6. Design av Aktörsregistret (finns mockups att utgå ifrån idag)
+7. Design av ny dialog - Markering av B-delar
 6. Nya ikoner för att skicka meddelande med B-delar
-7. Design av Aktörsregistret (finns mockups att utgå ifrån idag)
 7. Dokumentfönstret: ikonerna är otydliga
 8. Dokumentfönstret: listan tar för stor plats
 9. **DMS:** gör förslag på design och interaktioner
 10. "Undrar om det går att styla i infragistics så att det inte är en rosa ram runt valda checkboxar"
-11. "Kanske om det går att göra något åt hur de ser ut när de är utgråade?"
-12. GUI för "Falsförsegling" (vid Beräkna)
+11. "Kanske om det går att göra något åt hur de ser ut när de är utgråade?" 
 13. **Aktörsregistret:** Förslag på interaktionsflöden, vyer och design
 14. **B-delar:** Förslag på interaktionsflöden, vyer och design
-15. **CAB Plan:** Översyn av alla vyerna, vad är prioriterat att ändra till release 6 september?
 1. Guidelines för tangenbordsnavigering
 
 ## Ikoner att göra
