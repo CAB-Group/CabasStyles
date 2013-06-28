@@ -6,7 +6,9 @@
     <Window.Resources>        
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="..\ResourceDictionaries\Resources.xaml"/>
+                <!--Toggla dessa beroende på miljö. *LOB använder Lars Olof.-->
+                <!--<ResourceDictionary Source="..\ResourceDictionaries\Resources.xaml"/>-->
+                <ResourceDictionary Source="..\ResourceDictionaries\ResourcesLOB.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Window.Resources>
