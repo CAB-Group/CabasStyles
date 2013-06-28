@@ -50,9 +50,9 @@
                 <Button Content="{StaticResource ArrowMenuInverted}" ToolTip="ArrowMenuInverted"/>
                 <Button Content="{StaticResource Attachment}" ToolTip="Attachment"/>
                 <Button Content="{StaticResource CabIcon}" ToolTip="CabIcon"/>
+                <Button Content="{StaticResource CabPlan}" ToolTip="CabPlan"/>
                 <Button Content="{StaticResource Calculate}" ToolTip="Calculate"/>
                 <Button Content="{StaticResource Calendar}" ToolTip="Calendar"/>
-                <Button Content="{StaticResource Calendar2}" ToolTip="Calendar2"/>
                 <Button Content="{StaticResource Camera}" ToolTip="Camera"/>
                 <Button Content="{StaticResource Car}" ToolTip="Car"/>
                 <Button Content="{StaticResource CarAbove}" ToolTip="CarAbove"/>
@@ -91,6 +91,9 @@
                 <Button Content="{StaticResource Flag}" ToolTip="Flag"/>
                 <Button Content="{StaticResource FlagChecked}" ToolTip="Flag"/>
                 <Button Content="{StaticResource Home}" ToolTip="Home"/>
+                <Button Content="{StaticResource MediaPaus}" ToolTip="MediaPaus"/>
+                <Button Content="{StaticResource MediaStart}" ToolTip="MediaStart"/>
+                <Button Content="{StaticResource MediaStop}" ToolTip="MediaStop"/>
                 <Button Content="{StaticResource Messages}" ToolTip="Messages"/>
                 <Button Content="{StaticResource Note}" ToolTip="Note"/>
                 <Button Content="{StaticResource Phone}" ToolTip="Phone"/>                
