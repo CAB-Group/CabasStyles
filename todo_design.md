@@ -64,6 +64,6 @@
 * ~~Document rename~~
 * ~~Save as > Download~~
 * ~~Document delete~~
-* Ikon för CAB Plan
-* Datumväljare, pilar för upp-ner
-* Byt kalender mot den som Andreas hittat?
+* ~~Ikon för CAB Plan~~
+* ~~Datumväljare, pilar för upp-ner~~
+* ~~Byt kalender mot den som Andreas hittat?~~
