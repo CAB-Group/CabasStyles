@@ -19,10 +19,10 @@
 4. ~~Design: Flik "Försäljningsinformation", uppdateringar efter kommentarer från Jörgen~~
 5. ~~GUI för "Falsförsegling" (vid Beräkna)~~
 15. ~~**CAB Plan:** Översyn av alla vyerna, vad är prioriterat att ändra till release 6 september?~~
+6. **Aktörsregistret** Förslag på interaktionsflöden, vyer och design, (finns mockups att utgå ifrån)
 14. **B-delar:** Förslag på interaktionsflöden, vyer och design
 	7. Design av ny dialog - Markering av B-delar
 	6. Nya ikoner för att skicka meddelande med B-delar
-6. **Aktörsregistret** Förslag på interaktionsflöden, vyer och design, (finns mockups att utgå ifrån)
 7. Dokumentfönstret: ikonerna är otydliga
 8. Dokumentfönstret: listan tar för stor plats
 9. **DMS:** gör förslag på design och interaktioner
