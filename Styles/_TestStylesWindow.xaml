@@ -116,6 +116,7 @@
                 <Button Content="{StaticResource ExternalMessages}" ToolTip="ExternalMessages"/>
                 <Button Background="{StaticResource IconFillColorLight}" Content="{StaticResource ExternalMessagesInverted}" ToolTip="ExternalMessagesInverted"/>
                 <Button Content="{StaticResource ArrowUpDown}" ToolTip="ArrowUpDown"/>
+                <Button Content="{StaticResource CommissionAdd}" ToolTip="CommissionAdd"/>
             </ToolBar>
         </ToolBarPanel>
         <ToolBarPanel Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3" Background="Transparent" Height="55" >
