@@ -111,6 +111,8 @@
                 <Button Background="{StaticResource IconFillColorLight}" Content="{StaticResource MailInverted}" ToolTip="MailInverted"/>
                 <Button Content="{StaticResource MailOpen}" ToolTip="MailOpen"/>
                 <Button Background="{StaticResource IconFillColorLight}" Content="{StaticResource MailOpenInverted}" ToolTip="MailOpenInverted"/>
+                <Button Content="{StaticResource MessageUnRead}" ToolTip="MessageUnRead"/>
+                <Button Content="{StaticResource MessageRead}" ToolTip="MessageRead"/>
                 <Button Content="{StaticResource ExternalMessages}" ToolTip="ExternalMessages"/>
                 <Button Background="{StaticResource IconFillColorLight}" Content="{StaticResource ExternalMessagesInverted}" ToolTip="ExternalMessagesInverted"/>
                 <Button Content="{StaticResource ArrowUpDown}" ToolTip="ArrowUpDown"/>
