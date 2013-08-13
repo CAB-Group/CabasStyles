@@ -98,7 +98,8 @@
                 <Button Content="{StaticResource Note}" ToolTip="Note"/>
                 <Button Content="{StaticResource Phone}" ToolTip="Phone"/>                
                 <Button Content="{StaticResource Print}" ToolTip="Print"/>
-                <Button Content="{StaticResource Redemption}" ToolTip="Save"/>
+                <Button Content="{StaticResource Redemption}" ToolTip="Redemption"/>
+                <Button Content="{StaticResource Reload}" ToolTip="Reload"/>
                 <Button Content="{StaticResource Save}" ToolTip="Save"/>
                 <Button Content="{StaticResource SendEuro}" ToolTip="SendEuro"/>
             </ToolBar>
