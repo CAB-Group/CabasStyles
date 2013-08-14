@@ -51,7 +51,7 @@
             Fill="{DynamicResource AlertIconBackgroundError}" />
         </Grid>
     </Viewbox>
-    <Viewbox x:Key="AlertSuccess">
+    <Viewbox x:Key="AlertSuccess" x:Shared="False">
         <Grid
         x:Name="AlertSuccess"
         Background="{DynamicResource AlertIconBackgroundSuccess}"
@@ -1601,7 +1601,7 @@
         </Grid>
     </Viewbox>
 
-    <!-- DEPRECATED, använd MessageUnRead och MessageRead i stället-->
+    <!-- -DEPRECATED- Use MessageUnRead and MessageRead instead  -->
     <Viewbox x:Key="MailOpen" x:Shared="false">
         <Grid Width="30" Height="30"  Background="{StaticResource IconBackgroundDark}">
             <Path Data="M0,25.160011L0.036010232,25.160011 13.992004,38.838042 29.537963,54.085651 45.088989,38.838042 59.042968,25.160011 59.171997,25.160011 59.171997,63.994011 0,63.994011z M29.581497,0L42.612251,11.402004 55.651004,22.81401 42.615249,34.166005 29.584497,45.507999 16.553743,34.166005 3.5159901,22.81401 16.551744,11.402004z" Stretch="Uniform" Width="24" Height="24" Margin="0,0,0,0" RenderTransformOrigin="0.5,0.5"  Fill="{StaticResource IconFillColorLight}"/>
@@ -1622,7 +1622,7 @@
             <Path Data="M0.64199789,2.7119836L16.346003,18.416986C16.864008,18.932003,17.702996,18.932003,18.218987,18.416986L33.862996,2.7709438C34.181996,2.9829804,34.394001,3.3439434,34.394001,3.7559317L34.394001,23.891979C34.394001,24.542982,33.866993,25.068985,33.215992,25.068985L1.1770015,25.068985C0.5270079,25.068985,0,24.542982,0,23.891979L0,3.7559317C0,3.2990214,0.26300039,2.908029,0.64199789,2.7119836z M2.4646274,0L32.104004,0C32.089001,0.28299737,31.973,0.56099439,31.753998,0.77599239L18.058825,14.39585C17.59982,14.843845,16.87381,14.845845,16.437804,14.39885L2.7756311,0.84399176C2.5486285,0.61199403,2.4486271,0.30599713,2.4646274,0z" Stretch="Uniform" Width="24" Height="24" Margin="0,0,0,0" RenderTransformOrigin="0.5,0.5"  Fill="{StaticResource IconFillColorDark}"/>
         </Grid>
     </Viewbox>
-    <!-- DEPRECATED, använd MessageUnRead och MessageRead i stället-->
+    <!-- ^DEPRECATED^ Use MessageUnRead and MessageRead instead  -->
 
     <Viewbox x:Key="Messages" x:Shared="false">
         <Grid x:Name="Messages" Background="{StaticResource IconBackgroundDark}" Height="112" Width="112">
