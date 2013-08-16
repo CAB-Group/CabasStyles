@@ -5,7 +5,7 @@
     <copyright>CAB AB</copyright>
     <description>A Style Library with Windows 8-like style. introduced for Cabas Finland 2013. It's aimed to harmonized the visual interface of both Cabas and Cab Plan.</description>
     <version>0.1</version>
-    <lastModified>2013-08-16T09:13:49</lastModified>
+    <lastModified>2013-08-16T12:54:25</lastModified>
   </annotation>
   <styleSets defaultStyleSet="Default">
     <styleSet name="Default" useOsThemes="False" useFlatMode="True">
@@ -592,6 +592,11 @@
             <state name="Pressed" backColor="Transparent" backGradientStyle="None" />
           </states>
         </style>
+        <style role="ScrollBarButton">
+          <states>
+            <state name="Normal" backColor="240, 240, 240" backGradientStyle="None" backHatchStyle="None" />
+          </states>
+        </style>
         <style role="ScrollBarHorizontal">
           <states>
             <state name="Normal" imageBackgroundStyle="Stretched" imageBackgroundStretchMargins="11, 0, 12, 0" />
@@ -599,12 +604,12 @@
         </style>
         <style role="ScrollBarThumb">
           <states>
-            <state name="Normal" backColor="223, 223, 223" backGradientStyle="None" backHatchStyle="None" />
+            <state name="Normal" backColor="205, 205, 205" backGradientStyle="None" backHatchStyle="None" />
           </states>
         </style>
         <style role="ScrollBarTrackSection">
           <states>
-            <state name="Normal" backColor="239, 239, 239" backGradientStyle="None" backHatchStyle="None" />
+            <state name="Normal" backColor="240, 240, 240" backGradientStyle="None" backHatchStyle="None" />
           </states>
         </style>
         <style role="ScrollBarTrackSectionBottom">
