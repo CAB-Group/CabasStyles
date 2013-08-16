@@ -24,6 +24,8 @@
                                     <ContentPresenter RecognizesAccessKey="True" Content="{TemplateBinding ContentControl.Content}" 
                                                       ContentTemplate="{TemplateBinding ContentControl.ContentTemplate}" 
                                                       ContentStringFormat="{TemplateBinding ContentControl.ContentStringFormat}" 
+                                TextElement.FontSize="12" 
+                                TextElement.FontWeight="Bold" 
                                                       Name="HeaderContent" Margin="2" 
                                                       HorizontalAlignment="{TemplateBinding Control.HorizontalContentAlignment}" 
                                                       VerticalAlignment="{TemplateBinding Control.VerticalContentAlignment}" 

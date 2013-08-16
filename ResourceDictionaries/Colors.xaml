@@ -409,18 +409,18 @@
     
     <!--Normal -->
     <SolidColorBrush x:Key="GridViewColumnHeaderBorder" Color="Transparent"/>
-    <SolidColorBrush x:Key="GridViewColumnHeaderBackground" Opacity="0.85" Color="{StaticResource ColorCabBlue}"/>
-    <SolidColorBrush x:Key="GridViewColumnHeaderText" Color="#FFFFFFFF"/>
+    <SolidColorBrush x:Key="GridViewColumnHeaderBackground" Color="WhiteSmoke"/>
+    <SolidColorBrush x:Key="GridViewColumnHeaderText" Color="{StaticResource ColorCabBlue}"/>
     
     <!--Hover --> 
     <SolidColorBrush x:Key="GridViewColumnHeaderBorderHover" Color="Transparent"/>
-    <SolidColorBrush x:Key="GridViewColumnHeaderBackgroundHover" Color="{StaticResource ColorCabBlue}"/>
-    <SolidColorBrush x:Key="GridViewColumnHeaderTextHover" Color="#FFFFFFFF"/>
+    <SolidColorBrush x:Key="GridViewColumnHeaderBackgroundHover" Color="{StaticResource ColorCabBlue7}"/>
+    <SolidColorBrush x:Key="GridViewColumnHeaderTextHover" Color="{StaticResource ColorCabBlue}"/>
     
     <!--Selected -->
     <SolidColorBrush x:Key="GridViewColumnHeaderBorderSelected" Color="Transparent"/>
-    <SolidColorBrush x:Key="GridViewColumnHeaderBackgroundSelected" Color="{StaticResource ColorCabBlue}"/>
-    <SolidColorBrush x:Key="GridViewColumnHeaderTextSelected" Color="#FFFFFFFF"/>
+    <SolidColorBrush x:Key="GridViewColumnHeaderBackgroundSelected" Color="{StaticResource ColorCabBlue7}"/>
+    <SolidColorBrush x:Key="GridViewColumnHeaderTextSelected" Color="{StaticResource ColorCabBlue}"/>
 
     <!-- CHECKBOX -->
 
