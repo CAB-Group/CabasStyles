@@ -5,7 +5,7 @@
     <copyright>CAB AB</copyright>
     <description>A Style Library with Windows 8-like style. introduced for Cabas Finland 2013. It's aimed to harmonized the visual interface of both Cabas and Cab Plan.</description>
     <version>0.1</version>
-    <lastModified>2013-08-16T12:54:25</lastModified>
+    <lastModified>2013-08-16T13:11:56</lastModified>
   </annotation>
   <styleSets defaultStyleSet="Default">
     <styleSet name="Default" useOsThemes="False" useFlatMode="True">
@@ -300,11 +300,7 @@
           <states>
             <state name="Normal" borderColor="Transparent" />
             <state name="Selected" borderColor="Transparent" />
-            <state name="Active" backColor="Transparent" borderColor="Transparent" backGradientStyle="None" backHatchStyle="None">
-              <resources>
-                <name>_ActiveForeground</name>
-              </resources>
-            </state>
+            <state name="Active" backColor="Transparent" borderColor="Transparent" backGradientStyle="None" backHatchStyle="None" />
             <state name="EditMode" backColor="Transparent" imageBackgroundStyle="Stretched" backGradientStyle="None" imageBackgroundStretchMargins="3, 6, 4, 6" />
             <state name="RowHotTracked">
               <resources>
@@ -376,7 +372,7 @@
                 <name>SelectedHover</name>
               </resources>
             </state>
-            <state name="Active" foreColor="White" imageBackgroundStyle="Stretched" fontBold="True" imageBackgroundStretchMargins="3, 3, 3, 3">
+            <state name="Active" imageBackgroundStyle="Stretched" fontBold="True" imageBackgroundStretchMargins="3, 3, 3, 3">
               <resources>
                 <name>Selected</name>
               </resources>
@@ -1412,8 +1408,8 @@
     <resource name="CabBlue_Active" backColor="2, 65, 91" foreColor="White" imageBackgroundStyle="Stretched" foreColorDisabled="128, 160, 173" fontBold="True" backGradientStyle="None" backHatchStyle="None" />
     <resource name="CabBlue_HotTracked" backColor="34, 89, 112" foreColor="White" imageBackgroundStyle="Stretched" foreColorDisabled="160, 184, 193" fontBold="True" backGradientStyle="None" backHatchStyle="None" />
     <resource name="CabBlue_Normal" backColor="2, 65, 91" foreColor="White" imageBackgroundStyle="Stretched" foreColorDisabled="128, 160, 173" fontBold="True" backGradientStyle="None" backHatchStyle="None" />
-    <resource name="Selected" backColor="255, 133, 0" foreColor="White" borderColor="210, 210, 210" fontBold="True" backGradientStyle="None" backHatchStyle="None" />
-    <resource name="SelectedHover" backColor="255, 209, 159" foreColor="53, 53, 53" borderColor="210, 210, 210" backGradientStyle="None" backHatchStyle="None" />
+    <resource name="Selected" backColor="255, 194, 128" borderColor="Transparent" fontBold="True" backGradientStyle="None" backHatchStyle="None" />
+    <resource name="SelectedHover" backColor="255, 240, 223" foreColor="53, 53, 53" backGradientStyle="None" backHatchStyle="None" />
     <resource name="TabHorizontalTop_HotTracked" backColor="204, 217, 222" foreColor="2, 65, 91" borderColor="Transparent" imageBackgroundStyle="Stretched" imageBackgroundAlpha="UseAlphaLevel" fontSize="11" backGradientStyle="None" borderColor3DBase="Transparent" themedElementAlpha="UseAlphaLevel" backHatchStyle="None" imageBackgroundStretchMargins="10, 6, 10, 3" borderColor2="Transparent" />
     <resource name="TabHorizontalTop_Normal" backColor="Transparent" foreColor="2, 65, 91" borderColor="Transparent" imageBackgroundStyle="Stretched" borderAlpha="UseAlphaLevel" fontSize="11" backGradientStyle="None" borderColor3DBase="Transparent" backHatchStyle="None" imageBackgroundStretchMargins="10, 6, 10, 3" borderColor2="Transparent" />
     <resource name="TabHorizontalTop_Selected" backColor="2, 65, 91" foreColor="White" borderColor="Transparent" imageBackgroundStyle="Stretched" imageBackgroundAlpha="UseAlphaLevel" borderAlpha="UseAlphaLevel" foreColorDisabled="192, 207, 214" backColorDisabled="128, 160, 173" fontSize="11" backGradientStyle="None" borderColor3DBase="Transparent" themedElementAlpha="UseAlphaLevel" backHatchStyle="None" imageBackgroundStretchMargins="10, 6, 10, 3" borderColor2="Transparent" />
