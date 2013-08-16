@@ -5,7 +5,7 @@
     <copyright>CAB AB</copyright>
     <description>A Style Library with Windows 8-like style. introduced for Cabas Finland 2013. It's aimed to harmonized the visual interface of both Cabas and Cab Plan.</description>
     <version>0.1</version>
-    <lastModified>2013-08-16T13:35:13</lastModified>
+    <lastModified>2013-08-16T14:01:58</lastModified>
   </annotation>
   <styleSets defaultStyleSet="Default">
     <styleSet name="Default" useOsThemes="False" useFlatMode="True">
@@ -288,8 +288,8 @@
         </style>
         <style role="GridBandHeader">
           <states>
-            <state name="Normal" foreColor="2, 65, 91" textHAlign="Left" fontSize="14" />
-            <state name="HotTracked" foreColor="2, 65, 91" fontSize="14" />
+            <state name="Normal" textHAlign="Left" fontSize="11" />
+            <state name="HotTracked" backColor="WhiteSmoke" fontSize="11" backGradientStyle="None" backHatchStyle="None" />
           </states>
         </style>
         <style role="GridCaption">
@@ -300,8 +300,7 @@
         <style role="GridCell">
           <states>
             <state name="Normal" borderColor="244, 244, 244" />
-            <state name="Selected" borderColor="Transparent" />
-            <state name="Active" backColor="Transparent" borderColor="Transparent" backGradientStyle="None" backHatchStyle="None" />
+            <state name="Active" backColor="Transparent" backGradientStyle="None" backHatchStyle="None" />
             <state name="EditMode" backColor="Transparent" imageBackgroundStyle="Stretched" backGradientStyle="None" imageBackgroundStretchMargins="3, 6, 4, 6" />
             <state name="RowHotTracked">
               <resources>
@@ -312,8 +311,7 @@
         </style>
         <style role="GridColumnHeader">
           <states>
-            <state name="Normal" foreColor="2, 65, 91" fontBold="True" />
-            <state name="HotTracked" backColor="223, 231, 235" foreColor="2, 65, 91" backGradientStyle="None" backHatchStyle="None" />
+            <state name="HotTracked" backColor="223, 231, 235" backGradientStyle="None" backHatchStyle="None" />
           </states>
         </style>
         <style role="GridControlArea">
@@ -348,7 +346,12 @@
             </state>
           </states>
         </style>
-        <style role="GridHeader" borderStyle="None" />
+        <style role="GridHeader" borderStyle="None">
+          <states>
+            <state name="Normal" backColor="WhiteSmoke" foreColor="2, 65, 91" fontBold="True" backGradientStyle="None" backHatchStyle="None" />
+            <state name="HotTracked" backColor="223, 231, 235" foreColor="2, 65, 91" backGradientStyle="None" backHatchStyle="None" />
+          </states>
+        </style>
         <style role="GridRow">
           <states>
             <state name="Normal" borderColor="250, 250, 250" />
@@ -396,7 +399,7 @@
         </style>
         <style role="ListViewColumnHeader">
           <states>
-            <state name="Normal" foreColor="2, 65, 91" borderColor="150, 150, 150" textHAlign="Left" fontBold="True" textTrimming="EllipsisCharacter" />
+            <state name="Normal" foreColor="2, 65, 91" borderColor="244, 244, 244" textHAlign="Left" fontBold="True" textTrimming="EllipsisCharacter" />
           </states>
         </style>
         <style role="ListViewControlArea">
@@ -969,7 +972,7 @@
         <style role="TreeNode">
           <states>
             <state name="Normal" borderColor="Transparent" borderColor3DBase="Transparent" borderColor2="WhiteSmoke" />
-            <state name="Selected" foreColor="45, 45, 45">
+            <state name="Selected">
               <resources>
                 <name>Selected</name>
               </resources>
