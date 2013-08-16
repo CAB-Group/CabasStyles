@@ -5,7 +5,7 @@
     <copyright>CAB AB</copyright>
     <description>A Style Library with Windows 8-like style. introduced for Cabas Finland 2013. It's aimed to harmonized the visual interface of both Cabas and Cab Plan.</description>
     <version>0.1</version>
-    <lastModified>2013-05-17T14:00:06</lastModified>
+    <lastModified>2013-08-16T09:13:49</lastModified>
   </annotation>
   <styleSets defaultStyleSet="Default">
     <styleSet name="Default" useOsThemes="False" useFlatMode="True">
@@ -64,7 +64,7 @@
         </componentStyle>
         <componentStyle name="UltraListView" headerStyle="Standard">
           <properties>
-            <property name="DefaultImage" colorCategory="{Default}">AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAA+gAAAAKJUE5HDQoaCgAAAA1JSERSAAAAEAAAABAIBgAAAB/z/2EAAAADc0JJVAgICNvhT+AAAAABc1JHQgCuzhzpAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwQAADsEBuJFr7QAAABZ0RVh0Q3JlYXRpb24gVGltZQAxMy0wNS0wNwRp7ZcAAAAcdEVYdFNvZnR3YXJlAEFkb2JlIEZpcmV3b3JrcyBDUzVxteM2AAAANklEQVQ4T6XIsREAIAADIfdfOi5A4Z8FDWfbF2bBLJgFs2AWzIJZMAtmwSyYBbNgFsyC+W7nAsWt/R/ojsvuAAAAAElFTkSuQmCCCwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</property>
+            <property name="DefaultImage" colorCategory="{Default}">AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAA+gAAAAKJUE5HDQoaCgAAAA1JSERSAAAAEAAAABAIBgAAAB/z/2EAAAADc0JJVAgICNvhT+AAAAABc1JHQgCuzhzpAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwAAADsABataJCQAAABZ0RVh0Q3JlYXRpb24gVGltZQAxMy0wNS0wNwRp7ZcAAAAcdEVYdFNvZnR3YXJlAEFkb2JlIEZpcmV3b3JrcyBDUzVxteM2AAAANklEQVQ4T6XIsREAIAADIfdfOi5A4Z8FDWfbF2bBLJgFs2AWzIJZMAtmwSyYBbNgFsyC+W7nAsWt/R/ojsvuAAAAAElFTkSuQmCCCwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</property>
           </properties>
         </componentStyle>
         <componentStyle name="UltraTabbedMdiManager">
@@ -589,7 +589,6 @@
         </style>
         <style role="ScrollBarArrowUp">
           <states>
-            <state name="Normal" backColor="Transparent" backGradientStyle="None" />
             <state name="Pressed" backColor="Transparent" backGradientStyle="None" />
           </states>
         </style>
@@ -601,6 +600,11 @@
         <style role="ScrollBarThumb">
           <states>
             <state name="Normal" backColor="223, 223, 223" backGradientStyle="None" backHatchStyle="None" />
+          </states>
+        </style>
+        <style role="ScrollBarTrackSection">
+          <states>
+            <state name="Normal" backColor="239, 239, 239" backGradientStyle="None" backHatchStyle="None" />
           </states>
         </style>
         <style role="ScrollBarTrackSectionBottom">
