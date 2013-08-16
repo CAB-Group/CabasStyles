@@ -362,8 +362,8 @@
 	<SolidColorBrush x:Key="TextboxBackgroundDisabled" Color="{StaticResource ColorCabGray5}"/>
 	
     <!-- Readonly -->
-    <SolidColorBrush x:Key="TextboxBorderReadonly" Color="Transparent"/>
-    <SolidColorBrush x:Key="TextboxBorderReadonlyHover" Color="{StaticResource ColorCabBlack7}"/>
+    <SolidColorBrush x:Key="TextboxBorderReadonly" Color="{StaticResource ColorCabGray5}"/>
+    <SolidColorBrush x:Key="TextboxBorderReadonlyHover" Color="{StaticResource ColorCabGray5}"/>
 	<SolidColorBrush x:Key="TextboxBackgroundReadonly" Color="Transparent"/>
 
 
