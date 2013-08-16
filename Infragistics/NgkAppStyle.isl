@@ -5,7 +5,7 @@
     <copyright>CAB AB</copyright>
     <description>A Style Library with Windows 8-like style. introduced for Cabas Finland 2013. It's aimed to harmonized the visual interface of both Cabas and Cab Plan.</description>
     <version>0.1</version>
-    <lastModified>2013-08-16T13:11:56</lastModified>
+    <lastModified>2013-08-16T13:31:45</lastModified>
   </annotation>
   <styleSets defaultStyleSet="Default">
     <styleSet name="Default" useOsThemes="False" useFlatMode="True">
@@ -289,6 +289,7 @@
         <style role="GridBandHeader">
           <states>
             <state name="Normal" foreColor="2, 65, 91" textHAlign="Left" fontSize="14" />
+            <state name="HotTracked" foreColor="2, 65, 91" fontSize="14" />
           </states>
         </style>
         <style role="GridCaption">
@@ -298,7 +299,7 @@
         </style>
         <style role="GridCell">
           <states>
-            <state name="Normal" borderColor="Transparent" />
+            <state name="Normal" borderColor="244, 244, 244" />
             <state name="Selected" borderColor="Transparent" />
             <state name="Active" backColor="Transparent" borderColor="Transparent" backGradientStyle="None" backHatchStyle="None" />
             <state name="EditMode" backColor="Transparent" imageBackgroundStyle="Stretched" backGradientStyle="None" imageBackgroundStretchMargins="3, 6, 4, 6" />
@@ -311,16 +312,8 @@
         </style>
         <style role="GridColumnHeader">
           <states>
-            <state name="Normal" fontBold="False">
-              <resources>
-                <name>CabBlue_Normal</name>
-              </resources>
-            </state>
-            <state name="HotTracked">
-              <resources>
-                <name>CabBlue_HotTracked</name>
-              </resources>
-            </state>
+            <state name="Normal" foreColor="2, 65, 91" fontBold="True" />
+            <state name="HotTracked" backColor="223, 231, 235" foreColor="2, 65, 91" backGradientStyle="None" backHatchStyle="None" />
           </states>
         </style>
         <style role="GridControlArea">
@@ -333,15 +326,6 @@
             <state name="Normal">
               <resources>
                 <name>BgAreaInner</name>
-              </resources>
-            </state>
-          </states>
-        </style>
-        <style role="GridGroupByBoxColumnHeader">
-          <states>
-            <state name="Normal">
-              <resources>
-                <name>CabBlue_Normal</name>
               </resources>
             </state>
           </states>
@@ -367,6 +351,7 @@
         <style role="GridHeader" borderStyle="None" />
         <style role="GridRow">
           <states>
+            <state name="Normal" borderColor="250, 250, 250" />
             <state name="HotTracked">
               <resources>
                 <name>SelectedHover</name>
@@ -421,7 +406,7 @@
         </style>
         <style role="ListViewGroupHeader">
           <states>
-            <state name="Normal" foreColor="2, 65, 91" borderColor="Transparent" fontBold="True">
+            <state name="Normal" foreColor="2, 65, 91" fontBold="True">
               <resources>
                 <name>BgAreaInner</name>
               </resources>

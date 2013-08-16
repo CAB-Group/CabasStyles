@@ -281,7 +281,7 @@
     <SolidColorBrush x:Key="RowTextHover" Color="{StaticResource ColorCabBlack2}"/>
 
     <!--Selected-->
-    <SolidColorBrush x:Key="RowBackgroundSelected" Color="{StaticResource ColorCabOrange2}"/>
+    <SolidColorBrush x:Key="RowBackgroundSelected" Color="{StaticResource ColorCabOrange4}"/>
     <SolidColorBrush x:Key="RowTextSelected" Color="{StaticResource ColorCabBlack2}"/>
     
     
