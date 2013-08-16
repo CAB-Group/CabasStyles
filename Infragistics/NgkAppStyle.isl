@@ -5,7 +5,7 @@
     <copyright>CAB AB</copyright>
     <description>A Style Library with Windows 8-like style. introduced for Cabas Finland 2013. It's aimed to harmonized the visual interface of both Cabas and Cab Plan.</description>
     <version>0.1</version>
-    <lastModified>2013-08-16T13:31:45</lastModified>
+    <lastModified>2013-08-16T13:35:13</lastModified>
   </annotation>
   <styleSets defaultStyleSet="Default">
     <styleSet name="Default" useOsThemes="False" useFlatMode="True">
@@ -1052,7 +1052,7 @@
         </style>
         <style role="UltraGroupBoxHeader">
           <states>
-            <state name="Normal">
+            <state name="Normal" fontBold="True">
               <resources>
                 <name>BgAreaHeader</name>
               </resources>
