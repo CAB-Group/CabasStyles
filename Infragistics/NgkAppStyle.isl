@@ -5,7 +5,7 @@
     <copyright>CAB AB</copyright>
     <description>A Style Library with Windows 8-like style. introduced for Cabas Finland 2013. It's aimed to harmonized the visual interface of both Cabas and Cab Plan.</description>
     <version>0.1</version>
-    <lastModified>2013-08-20T12:32:46</lastModified>
+    <lastModified>2013-08-20T13:44:41</lastModified>
   </annotation>
   <styleSets defaultStyleSet="Default">
     <styleSet name="Default" useOsThemes="False" useFlatMode="True">
@@ -221,11 +221,6 @@
             </state>
           </states>
         </style>
-        <style role="DotNetMonthDropDownTitle">
-          <states>
-            <state name="Normal" backColor="114, 206, 82" backGradientStyle="None" backHatchStyle="None" />
-          </states>
-        </style>
         <style role="DropDownControlArea">
           <states>
             <state name="Normal" backColor="White" backGradientStyle="None" backHatchStyle="None" />
@@ -353,8 +348,16 @@
         </style>
         <style role="GridHeader" borderStyle="None">
           <states>
-            <state name="Normal" backColor="250, 250, 250" foreColor="2, 65, 91" fontBold="True" backGradientStyle="None" backHatchStyle="None" />
-            <state name="HotTracked" backColor="223, 231, 235" foreColor="2, 65, 91" backGradientStyle="None" backHatchStyle="None" />
+            <state name="Normal">
+              <resources>
+                <name>ColumnHeader_Normal</name>
+              </resources>
+            </state>
+            <state name="HotTracked">
+              <resources>
+                <name>ColumnHeader_HotTracked</name>
+              </resources>
+            </state>
           </states>
         </style>
         <style role="GridRow">
@@ -964,7 +967,7 @@
           <states>
             <state name="Normal" textHAlign="Left" imageBackgroundStyle="Stretched" textTrimming="EllipsisCharacter">
               <resources>
-                <name>CabBlue_HotTracked</name>
+                <name>ColumnHeader_Normal</name>
               </resources>
             </state>
           </states>
@@ -1412,6 +1415,8 @@
     <resource name="CabBlue_Active" backColor="2, 65, 91" foreColor="White" imageBackgroundStyle="Stretched" foreColorDisabled="128, 160, 173" fontBold="True" backGradientStyle="None" backHatchStyle="None" />
     <resource name="CabBlue_HotTracked" backColor="2, 65, 91" foreColor="White" imageBackgroundStyle="Stretched" foreColorDisabled="128, 160, 173" fontBold="True" backGradientStyle="None" backHatchStyle="None" />
     <resource name="CabBlue_Normal" backColor="34, 89, 112" foreColor="White" imageBackgroundStyle="Stretched" foreColorDisabled="160, 184, 193" fontBold="True" backGradientStyle="None" backHatchStyle="None" />
+    <resource name="ColumnHeader_HotTracked" backColor="223, 231, 235" foreColor="2, 65, 91" backGradientStyle="None" backHatchStyle="None" />
+    <resource name="ColumnHeader_Normal" backColor="250, 250, 250" foreColor="2, 65, 91" fontBold="True" backGradientStyle="None" backHatchStyle="None" />
     <resource name="Selected" backColor="255, 194, 128" borderColor="Transparent" backGradientStyle="None" backHatchStyle="None" />
     <resource name="SelectedHover" backColor="255, 240, 223" foreColor="53, 53, 53" backGradientStyle="None" backHatchStyle="None" />
     <resource name="TabHorizontalTop_HotTracked" backColor="204, 217, 222" foreColor="2, 65, 91" borderColor="Transparent" imageBackgroundStyle="Stretched" imageBackgroundAlpha="UseAlphaLevel" backGradientStyle="None" borderColor3DBase="Transparent" themedElementAlpha="UseAlphaLevel" backHatchStyle="None" imageBackgroundStretchMargins="10, 6, 10, 3" borderColor2="Transparent" />
