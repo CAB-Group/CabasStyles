@@ -5,7 +5,7 @@
     <copyright>CAB AB</copyright>
     <description>A Style Library with Windows 8-like style. introduced for Cabas Finland 2013. It's aimed to harmonized the visual interface of both Cabas and Cab Plan.</description>
     <version>0.1</version>
-    <lastModified>2013-08-20T11:43:44</lastModified>
+    <lastModified>2013-08-20T11:55:31</lastModified>
   </annotation>
   <styleSets defaultStyleSet="Default">
     <styleSet name="Default" useOsThemes="False" useFlatMode="True">
@@ -1168,14 +1168,20 @@
             </state>
           </states>
         </style>
+        <style role="UltraButton">
+          <states>
+            <state name="Normal" borderColor="132, 132, 132" />
+            <state name="HotTracked" borderColor="106, 106, 106" />
+          </states>
+        </style>
         <style role="UltraButtonDefault">
           <states>
-            <state name="Normal">
+            <state name="Normal" borderColor="53, 53, 53">
               <resources>
                 <name>ButtonDefault_Normal</name>
               </resources>
             </state>
-            <state name="HotTracked">
+            <state name="HotTracked" borderColor="Black">
               <resources>
                 <name>ButtonDefault_HotTracked</name>
               </resources>
