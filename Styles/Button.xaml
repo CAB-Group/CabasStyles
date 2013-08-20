@@ -12,8 +12,8 @@
                 BorderThickness="1" 
                 Background="{TemplateBinding Background}" 
                 x:Name="ButtonBorder">
-            <Grid Margin="5,2" MinWidth="60">
-                <ContentPresenter 
+            <Grid MinWidth="60" x:Name="Grid" Margin="5,0">
+                <ContentPresenter
                     IsHitTestVisible="True" 
                     HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" 
                     Margin="{TemplateBinding Padding}" 
@@ -22,16 +22,27 @@
                     VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
             </Grid>
         </Border>
+        <ControlTemplate.Triggers>
+            <MultiTrigger>
+                <MultiTrigger.Conditions>                    
+                    <Condition Property="IsPressed" Value="True"/>                    
+                </MultiTrigger.Conditions>
+                <MultiTrigger.Setters>
+                    <Setter Property="Padding" Value="2,2,0,0"/>
+                    <Setter TargetName="Grid" Property="Margin" Value="5,0,5,0"/>
+                </MultiTrigger.Setters>
+            </MultiTrigger>
+        </ControlTemplate.Triggers>
     </ControlTemplate>
 
     <ControlTemplate x:Key="SimpleButtonTemplate" TargetType="{x:Type ButtonBase}">
         <ContentPresenter IsHitTestVisible="True" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" Margin="{TemplateBinding Padding}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
     </ControlTemplate>
 
-    <Style x:Key="ButtonStyle" TargetType="{x:Type ButtonBase}">
+    <Style x:Key="EmptyButtonStyle" TargetType="{x:Type ButtonBase}">
         <Setter Property="Background" Value="Transparent"/>
         <Setter Property="BorderThickness" Value="0"></Setter>
-        <Setter Property="Template" Value="{DynamicResource SimpleButtonTemplate}"/>
+        <Setter Property="Template" Value="{DynamicResource SimpleButtonTemplate}"/>        
     </Style>
 
     <Style x:Key="DefaultButtonStyle" TargetType="{x:Type ButtonBase}">
@@ -41,7 +52,7 @@
         <Setter Property="Background" Value="{StaticResource ButtonBackground}"/>
         <Setter Property="BorderBrush" Value="{StaticResource ButtonBorder}"/>
         <Setter Property="Foreground" Value="{StaticResource ButtonText}"/>
-        <Setter Property="ToolTipService.ShowOnDisabled" Value="True"/>
+        <Setter Property="ToolTipService.ShowOnDisabled" Value="True"/>     
         <Style.Triggers>
             <MultiTrigger>
                 <MultiTrigger.Conditions>
@@ -109,7 +120,7 @@
                 <MultiTrigger.Conditions>
                     <Condition Property="IsDefault" Value="True"/>
                     <Condition Property="IsEnabled" Value="True"/>
-                    <Condition Property="IsFocused" Value="True"/>
+                    <Condition Property="IsFocused" Value="True"/>                    
                 </MultiTrigger.Conditions>
                 <MultiTrigger.Setters>
                     <Setter Property="Background" Value="{StaticResource ButtonBackgroundPrimaryActive}"/>
@@ -180,7 +191,7 @@
                     </Grid>
                 </Viewbox>
             </Border.Resources>
-            <Grid Margin="5,3" MinWidth="60">
+            <Grid Margin="5,0" MinWidth="60">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="Auto"/>

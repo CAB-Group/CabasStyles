@@ -7,8 +7,8 @@
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <!--Toggla dessa beroende på miljö. *LOB använder Lars Olof.-->
-                <!--<ResourceDictionary Source="..\ResourceDictionaries\Resources.xaml"/>-->
-                <ResourceDictionary Source="..\ResourceDictionaries\ResourcesLOB.xaml"/>
+                <!--<ResourceDictionary Source="..\ResourceDictionaries\ResourcesLOB.xaml"/>-->
+                <ResourceDictionary Source="..\ResourceDictionaries\Resources.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Window.Resources>
@@ -296,6 +296,9 @@
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
                 <ToggleButton Margin="5">ToggleButton UnChecked</ToggleButton>
                 <ToggleButton IsChecked="True" Margin="5">ToggleButton Checked</ToggleButton>
+            </StackPanel>
+            <StackPanel>
+                <ToggleButton Style="{DynamicResource DropDownButtonStyle}">DropDownButton</ToggleButton>
             </StackPanel>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
                 <ToggleButton Style="{StaticResource ProcessButtonStyle}" Margin="5" IsChecked="True">Step 1 Selected</ToggleButton>
