@@ -5,7 +5,7 @@
     <copyright>CAB AB</copyright>
     <description>A Style Library with Windows 8-like style. introduced for Cabas Finland 2013. It's aimed to harmonized the visual interface of both Cabas and Cab Plan.</description>
     <version>0.1</version>
-    <lastModified>2013-08-20T10:38:10</lastModified>
+    <lastModified>2013-08-20T11:29:08</lastModified>
   </annotation>
   <styleSets defaultStyleSet="Default">
     <styleSet name="Default" useOsThemes="False" useFlatMode="True">
@@ -50,7 +50,7 @@
             <property name="HeaderPosition" colorCategory="{Default}">TopOutsideBorder</property>
           </properties>
         </componentStyle>
-        <componentStyle name="UltraGrid">
+        <componentStyle name="UltraGrid" headerStyle="WindowsXPCommand">
           <properties>
             <property name="RowConnectorStyle" colorCategory="{Default}">Dotted</property>
           </properties>
@@ -294,7 +294,7 @@
         </style>
         <style role="GridCaption">
           <states>
-            <state name="Normal" backColor="WhiteSmoke" borderColor="Transparent" fontSize="11" backGradientStyle="None" backHatchStyle="None" />
+            <state name="Normal" backColor="250, 250, 250" borderColor="Transparent" fontSize="11" backGradientStyle="None" backHatchStyle="None" />
           </states>
         </style>
         <style role="GridCell">
@@ -328,6 +328,11 @@
             </state>
           </states>
         </style>
+        <style role="GridGroupByBoxColumnHeader">
+          <states>
+            <state name="Normal" borderColor="Brown" />
+          </states>
+        </style>
         <style role="GridGroupByBoxPrompt">
           <states>
             <state name="Normal" backColor="Transparent" imageBackgroundOrigin="Container" backGradientStyle="None" backHatchStyle="None">
@@ -348,7 +353,7 @@
         </style>
         <style role="GridHeader" borderStyle="None">
           <states>
-            <state name="Normal" backColor="WhiteSmoke" foreColor="2, 65, 91" fontBold="True" backGradientStyle="None" backHatchStyle="None" />
+            <state name="Normal" backColor="250, 250, 250" foreColor="2, 65, 91" fontBold="True" backGradientStyle="None" backHatchStyle="None" />
             <state name="HotTracked" backColor="223, 231, 235" foreColor="2, 65, 91" backGradientStyle="None" backHatchStyle="None" />
           </states>
         </style>
@@ -360,7 +365,7 @@
                 <name>SelectedHover</name>
               </resources>
             </state>
-            <state name="Active" imageBackgroundStyle="Stretched" fontBold="True" imageBackgroundStretchMargins="3, 3, 3, 3">
+            <state name="Active" imageBackgroundStyle="Stretched" imageBackgroundStretchMargins="3, 3, 3, 3">
               <resources>
                 <name>Selected</name>
               </resources>
@@ -379,7 +384,7 @@
         </style>
         <style role="GridRowSelectorHeader">
           <states>
-            <state name="Normal" backColor="WhiteSmoke" backGradientStyle="None" />
+            <state name="Normal" backColor="250, 250, 250" backGradientStyle="None" backHatchStyle="None" />
           </states>
         </style>
         <style role="GroupPaneTabItemAreaHorizontalBottom">
@@ -1396,7 +1401,7 @@
     <resource name="CabBlue_Active" backColor="2, 65, 91" foreColor="White" imageBackgroundStyle="Stretched" foreColorDisabled="128, 160, 173" fontBold="True" backGradientStyle="None" backHatchStyle="None" />
     <resource name="CabBlue_HotTracked" backColor="34, 89, 112" foreColor="White" imageBackgroundStyle="Stretched" foreColorDisabled="160, 184, 193" fontBold="True" backGradientStyle="None" backHatchStyle="None" />
     <resource name="CabBlue_Normal" backColor="2, 65, 91" foreColor="White" imageBackgroundStyle="Stretched" foreColorDisabled="128, 160, 173" fontBold="True" backGradientStyle="None" backHatchStyle="None" />
-    <resource name="Selected" backColor="255, 194, 128" borderColor="Transparent" fontBold="True" backGradientStyle="None" backHatchStyle="None" />
+    <resource name="Selected" backColor="255, 194, 128" borderColor="Transparent" backGradientStyle="None" backHatchStyle="None" />
     <resource name="SelectedHover" backColor="255, 240, 223" foreColor="53, 53, 53" backGradientStyle="None" backHatchStyle="None" />
     <resource name="TabHorizontalTop_HotTracked" backColor="204, 217, 222" foreColor="2, 65, 91" borderColor="Transparent" imageBackgroundStyle="Stretched" imageBackgroundAlpha="UseAlphaLevel" backGradientStyle="None" borderColor3DBase="Transparent" themedElementAlpha="UseAlphaLevel" backHatchStyle="None" imageBackgroundStretchMargins="10, 6, 10, 3" borderColor2="Transparent" />
     <resource name="TabHorizontalTop_Normal" backColor="Transparent" foreColor="2, 65, 91" borderColor="Transparent" imageBackgroundStyle="Stretched" borderAlpha="UseAlphaLevel" backGradientStyle="None" borderColor3DBase="Transparent" backHatchStyle="None" imageBackgroundStretchMargins="10, 6, 10, 3" borderColor2="Transparent" />
