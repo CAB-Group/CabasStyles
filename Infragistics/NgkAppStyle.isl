@@ -5,7 +5,7 @@
     <copyright>CAB AB</copyright>
     <description>A Style Library with Windows 8-like style. introduced for Cabas Finland 2013. It's aimed to harmonized the visual interface of both Cabas and Cab Plan.</description>
     <version>0.1</version>
-    <lastModified>2013-08-20T11:29:08</lastModified>
+    <lastModified>2013-08-20T11:39:20</lastModified>
   </annotation>
   <styleSets defaultStyleSet="Default">
     <styleSet name="Default" useOsThemes="False" useFlatMode="True">
@@ -188,12 +188,12 @@
           <states>
             <state name="Normal" fontBold="True">
               <resources>
-                <name>CabBlue_Normal</name>
+                <name>CabBlue_HotTracked</name>
               </resources>
             </state>
             <state name="HotTracked">
               <resources>
-                <name>CabBlue_HotTracked</name>
+                <name>CabBlue_Normal</name>
               </resources>
             </state>
             <state name="Active">
@@ -207,7 +207,7 @@
           <states>
             <state name="Normal">
               <resources>
-                <name>CabBlue_Normal</name>
+                <name>CabBlue_HotTracked</name>
               </resources>
             </state>
           </states>
@@ -346,7 +346,7 @@
           <states>
             <state name="Normal">
               <resources>
-                <name>CabBlue_Normal</name>
+                <name>CabBlue_HotTracked</name>
               </resources>
             </state>
           </states>
@@ -468,7 +468,7 @@
           <states>
             <state name="Normal">
               <resources>
-                <name>CabBlue_Normal</name>
+                <name>CabBlue_HotTracked</name>
               </resources>
             </state>
           </states>
@@ -557,7 +557,7 @@
           <states>
             <state name="Normal" fontBold="True">
               <resources>
-                <name>CabBlue_Normal</name>
+                <name>CabBlue_HotTracked</name>
               </resources>
             </state>
           </states>
@@ -571,7 +571,7 @@
           <states>
             <state name="Normal" borderColor="Transparent" imageBackgroundStyle="Stretched" imageBackgroundStretchMargins="3, 3, 5, 3">
               <resources>
-                <name>CabBlue_Normal</name>
+                <name>CabBlue_HotTracked</name>
               </resources>
             </state>
           </states>
@@ -772,7 +772,7 @@
           <states>
             <state name="Normal">
               <resources>
-                <name>CabBlue_Normal</name>
+                <name>CabBlue_HotTracked</name>
               </resources>
             </state>
           </states>
@@ -964,7 +964,7 @@
           <states>
             <state name="Normal" textHAlign="Left" imageBackgroundStyle="Stretched" textTrimming="EllipsisCharacter">
               <resources>
-                <name>CabBlue_Normal</name>
+                <name>CabBlue_HotTracked</name>
               </resources>
             </state>
           </states>
@@ -1399,8 +1399,8 @@
     <resource name="ButtonDefault_Normal" backColor="37, 91, 113" foreColor="White" foreColorDisabled="188, 204, 210" backColorDisabled="121, 152, 165" backGradientStyle="None" backHatchStyle="None" />
     <resource name="CabBlue" backColor="2, 65, 91" foreColor="White" foreColorDisabled="128, 160, 173" backGradientStyle="None" backHatchStyle="None" />
     <resource name="CabBlue_Active" backColor="2, 65, 91" foreColor="White" imageBackgroundStyle="Stretched" foreColorDisabled="128, 160, 173" fontBold="True" backGradientStyle="None" backHatchStyle="None" />
-    <resource name="CabBlue_HotTracked" backColor="34, 89, 112" foreColor="White" imageBackgroundStyle="Stretched" foreColorDisabled="160, 184, 193" fontBold="True" backGradientStyle="None" backHatchStyle="None" />
-    <resource name="CabBlue_Normal" backColor="2, 65, 91" foreColor="White" imageBackgroundStyle="Stretched" foreColorDisabled="128, 160, 173" fontBold="True" backGradientStyle="None" backHatchStyle="None" />
+    <resource name="CabBlue_HotTracked" backColor="2, 65, 91" foreColor="White" imageBackgroundStyle="Stretched" foreColorDisabled="128, 160, 173" fontBold="True" backGradientStyle="None" backHatchStyle="None" />
+    <resource name="CabBlue_Normal" backColor="34, 89, 112" foreColor="White" imageBackgroundStyle="Stretched" foreColorDisabled="160, 184, 193" fontBold="True" backGradientStyle="None" backHatchStyle="None" />
     <resource name="Selected" backColor="255, 194, 128" borderColor="Transparent" backGradientStyle="None" backHatchStyle="None" />
     <resource name="SelectedHover" backColor="255, 240, 223" foreColor="53, 53, 53" backGradientStyle="None" backHatchStyle="None" />
     <resource name="TabHorizontalTop_HotTracked" backColor="204, 217, 222" foreColor="2, 65, 91" borderColor="Transparent" imageBackgroundStyle="Stretched" imageBackgroundAlpha="UseAlphaLevel" backGradientStyle="None" borderColor3DBase="Transparent" themedElementAlpha="UseAlphaLevel" backHatchStyle="None" imageBackgroundStretchMargins="10, 6, 10, 3" borderColor2="Transparent" />
