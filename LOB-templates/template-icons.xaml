@@ -2,11 +2,11 @@ Fill="{StaticResource IconFillColorLight}"
 Background="{StaticResource IconBackgroundDark}"
 
     <Viewbox x:Key="xxx" x:Shared="False">
-        <Grid    
-          x:Name="xxx"
-          Background="{StaticResource IconBackgroundDark}"
-          Height="112"
-          Width="112">
+        <Grid
+            x:Name="xxx"
+            Background="{StaticResource IconBackgroundDark}"
+            Height="112"
+            Width="112">
 
         </Grid>
     </Viewbox>
