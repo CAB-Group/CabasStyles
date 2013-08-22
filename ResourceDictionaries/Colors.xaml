@@ -276,6 +276,8 @@
     
     <!-- ROW -->
 
+    <SolidColorBrush x:Key="RowBorder" Color="{StaticResource ColorCabGray2}"/>
+
     <!--Hover-->
     <SolidColorBrush x:Key="RowBackgroundHover" Color="{StaticResource ColorCabOrange7}"/>
     <SolidColorBrush x:Key="RowTextHover" Color="{StaticResource ColorCabBlack2}"/>
@@ -408,7 +410,7 @@
     <!--GRID VIEW COLUMN HEADER-->
     
     <!--Normal -->
-    <SolidColorBrush x:Key="GridViewColumnHeaderBorder" Color="Transparent"/>
+    <SolidColorBrush x:Key="GridViewColumnHeaderBorder" Color="{StaticResource ColorCabGray}"/>
     <SolidColorBrush x:Key="GridViewColumnHeaderBackground" Color="WhiteSmoke"/>
     <SolidColorBrush x:Key="GridViewColumnHeaderText" Color="{StaticResource ColorCabBlue}"/>
     

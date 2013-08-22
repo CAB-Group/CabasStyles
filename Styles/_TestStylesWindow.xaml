@@ -227,7 +227,14 @@
                     </GridView>
                 </ListView.View>
             </ListView>
-            
+
+            <DataGrid RowHeaderWidth="0" ItemsSource="{StaticResource ListOfStrings}" AutoGenerateColumns="False" CanUserResizeColumns="True">
+                <DataGrid.Columns>
+                    <DataGridTextColumn ElementStyle="{StaticResource ElementTextStyle}"  Width="*" x:Uid="Text" Header="Text" Binding="{Binding Length}" />
+                    <DataGridTextColumn ElementStyle="{StaticResource ElementTextStyle}" Width="Auto" x:Uid="SparepartNumber" Header="SparepartNumber" Binding="{Binding}" />
+                </DataGrid.Columns>
+            </DataGrid>
+
             <TabControl TabStripPlacement="Left" ItemContainerStyle="{StaticResource VerticalTabItem}">
                 <TabItem Header="Selected Vertical item 1" IsSelected="False"/>
                 <TabItem Header="Normal Vertical item 2"/>

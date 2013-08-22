@@ -9,13 +9,16 @@
     <Style TargetType="{x:Type DataGrid}" BasedOn="{StaticResource {x:Type DataGrid}}">
         <Setter Property="Margin" Value="2"/>   
         <Setter Property="Background" Value="White"/>
+        <Setter Property="HorizontalGridLinesBrush" Value="{StaticResource RowBorder}"/>
+        <Setter Property="VerticalGridLinesBrush" Value="{StaticResource RowBorder}"/>
+        <Setter Property="CellStyle" Value="{DynamicResource DataGridCellStyle}"></Setter>
     </Style>
 
     <Style x:Key="DataGridCellStyle" TargetType="{x:Type DataGridCell}">
         <Setter Property="Background" Value="Transparent"/>
         <Setter Property="HorizontalContentAlignment" Value="{Binding HorizontalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"/>
         <Setter Property="VerticalContentAlignment" Value="{Binding VerticalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"/>
-        <Setter Property="Padding" Value="2,0,0,0"/>
+        <Setter Property="Padding" Value="2,0"/>
         <Setter Property="Foreground" Value="{StaticResource Text}" />
         <Setter Property="BorderBrush" Value="Transparent" />
         <Setter Property="BorderThickness" Value="0" />
@@ -33,4 +36,14 @@
             </Trigger>
         </Style.Triggers>
     </Style>
+
+    <Style x:Key="ElementTextStyle" TargetType="{x:Type TextBlock}">
+        <Setter Property="Margin" Value="7,1"/>
+    </Style>
+
+    <Style x:Key="ElementCheckboxStyle" TargetType="{x:Type CheckBox}">
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+    </Style>
+
 </ResourceDictionary>
