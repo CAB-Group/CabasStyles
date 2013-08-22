@@ -7,8 +7,8 @@
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <!--Toggla dessa beroende på miljö. *LOB använder Lars Olof.-->
-                <!--<ResourceDictionary Source="..\ResourceDictionaries\ResourcesLOB.xaml"/>-->
-                <ResourceDictionary Source="..\ResourceDictionaries\Resources.xaml"/>
+                <ResourceDictionary Source="..\ResourceDictionaries\ResourcesLOB.xaml"/>
+                <!--<ResourceDictionary Source="..\ResourceDictionaries\Resources.xaml"/>-->
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Window.Resources>
@@ -108,10 +108,6 @@
             <ToolBar Height="40" Background="#02415b">
                 <Button Content="{StaticResource Share}" ToolTip="Share"/>
                 <Button Content="{StaticResource Tools}" ToolTip="Tools"/>
-                <Button Content="{StaticResource Mail}" ToolTip="Mail"/>
-                <Button Background="{StaticResource IconFillColorLight}" Content="{StaticResource MailInverted}" ToolTip="MailInverted"/>
-                <Button Content="{StaticResource MailOpen}" ToolTip="MailOpen"/>
-                <Button Background="{StaticResource IconFillColorLight}" Content="{StaticResource MailOpenInverted}" ToolTip="MailOpenInverted"/>
                 <Button Content="{StaticResource MessageToInsuranceCompany}" ToolTip="MessageToInsuranceCompany"/>
                 <Button Content="{StaticResource MessageToWorkshop}" ToolTip="MessageToWorkshop"/>
                 <Button Content="{StaticResource MessageUpdate}" ToolTip="MessageUpdate"/>
