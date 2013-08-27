@@ -310,6 +310,10 @@
     <SolidColorBrush x:Key="ButtonBorderHover" Color="{StaticResource ColorCabBlack4}"/>
     <SolidColorBrush x:Key="ButtonBackgroundHover" Color="{StaticResource ColorCabBlack7}"/>
 
+    <!-- Focus:hover -->
+    <SolidColorBrush x:Key="ButtonBorderFocusHover" Color="{StaticResource ColorCabBlack5}"/>
+    <SolidColorBrush x:Key="ButtonBackgroundFocusHover" Opacity="0.85" Color="{StaticResource ColorCabBlack7}"/>
+
     <!-- Active -->
     <SolidColorBrush x:Key="ButtonBorderActive" Color="{StaticResource ColorCabBlack4}"/>
     <SolidColorBrush x:Key="ButtonBackgroundActive" Color="{StaticResource ColorCabBlack7}"/>
@@ -328,11 +332,15 @@
     <SolidColorBrush x:Key="ButtonBorderPrimaryHover" Color="{StaticResource ColorCabBlack}"/>
     <SolidColorBrush x:Key="ButtonBackgroundPrimaryHover" Color="{StaticResource ColorCabBlue}"/>
 
+    <!-- Button default, focus:hover -->
+    <SolidColorBrush x:Key="ButtonBorderPrimaryFocusHover" Color="{StaticResource ColorCabBlack2}"/>
+    <SolidColorBrush x:Key="ButtonBackgroundPrimaryFocusHover" Opacity="0.85" Color="{StaticResource ColorCabBlue}"/>
+
     <!-- Button default, active -->
     <SolidColorBrush x:Key="ButtonBorderPrimaryActive" Color="{StaticResource ColorCabBlack}"/>
     <SolidColorBrush x:Key="ButtonBackgroundPrimaryActive" Color="{StaticResource ColorCabBlue}"/>
 
-    <!-- Button default, disadled -->
+    <!-- Button default, disabled -->
     <SolidColorBrush x:Key="ButtonBorderPrimaryDisabled" Color="Transparent"/>
     <SolidColorBrush x:Key="ButtonBackgroundPrimaryDisabled" Opacity="0.5" Color="#FFFFFFFF"/>
 

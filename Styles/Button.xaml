@@ -74,6 +74,17 @@
                     <Setter Property="BorderBrush" Value="{StaticResource ButtonBorderActive}"/>
                 </MultiTrigger.Setters>
             </MultiTrigger>
+            <MultiTrigger>
+                <MultiTrigger.Conditions>
+                    <Condition Property="IsEnabled" Value="True"/>
+                    <Condition Property="IsFocused" Value="True"/>
+                    <Condition Property="IsMouseOver" Value="True"/>
+                </MultiTrigger.Conditions>
+                <MultiTrigger.Setters>
+                    <Setter Property="Background" Value="{StaticResource ButtonBackgroundFocusHover}"/>
+                    <Setter Property="BorderBrush" Value="{StaticResource ButtonBorderFocusHover}"/>
+                </MultiTrigger.Setters>
+            </MultiTrigger>
             <Trigger Property="IsEnabled" Value="False">
                 <Setter Property="Background" Value="{StaticResource ButtonBackgroundDisabled}"/>
                 <Setter Property="Foreground" Value="{StaticResource ButtonTextDisabled}"/>
@@ -125,6 +136,18 @@
                 <MultiTrigger.Setters>
                     <Setter Property="Background" Value="{StaticResource ButtonBackgroundPrimaryActive}"/>
                     <Setter Property="BorderBrush" Value="{StaticResource ButtonBorderPrimaryActive}"/>
+                </MultiTrigger.Setters>
+            </MultiTrigger>
+            <MultiTrigger>
+                <MultiTrigger.Conditions>
+                    <Condition Property="IsDefault" Value="True"/>
+                    <Condition Property="IsEnabled" Value="True"/>
+                    <Condition Property="IsFocused" Value="True"/>
+                    <Condition Property="IsMouseOver" Value="True"/>
+                </MultiTrigger.Conditions>
+                <MultiTrigger.Setters>
+                    <Setter Property="Background" Value="{StaticResource ButtonBackgroundPrimaryFocusHover}"/>
+                    <Setter Property="BorderBrush" Value="{StaticResource ButtonBorderPrimaryFocusHover}"/>
                 </MultiTrigger.Setters>
             </MultiTrigger>
         </Style.Triggers>

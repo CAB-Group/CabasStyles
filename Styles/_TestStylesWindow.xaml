@@ -79,14 +79,9 @@
                 <Button Content="{StaticResource CompareAdded}" ToolTip="CompareAdded"/>
                 <Button Content="{StaticResource CompareChanged}" ToolTip="CompareChanged"/>
                 <Button Content="{StaticResource CompareDeleted}" ToolTip="CompareDeleted"/>
-                <Button Content="{StaticResource EstimateDownload}" ToolTip="EstimateDownload"/>
-                <Button Content="{StaticResource EstimateDownload2}" ToolTip="EstimateDownload2"/>
                 <Button Content="{StaticResource EstimateDuplicate}" ToolTip="EstimateDuplicate"/>
                 <Button Content="{StaticResource EstimateHistory}" ToolTip="EstimateHistory"/>
                 <Button Content="{StaticResource EstimateReady}" ToolTip="EstimateReady"/>
-                <Button Content="{StaticResource EstimateReply}" ToolTip="EstimateReply"/>
-                <Button Content="{StaticResource EstimateReply2}" ToolTip="EstimateReply2"/>
-                <Button Content="{StaticResource EstimateSend}" ToolTip="EstimateSend"/>
                 <Button Content="{StaticResource EuroDone}" ToolTip="EuroDone"/>
                 <Button Content="{StaticResource Flag}" ToolTip="Flag"/>
                 <Button Content="{StaticResource FlagChecked}" ToolTip="Flag"/>
