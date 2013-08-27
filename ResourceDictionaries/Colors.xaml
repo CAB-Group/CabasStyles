@@ -169,7 +169,7 @@
     <!-- TABS STANDARD -->
 
     <!-- Tab, border bottom line -->
-    <SolidColorBrush x:Key="TabHeaderBorderLine" Opacity="0.85" Color="{StaticResource ColorCabBlue}"/>
+    <SolidColorBrush x:Key="TabHeaderBorderLine" Opacity="1" Color="{StaticResource ColorCabBlue}"/>
 
 
     <!-- Normal -->
@@ -184,7 +184,7 @@
 
     <!-- Selected -->
     <SolidColorBrush x:Key="TabBorderSelected" Color="Transparent"/>
-    <SolidColorBrush x:Key="TabBackgroundSelected" Opacity="0.85" Color="{StaticResource ColorCabBlue}"/>
+    <SolidColorBrush x:Key="TabBackgroundSelected" Opacity="1" Color="{StaticResource ColorCabBlue}"/>
     <SolidColorBrush x:Key="TabTextSelected" Color="#FFFFFFFF"/>
 
     <!-- Disabled -->
