@@ -5,7 +5,7 @@
     <copyright>CAB AB</copyright>
     <description>A Style Library with Windows 8-like style. introduced for Cabas Finland 2013. It's aimed to harmonized the visual interface of both Cabas and Cab Plan.</description>
     <version>0.1</version>
-    <lastModified>2013-08-27T09:39:25</lastModified>
+    <lastModified>2013-08-27T13:13:26</lastModified>
   </annotation>
   <styleSets defaultStyleSet="Default">
     <styleSet name="Default" useOsThemes="False" useFlatMode="True">
@@ -649,7 +649,7 @@
         </style>
         <style role="TabClientArea">
           <states>
-            <state name="Normal" backColor="White" borderColor="217, 217, 217" backGradientStyle="None" backHatchStyle="None" borderColor2="217, 217, 217">
+            <state name="Normal">
               <resources>
                 <name>BgAreaPanelSecondary</name>
               </resources>
@@ -707,7 +707,7 @@
         </style>
         <style role="TabItemArea">
           <states>
-            <state name="Normal" backColor="White" borderColor="Transparent" backGradientStyle="None" borderColor3DBase="Transparent" backHatchStyle="None" borderColor2="Transparent" />
+            <state name="Normal" borderColor="Transparent" borderColor3DBase="Transparent" borderColor2="Transparent" />
           </states>
         </style>
         <style role="TabItemVertical">
@@ -1261,17 +1261,17 @@
       <styles>
         <style role="Base">
           <states>
-            <state name="Normal" themedElementAlpha="Transparent" />
+            <state name="Normal" backColor="Transparent" backGradientStyle="None" themedElementAlpha="Transparent" backHatchStyle="None" />
           </states>
         </style>
         <style role="TabClientArea">
           <states>
-            <state name="Normal" backColor="223, 231, 235" borderColor="Transparent" backGradientStyle="None" backHatchStyle="None" />
+            <state name="Normal" backColor="White" borderColor="160, 184, 193" backGradientStyle="None" backHatchStyle="None" borderColor2="160, 184, 193" />
           </states>
         </style>
         <style role="TabItem">
           <states>
-            <state name="Normal">
+            <state name="Normal" foreColor="White">
               <resources>
                 <name>TabHorizontalTop_Normal</name>
               </resources>
@@ -1402,7 +1402,7 @@
     <resource name="_BgAreaEdit" backColor="White" borderColor="210, 210, 210" backGradientStyle="None" backHatchStyle="None" />
     <resource name="BgAreaHeader" backColor="192, 207, 214" foreColor="2, 65, 91" imageBackgroundStyle="Stretched" foreColorDisabled="97, 136, 152" backGradientStyle="None" backHatchStyle="None" imageBackgroundStretchMargins="0, 4, 0, 4" />
     <resource name="BgAreaInner" backColor="White" foreColor="White" imageBackgroundStyle="Stretched" backGradientStyle="None" backHatchStyle="None" imageBackgroundStretchMargins="3, 0, 3, 0" />
-    <resource name="BgAreaPanelSecondary" backColor="Transparent" borderColor="57, 121, 186" backGradientStyle="None" backHatchStyle="None" imageBackgroundStretchMargins="3, 0, 3, 0" />
+    <resource name="BgAreaPanelSecondary" backColor="White" borderColor="192, 207, 214" backGradientStyle="None" backHatchStyle="None" imageBackgroundStretchMargins="3, 0, 3, 0" />
     <resource name="BgHeaderTreeview_Normal" foreColor="Black" imageBackgroundStyle="Stretched" fontBold="False">
       <imageBackground>AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJhd2luZy5CaXRtYXABAAAABERhdGEHAgIAAAAJAwAAAA8DAAAA+wAAAAKJUE5HDQoaCgAAAA1JSERSAAAACQAAABMIBgAAAELcJ+0AAAABc1JHQgCuzhzpAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsMAAALDAE/QCLIAAAAZElEQVQoU43RSQ6AIBBE0br/LZ3iiAOoCJiUnMBi8XaVdPIb1eKpoDGeCrr1oYJhD1Qw20gF6xmpwN6JCpx/qZSdm45ApaxTnbMraPNSQb8FKhhzdqXsLcZFKtivRAU2Z//38gNacY5Y3jya1QAAAABJRU5ErkJgggsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</imageBackground>
     </resource>
