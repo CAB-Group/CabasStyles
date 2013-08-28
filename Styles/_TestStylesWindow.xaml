@@ -61,8 +61,8 @@
                 <Button Content="{StaticResource DocumentAddInverted}" ToolTip="DocumentAddInverted"/>
                 <Button Content="{StaticResource DocumentDelete}" ToolTip="DocumentDelete"/>
                 <Button Content="{StaticResource DocumentDeleteInverted}" ToolTip="DocumentDeleteInverted"/>
-                <Button Content="{StaticResource DocumentSaveAs}" ToolTip="DocumentSaveAs"/>
-                <Button Content="{StaticResource DocumentSaveAsInverted}" ToolTip="DocumentSaveAsInverted"/>
+                <Button Content="{StaticResource Save}" ToolTip="Save"/>
+                <Button Content="{StaticResource SaveInverted}" ToolTip="SaveInverted"/>
                 <Button Content="{StaticResource DocumentOpen}" ToolTip="DocumentOpen"/>
                 <Button Content="{StaticResource DocumentOpenInverted}" ToolTip="DocumentOpenInverted"/>
                 <Button Content="{StaticResource DocumentRename}" ToolTip="DocumentRename"/>
