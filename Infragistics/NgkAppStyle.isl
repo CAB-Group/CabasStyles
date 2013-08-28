@@ -5,7 +5,7 @@
     <copyright>CAB AB</copyright>
     <description>A Style Library with Windows 8-like style. introduced for Cabas Finland 2013. It's aimed to harmonized the visual interface of both Cabas and Cab Plan.</description>
     <version>0.1</version>
-    <lastModified>2013-08-27T14:37:56</lastModified>
+    <lastModified>2013-08-28T06:37:00</lastModified>
   </annotation>
   <styleSets defaultStyleSet="Default">
     <styleSet name="Default" useOsThemes="False" useFlatMode="True">
@@ -1415,9 +1415,9 @@
     <resource name="ColumnHeader_Normal" backColor="250, 250, 250" foreColor="2, 65, 91" borderColor="244, 244, 244" fontBold="True" backGradientStyle="None" backHatchStyle="None" />
     <resource name="Selected" backColor="255, 194, 128" borderColor="Transparent" backGradientStyle="None" backHatchStyle="None" />
     <resource name="SelectedHover" backColor="255, 240, 223" foreColor="53, 53, 53" backGradientStyle="None" backHatchStyle="None" />
-    <resource name="TabHorizontalTop_HotTracked" backColor="204, 217, 222" foreColor="2, 65, 91" borderColor="Transparent" imageBackgroundStyle="Stretched" imageBackgroundAlpha="UseAlphaLevel" backGradientStyle="None" borderColor3DBase="Transparent" themedElementAlpha="UseAlphaLevel" backHatchStyle="None" imageBackgroundStretchMargins="10, 6, 10, 3" borderColor2="Transparent" />
-    <resource name="TabHorizontalTop_Normal" backColor="Transparent" foreColor="2, 65, 91" borderColor="Transparent" imageBackgroundStyle="Stretched" borderAlpha="UseAlphaLevel" backGradientStyle="None" borderColor3DBase="Transparent" backHatchStyle="None" imageBackgroundStretchMargins="10, 6, 10, 3" borderColor2="Transparent" />
-    <resource name="TabHorizontalTop_Selected" backColor="2, 65, 91" foreColor="White" borderColor="Transparent" imageBackgroundStyle="Stretched" imageBackgroundAlpha="UseAlphaLevel" borderAlpha="UseAlphaLevel" foreColorDisabled="192, 207, 214" backColorDisabled="128, 160, 173" backGradientStyle="None" borderColor3DBase="Transparent" themedElementAlpha="UseAlphaLevel" backHatchStyle="None" imageBackgroundStretchMargins="10, 6, 10, 3" borderColor2="Transparent" />
+    <resource name="TabHorizontalTop_HotTracked" backColor="204, 217, 222" foreColor="2, 65, 91" borderColor="Transparent" imageBackgroundStyle="Stretched" imageBackgroundAlpha="UseAlphaLevel" fontSize="11" backGradientStyle="None" borderColor3DBase="Transparent" themedElementAlpha="UseAlphaLevel" backHatchStyle="None" imageBackgroundStretchMargins="10, 6, 10, 3" borderColor2="Transparent" />
+    <resource name="TabHorizontalTop_Normal" backColor="Transparent" foreColor="2, 65, 91" borderColor="Transparent" imageBackgroundStyle="Stretched" borderAlpha="UseAlphaLevel" fontSize="11" backGradientStyle="None" borderColor3DBase="Transparent" backHatchStyle="None" imageBackgroundStretchMargins="10, 6, 10, 3" borderColor2="Transparent" />
+    <resource name="TabHorizontalTop_Selected" backColor="2, 65, 91" foreColor="White" borderColor="Transparent" imageBackgroundStyle="Stretched" imageBackgroundAlpha="UseAlphaLevel" borderAlpha="UseAlphaLevel" foreColorDisabled="192, 207, 214" backColorDisabled="128, 160, 173" fontSize="11" backGradientStyle="None" borderColor3DBase="Transparent" themedElementAlpha="UseAlphaLevel" backHatchStyle="None" imageBackgroundStretchMargins="10, 6, 10, 3" borderColor2="Transparent" />
     <resource name="TabHorizontalTopPrimary_Selected" backColor="2, 65, 91" foreColor="White" borderColor="Transparent" imageBackgroundStyle="Stretched" imageBackgroundAlpha="UseAlphaLevel" borderAlpha="UseAlphaLevel" foreColorDisabled="192, 207, 214" backColorDisabled="Transparent" backGradientStyle="None" borderColor3DBase="Transparent" themedElementAlpha="UseAlphaLevel" backHatchStyle="None" imageBackgroundStretchMargins="10, 6, 10, 3" borderColor2="Transparent" />
     <resource name="ToolbarBg" backColor="2, 65, 91" foreColor="White" imageBackgroundStyle="Stretched" foreColorDisabled="128, 160, 173" backGradientStyle="None" backHatchStyle="None" imageBackgroundStretchMargins="0, 3, 0, 3" />
     <resource name="ToolbarItemBg_HotTracked" backColor="65, 113, 132" foreColor="White" borderColor="Transparent" backGradientStyle="None" backHatchStyle="None" />
