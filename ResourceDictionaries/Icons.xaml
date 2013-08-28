@@ -665,7 +665,7 @@
                 Stretch="Fill"
                 Opacity="1"
                 Data="M 25,56.5 C25,56.5 42.04567337036133,37 57,37 71.95433044433594,37 89,56.5 89,56.5 89,56.5 71.95433044433594,76 57,76 42.04567337036133,76 25,56.5 25,56.5 z"
-                Fill="#ffffff" />
+                Fill="{StaticResource IconFillColorLight}" />
             <Path
                 Margin="41,40,0,0"
                 HorizontalAlignment="Left"
@@ -675,7 +675,7 @@
                 Stretch="Fill"
                 Opacity="1"
                 Data="M 41,56 C41,47.163330078125 48.16343307495117,40 57,40 65.83656311035156,40 73,47.163330078125 73,56 73,64.836669921875 65.83656311035156,72 57,72 48.16343307495117,72 41,64.836669921875 41,56 z"
-                Fill="#02415b" />
+                Fill="{StaticResource IconFillColorDark}" />
             <Path
                 Margin="47,46,0,0"
                 HorizontalAlignment="Left"
