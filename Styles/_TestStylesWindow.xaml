@@ -7,8 +7,8 @@
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <!--Toggla dessa beroende på miljö. *LOB använder Lars Olof.-->
-                <!--<ResourceDictionary Source="..\ResourceDictionaries\ResourcesLOB.xaml"/>-->
-                <ResourceDictionary Source="..\ResourceDictionaries\Resources.xaml"/>
+                <ResourceDictionary Source="..\ResourceDictionaries\ResourcesLOB.xaml"/>
+                <!--<ResourceDictionary Source="..\ResourceDictionaries\Resources.xaml"/>-->
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Window.Resources>
@@ -61,8 +61,8 @@
                 <Button Content="{StaticResource DocumentAddInverted}" ToolTip="DocumentAddInverted"/>
                 <Button Content="{StaticResource DocumentDelete}" ToolTip="DocumentDelete"/>
                 <Button Content="{StaticResource DocumentDeleteInverted}" ToolTip="DocumentDeleteInverted"/>
-                <Button Content="{StaticResource DocumentDownload}" ToolTip="DocumentDownload"/>
-                <Button Content="{StaticResource DocumentDownloadInverted}" ToolTip="DocumentDownloadInverted"/>
+                <Button Content="{StaticResource DocumentSaveAs}" ToolTip="DocumentSaveAs"/>
+                <Button Content="{StaticResource DocumentSaveAsInverted}" ToolTip="DocumentSaveAsInverted"/>
                 <Button Content="{StaticResource DocumentOpen}" ToolTip="DocumentOpen"/>
                 <Button Content="{StaticResource DocumentOpenInverted}" ToolTip="DocumentOpenInverted"/>
                 <Button Content="{StaticResource DocumentRename}" ToolTip="DocumentRename"/>
