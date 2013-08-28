@@ -7,8 +7,8 @@
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <!--Toggla dessa beroende på miljö. *LOB använder Lars Olof.-->
-                <ResourceDictionary Source="..\ResourceDictionaries\ResourcesLOB.xaml"/>
-                <!--<ResourceDictionary Source="..\ResourceDictionaries\Resources.xaml"/>-->
+                <!--<ResourceDictionary Source="..\ResourceDictionaries\ResourcesLOB.xaml"/>-->
+                <ResourceDictionary Source="..\ResourceDictionaries\Resources.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Window.Resources>
@@ -81,7 +81,7 @@
                 <Button Content="{StaticResource CompareDeleted}" ToolTip="CompareDeleted"/>
                 <Button Content="{StaticResource EstimateDuplicate}" ToolTip="EstimateDuplicate"/>
                 <Button Content="{StaticResource EstimateHistory}" ToolTip="EstimateHistory"/>
-                <Button Content="{StaticResource EstimateReady}" ToolTip="EstimateReady"/>
+                <Button Content="{StaticResource EstimateReady}" ToolTip="EstimateReady"/>                
                 <Button Content="{StaticResource EuroDone}" ToolTip="EuroDone"/>
                 <Button Content="{StaticResource Flag}" ToolTip="Flag"/>
                 <Button Content="{StaticResource FlagChecked}" ToolTip="Flag"/>
