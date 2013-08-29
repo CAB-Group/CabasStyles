@@ -392,6 +392,9 @@
     <SolidColorBrush x:Key="ComboBoxBackgroundDisabled" Color="{StaticResource ColorCabGray5}"/>
 
 
+    <!-- GRIDSPLITTER CONTROL -->
+    <SolidColorBrush x:Key="GridSplitterBackground" Color="{StaticResource ColorCabGray2}"/>
+    <SolidColorBrush x:Key="GridSplitterGripDark" Color="{StaticResource ColorCabBlack7}"/>
 
     <!-- GROUPBOX CONTROL -->
     

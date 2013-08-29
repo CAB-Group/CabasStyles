@@ -44,6 +44,9 @@
         <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
         <Setter Property="Template" Value="{DynamicResource DatePickerTemplate}"/>
         <Setter Property="ToolTip" Value="{Binding RelativeSource={RelativeSource Self}, Path=(Validation.Errors).CurrentItem.ErrorContent}"/>
+        <Setter Property="HorizontalAlignment" Value="Left"/>
+        <Setter Property="MinWidth" Value="100"/>
+        
     </Style>
 
 </ResourceDictionary>

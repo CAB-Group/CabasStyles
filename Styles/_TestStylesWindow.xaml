@@ -7,8 +7,8 @@
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <!--Toggla dessa beroende på miljö. *LOB använder Lars Olof.-->
-                <ResourceDictionary Source="..\ResourceDictionaries\ResourcesLOB.xaml"/>
-                <!--<ResourceDictionary Source="..\ResourceDictionaries\Resources.xaml"/>-->
+                <!--<ResourceDictionary Source="..\ResourceDictionaries\ResourcesLOB.xaml"/>-->
+                <ResourceDictionary Source="..\ResourceDictionaries\Resources.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Window.Resources>
@@ -323,6 +323,17 @@
             <Border BorderThickness="1" BorderBrush="{StaticResource MessageBorderError}" Background="{StaticResource MessageBackgroundError}" Margin="0 5" Padding="10" VerticalAlignment="Top">
                 <TextBlock Foreground="{StaticResource MessageTextError}" Name="TextBlock4" Text="Detta visar att något är fel" VerticalAlignment="Top" FontFamily="Calibri" FontSize="13" />
             </Border>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <TextBox Grid.Row="0"/>
+                    
+                <GridSplitter Grid.Row="1" ResizeDirection="Rows" />
+                <TextBox Grid.Row="2"/>
+            </Grid>
         </StackPanel>
     </Grid>
 </Window>
