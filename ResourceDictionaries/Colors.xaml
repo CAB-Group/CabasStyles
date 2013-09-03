@@ -393,8 +393,19 @@
 
 
     <!-- GRIDSPLITTER CONTROL -->
-    <SolidColorBrush x:Key="GridSplitterBackground" Color="{StaticResource ColorCabGray2}"/>
-    <SolidColorBrush x:Key="GridSplitterGripDark" Color="{StaticResource ColorCabBlack7}"/>
+    <LinearGradientBrush x:Key="HorizontalToggleGradientColor" StartPoint="0,0" EndPoint="0,1">
+        <GradientStop Color="White" Offset="0" />
+        <GradientStop Color="{DynamicResource ColorCabGray2}" Offset="0.3" />
+        <GradientStop Color="{DynamicResource ColorCabBlack7}" Offset="1" />
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="VerticalToggleGradientColor" StartPoint="0,0" EndPoint="1,0">
+        <GradientStop Color="White" Offset="0" />
+        <GradientStop Color="{DynamicResource ColorCabGray2}" Offset="0.3" />
+        <GradientStop Color="{DynamicResource ColorCabBlack7}" Offset="1" />
+    </LinearGradientBrush>
+    <SolidColorBrush x:Key="GridSplitterBorderDark" Color="{StaticResource ColorCabBlack7}"/>
+    <SolidColorBrush x:Key="GridSplitterGripDark" Color="{StaticResource ColorCabBlack6}"/>
+    <SolidColorBrush x:Key="GridSplitterGripLight" Color="White"/>
 
     <!-- GROUPBOX CONTROL -->
     

@@ -7,8 +7,8 @@
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <!--Toggla dessa beroende på miljö. *LOB använder Lars Olof.-->
-                <!--<ResourceDictionary Source="..\ResourceDictionaries\ResourcesLOB.xaml"/>-->
-                <ResourceDictionary Source="..\ResourceDictionaries\Resources.xaml"/>
+                <ResourceDictionary Source="..\ResourceDictionaries\ResourcesLOB.xaml"/>
+                <!--<ResourceDictionary Source="..\ResourceDictionaries\Resources.xaml"/>-->
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Window.Resources>
@@ -330,9 +330,18 @@
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
                 <TextBox Grid.Row="0"/>
-                    
-                <GridSplitter Grid.Row="1" ResizeDirection="Rows" />
+                <GridSplitter Grid.Row="1" ResizeDirection="Rows" HorizontalAlignment="Stretch" />
                 <TextBox Grid.Row="2"/>
+            </Grid>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <TextBox Grid.Column="0" Height="200"/>
+                <GridSplitter Grid.Column="1" ResizeDirection="Columns" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" />
+                <TextBox Grid.Column="2"/>
             </Grid>
         </StackPanel>
     </Grid>
