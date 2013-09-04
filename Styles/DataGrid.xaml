@@ -39,6 +39,11 @@
 
     <Style x:Key="ElementTextStyle" TargetType="{x:Type TextBlock}">
         <Setter Property="Margin" Value="7,1"/>
+        <Style.Triggers>
+            <Trigger Property="Validation.HasError" Value="True">
+                <Setter Property="ToolTip" Value="{Binding RelativeSource={RelativeSource Self}, Path=(Validation.Errors).CurrentItem.ErrorContent}"/>
+            </Trigger>
+        </Style.Triggers>
     </Style>
 
     <Style x:Key="ElementCheckboxStyle" TargetType="{x:Type CheckBox}">

@@ -15,10 +15,11 @@
         <Setter Property="TextElement.Foreground" Value="{StaticResource Text}"/>
         <Setter Property="TextOptions.TextFormattingMode" Value="Ideal"/>
         <Setter Property="TextOptions.TextRenderingMode" Value="ClearType"/>
-        <Setter Property="Background" Value="{StaticResource PageBackground}"></Setter>
+        <Setter Property="Background" Value="{StaticResource PageBackground}" />
     </Style>
     
-    <Style TargetType="{x:Type UserControl}" BasedOn="{StaticResource PageBase}"/>
+    <!-- Dessa styles appliceras från koden för de typer som använder den. Se WindowView.cs/UserControlView.cs -->
     <Style TargetType="{x:Type Window}" BasedOn="{StaticResource PageBase}"/>
-    
+    <Style TargetType="{x:Type UserControl}" BasedOn="{StaticResource PageBase}"/>
+
 </ResourceDictionary>

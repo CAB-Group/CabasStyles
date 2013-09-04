@@ -153,6 +153,7 @@
         </Style.Triggers>
     </Style>
 
+    <SolidColorBrush Color="{StaticResource ColorInformation5}" x:Key="ToggleButtonIsCheckedBackground"></SolidColorBrush>
     <Style TargetType="{x:Type ToggleButton}" BasedOn="{StaticResource DefaultButtonStyle}">
         <Style.Triggers>
             <MultiTrigger>
@@ -164,6 +165,14 @@
                     <Setter Property="Background" Value="{StaticResource ButtonBackground}"/>
                 </MultiTrigger.Setters>
             </MultiTrigger>
+            <Trigger Property="IsChecked" Value="true">
+                <Setter Property="Background" Value="{StaticResource ToggleButtonIsCheckedBackground}"/>                
+            </Trigger>
+            <Trigger Property="IsEnabled" Value="False">
+                <Setter Property="Background" Value="{StaticResource ButtonBackgroundDisabled}"/>
+                <Setter Property="Foreground" Value="{StaticResource ButtonTextDisabled}"/>
+                <Setter Property="BorderBrush" Value="{StaticResource ButtonBorderDisabled}"/>
+            </Trigger>
         </Style.Triggers>
     </Style>
 
