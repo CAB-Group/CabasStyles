@@ -341,8 +341,8 @@
     <SolidColorBrush x:Key="ButtonBackgroundPrimaryActive" Color="{StaticResource ColorCabBlue}"/>
 
     <!-- Button default, disabled -->
-    <SolidColorBrush x:Key="ButtonBorderPrimaryDisabled" Color="Transparent"/>
-    <SolidColorBrush x:Key="ButtonBackgroundPrimaryDisabled" Opacity="0.5" Color="#FFFFFFFF"/>
+    <SolidColorBrush x:Key="ButtonBorderPrimaryDisabled" Opacity="0.9" Color="{StaticResource ColorCabBlue}"/>
+    <SolidColorBrush x:Key="ButtonBackgroundPrimaryDisabled" Opacity="0.5" Color="{StaticResource ColorCabBlue5}"/>
 
 
     <!--LINK BUTTON-->
