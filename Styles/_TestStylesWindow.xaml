@@ -89,6 +89,7 @@
                 <Button Content="{StaticResource MediaPaus}" ToolTip="MediaPaus"/>
                 <Button Content="{StaticResource MediaStart}" ToolTip="MediaStart"/>
                 <Button Content="{StaticResource MediaStop}" ToolTip="MediaStop"/>
+                <Button Content="{StaticResource MessageCalloutComplaint}" ToolTip="MessageCalloutComplaint"/>
                 <Button Content="{StaticResource Messages}" ToolTip="Messages"/>
                 <Button Content="{StaticResource Note}" ToolTip="Note"/>
                 <Button Content="{StaticResource Phone}" ToolTip="Phone"/>                

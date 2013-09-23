@@ -1439,6 +1439,53 @@
     </Viewbox>
     <!-- ^DEPRECATED^ Was "Messages" -->
 
+    <Viewbox x:Key="MessageCalloutComplaint" x:Shared="False">
+        <Grid
+          x:Name="MessageCalloutComplaint"
+          Background="{StaticResource IconBackgroundDark}"
+          Height="112"
+          Width="112">
+            <Path
+            Margin="19,25,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Height="64.6029052734375"
+            Width="74"
+            Stretch="Fill"
+            Opacity="1"
+            Data="M 93,25 C93,25 19,25 19,25 19,25 19,75 19,75 19,75 29,75 29,75 29,75 29,89.6029052734375 29,89.6029052734375 29,89.6029052734375 42.370025634765625,75 42.370025634765625,75 42.370025634765625,75 93,75 93,75 93,75 93,25 93,25 z"
+            Fill="{StaticResource IconFillColorLight}" />
+            <Grid
+                Width="10"
+                Height="38"
+                Opacity="1"
+                Margin="51,31,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top">
+                <Path
+                  Margin="0,30.400001525878906,0,0"
+                  HorizontalAlignment="Left"
+                  VerticalAlignment="Top"
+                  Height="7.599998474121094"
+                  Width="9.000003814697266"
+                  Stretch="Fill"
+                  Opacity="1"
+                  Data="M 0,30.400001525878906 C0,30.400001525878906 0,38 0,38 0,38 9.000003814697266,38 9.000003814697266,38 9.000003814697266,38 9.000003814697266,30.400001525878906 9.000003814697266,30.400001525878906 9.000003814697266,30.400001525878906 0,30.400001525878906 0,30.400001525878906 0,30.400001525878906 0,30.400001525878906 0,30.400001525878906 z"
+                  Fill="{StaticResource IconBackgroundDark}" />
+                <Path
+                  Margin="0,0,0,0"
+                  HorizontalAlignment="Left"
+                  VerticalAlignment="Top"
+                  Height="27.022228240966797"
+                  Width="10"
+                  Stretch="Fill"
+                  Opacity="1"
+                  Data="M 0,0 C0,0 10,0 10,0 10,0 7.000003814697266,27.022228240966797 7.000003814697266,27.022228240966797 7.000003814697266,27.022228240966797 2.0000038146972656,27.022228240966797 2.0000038146972656,27.022228240966797 2.0000038146972656,27.022228240966797 0,0 0,0 z"
+                  Fill="{StaticResource IconBackgroundDark}" />
+            </Grid>
+        </Grid>
+    </Viewbox>
+
     <Viewbox x:Key="MessageToInsuranceCompany" x:Shared="False">
         <Grid
             x:Name="MessageToIC"
