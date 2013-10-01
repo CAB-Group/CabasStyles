@@ -6,6 +6,7 @@
 
         <ResourceDictionary Source="..\Styles\Button.xaml"/>
 
+        <ResourceDictionary Source="..\Styles\CabSimpleDatePicker.xaml"/>
         <ResourceDictionary Source="..\Styles\CabDecimalUpDown.xaml"/>
         <ResourceDictionary Source="..\Styles\CabExpander.xaml"/>
         <ResourceDictionary Source="..\Styles\CheckBox.xaml"/>
@@ -26,6 +27,8 @@
         <ResourceDictionary Source="..\Styles\ListView.xaml"/>
         <ResourceDictionary Source="..\Styles\ListBox.xaml"/>
 
+        <ResourceDictionary Source="..\Styles\Menu.xaml"/>
+
         <ResourceDictionary Source="..\Styles\ProcessButtonStyle.xaml"/>
 
         <ResourceDictionary Source="..\Styles\TabControl.xaml"/>
@@ -39,7 +42,6 @@
 
         <ResourceDictionary Source="..\Styles\VerticalTabItem.xaml"/>
 
-        <ResourceDictionary Source="..\Styles\WindowAndUserControl.xaml"/>
-                    
+        <ResourceDictionary Source="..\Styles\WindowAndUserControl.xaml"/>        
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>
