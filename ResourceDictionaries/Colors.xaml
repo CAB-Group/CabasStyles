@@ -126,7 +126,7 @@
 
     <!-- MENU, MAIN -->
     <SolidColorBrush x:Key="MenuMain" Color="{StaticResource ColorCabBlue}"/>
-    <SolidColorBrush x:Key="MenuMainDivider" Color="{StaticResource ColorCabBlue5}"/>
+    <SolidColorBrush x:Key="MenuMainDivider" Color="{StaticResource ColorCabBlue4}"/>
 
     <!-- ICONS -->
     
