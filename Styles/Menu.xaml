@@ -1,7 +1,7 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                    xmlns:client="clr-namespace:CAB.CSP.Common.Client"
-                    xmlns:data="clr-namespace:CAB.CSP.Common.Client.Windows.Data">
+                    xmlns:data="clr-namespace:CAB.CSP.Common.Client.Windows.Data"
+                    xmlns:shell="clr-namespace:CAB.CSP.Common.Client.Shell">
 
     <Style x:Key="DynamicMenuItemStyleBase" TargetType="{x:Type MenuItem}">
         <Setter Property="Header" Value="{Binding Text}"/>
@@ -30,7 +30,7 @@
         <Setter Property="Foreground" Value="White"/>
         <Setter Property="ItemContainerStyleSelector">
             <Setter.Value>
-                <client:DynamicMenuItemContainerStyleSelector ButtonStyle="{StaticResource DynamicButtonMenuItemStyle}"
+                <shell:DynamicMenuItemContainerStyleSelector ButtonStyle="{StaticResource DynamicButtonMenuItemStyle}"
                     				ParentStyle="{StaticResource DynamicParentMenuItemStyle}"
                     				SeparatorStyle="{StaticResource DynamicSeparatorMenuItemStyle}"/>
             </Setter.Value>

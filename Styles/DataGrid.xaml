@@ -6,7 +6,7 @@
     </ResourceDictionary.MergedDictionaries>
 
 
-    <Style TargetType="{x:Type DataGrid}" BasedOn="{StaticResource {x:Type DataGrid}}">
+    <Style TargetType="{x:Type DataGrid}">
         <Setter Property="Margin" Value="2"/>   
         <Setter Property="Background" Value="White"/>
         <Setter Property="HorizontalGridLinesBrush" Value="{StaticResource RowBorder}"/>

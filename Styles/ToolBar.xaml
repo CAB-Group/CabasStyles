@@ -1,7 +1,9 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:themes="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero"
-                    xmlns:client="clr-namespace:CAB.CSP.Common.Client">
+                    xmlns:client="clr-namespace:CAB.CSP.Common.Client"
+                    xmlns:data="clr-namespace:CAB.CSP.Common.Client.Windows.Data"
+                    xmlns:shell="clr-namespace:CAB.CSP.Common.Client.Shell">
 
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="..\ResourceDictionaries\Colors.xaml"/>
@@ -194,14 +196,14 @@
 
     <Style x:Key="DynamicToolBarStyle" TargetType="{x:Type ToolBar}" BasedOn="{StaticResource {x:Type ToolBar}}">
         <Style.Resources>
-            <DataTemplate x:Key="DynamicButtonToolBarItemTemplate" DataType="{x:Type client:ButtonToolBarItem}">
-                <Button Style="{DynamicResource ResourceKey={x:Static ToolBar.ButtonStyleKey}}" Content="{Binding Icon}" ToolTip="{Binding ToolTip}" Command="{Binding Command}" />
+            <DataTemplate x:Key="DynamicButtonToolBarItemTemplate" DataType="{x:Type shell:ButtonToolBarItem}">
+                <Button Style="{DynamicResource ResourceKey={x:Static ToolBar.ButtonStyleKey}}" Content="{Binding Icon}" ToolTip="{Binding ToolTip}" Command="{Binding Command}" Visibility="{Binding IsVisible, Converter={x:Static data:BoolToVisibilityConverter.Instance}}"/>
             </DataTemplate>
-            <DataTemplate x:Key="DynamicParentToolBarItemTemplate" DataType="{x:Type client:ParentToolBarItem}">
+            <DataTemplate x:Key="DynamicParentToolBarItemTemplate" DataType="{x:Type shell:ParentToolBarItem}">
                 <Menu Background="Transparent" Style="{DynamicResource ResourceKey={x:Static ToolBar.MenuStyleKey}}">
                     <MenuItem ItemsSource="{Binding Items}" ToolTip="{Binding ToolTip}" Background="Transparent">
                         <MenuItem.ItemContainerStyleSelector>
-                            <client:DynamicMenuItemContainerStyleSelector ButtonStyle="{StaticResource DynamicButtonMenuItemStyle}"
+                            <shell:DynamicMenuItemContainerStyleSelector ButtonStyle="{StaticResource DynamicButtonMenuItemStyle}"
                             					ParentStyle="{StaticResource DynamicParentMenuItemStyle}"
                             					SeparatorStyle="{StaticResource DynamicSeparatorMenuItemStyle}"/>
                         </MenuItem.ItemContainerStyleSelector>
@@ -221,7 +223,7 @@
         <Setter Property="OverflowMode" Value="Never"/>
         <Setter Property="ItemTemplateSelector">
             <Setter.Value>
-                <client:ToolBarItemTemplateSelector ButtonTemplate="{StaticResource DynamicButtonToolBarItemTemplate}"
+                <shell:ToolBarItemTemplateSelector ButtonTemplate="{StaticResource DynamicButtonToolBarItemTemplate}"
                     				ParentTemplate="{StaticResource DynamicParentToolBarItemTemplate}"
                     				SeparatorTemplate="{StaticResource DynamicSeparatorToolBarItemTemplate}"/>
             </Setter.Value>

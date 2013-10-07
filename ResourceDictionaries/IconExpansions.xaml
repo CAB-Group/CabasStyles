@@ -1,0 +1,28 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <StackPanel x:Key="SignInButtonIcon" Orientation="Horizontal">
+        <ContentPresenter Content="{DynamicResource MediaStart}" Height="25" Width="25" />
+        <TextBlock Text="Sign In" x:Uid="SignInButtonText" Margin="5,0" />
+    </StackPanel>
+
+    <StackPanel x:Key="SignOutButtonIcon" Orientation="Horizontal">
+        <ContentPresenter Content="{DynamicResource MediaStop}" Height="25" Width="25" />
+        <TextBlock Text="Sign Out" x:Uid="SignOutButtonText" Margin="5,0" />
+    </StackPanel>
+
+    <StackPanel x:Key="BreakInButtonIcon" Orientation="Horizontal">
+        <ContentPresenter Content="{DynamicResource MediaPaus}" Height="25" Width="25" />
+        <TextBlock Text="Break In" x:Uid="BreakInButtonText" Margin="5,0" />
+    </StackPanel>
+
+    <StackPanel x:Key="BreakOutButtonIcon" Orientation="Horizontal">
+        <ContentPresenter Content="{DynamicResource MediaStart}" Height="25" Width="25" />
+        <TextBlock Text="Break Out" x:Uid="BreakOutButtonText" Margin="5,0" />
+    </StackPanel>
+
+    <StackPanel x:Key="AutotaksButtonIcon" Orientation="Horizontal">
+        <ContentPresenter Content="{DynamicResource Reload}" Height="25" Width="25" />
+        <TextBlock Text="Load estimates from Autotaks" x:Uid="AutotaksButtonText" Margin="5,0" />
+    </StackPanel>
+</ResourceDictionary>
