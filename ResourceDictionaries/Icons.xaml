@@ -89,50 +89,42 @@
                     Fill="{StaticResource IconFillColorLight}" />
             </Grid>
             <Grid
-                Width="28"
-                Height="28"
+                Width="36"
+                Height="36"
                 Opacity="1"
-                Margin="67,10,0,0"
+                Margin="66,10,0,0"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top">
                 <Path
                     Margin="0,0,0,0"
                     HorizontalAlignment="Left"
                     VerticalAlignment="Top"
-                    Height="28"
-                    Width="28"
+                    Height="36"
+                    Width="36"
                     Stretch="Fill"
                     Opacity="1"
-                    Data="M 28,28 C28,28 0,28 0,28 0,28 0,0 0,0 0,0 28,0 28,0 28,0 28,28 28,28 z"
+                    Data="M 36,36 C36,36 0,36 0,36 0,36 0,0 0,0 0,0 36,0 36,0 36,0 36,36 36,36 z"
                     Fill="{DynamicResource AlertIconBackgroundError}" />
-                <Grid
-                    Width="6"
-                    Height="22"
-                    Opacity="1"
-                    Margin="12,3,0,0"
+                <Path
+                    Margin="15,26,0,0"
                     HorizontalAlignment="Left"
-                    VerticalAlignment="Top">
-                    <Path
-                        Margin="0,17.600000381469727,0,0"
-                        HorizontalAlignment="Left"
-                        VerticalAlignment="Top"
-                        Height="4.399999618530273"
-                        Width="5.400001525878906"
-                        Stretch="Fill"
-                        Opacity="1"
-                        Data="M 0,17.600000381469727 C0,17.600000381469727 0,22 0,22 0,22 5.400001525878906,22 5.400001525878906,22 5.400001525878906,22 5.400001525878906,17.600000381469727 5.400001525878906,17.600000381469727 5.400001525878906,17.600000381469727 0,17.600000381469727 0,17.600000381469727 0,17.600000381469727 0,17.600000381469727 0,17.600000381469727 z"
-                        Fill="{StaticResource IconFillColorLight}" />
-                    <Path
-                        Margin="0,0,0,0"
-                        HorizontalAlignment="Left"
-                        VerticalAlignment="Top"
-                        Height="15.64444351196289"
-                        Width="6"
-                        Stretch="Fill"
-                        Opacity="1"
-                        Data="M 0,0 C0,0 6,0 6,0 6,0 4.200004577636719,15.64444351196289 4.200004577636719,15.64444351196289 4.200004577636719,15.64444351196289 1.2000045776367188,15.64444351196289 1.2000045776367188,15.64444351196289 1.2000045776367188,15.64444351196289 0,0 0,0 z"
-                        Fill="{StaticResource IconFillColorLight}" />
-                </Grid>
+                    VerticalAlignment="Top"
+                    Height="6"
+                    Width="8"
+                    Stretch="Fill"
+                    Opacity="1"
+                    Data="M 15,26 C15,26 15,32 15,32 15,32 23,32 23,32 23,32 23,26 23,26 23,26 15,26 15,26 15,26 15,26 15,26 z"
+                    Fill="{StaticResource IconFillColorLight}" />
+                <Path
+                    Margin="14.428573608398438,3.8571434020996094,0,0"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Height="18.114280700683594"
+                    Width="9.714286804199219"
+                    Stretch="Fill"
+                    Opacity="1"
+                    Data="M 14.428573608398438,3.8571434020996094 C14.428573608398438,3.8571434020996094 24.142860412597656,3.8571434020996094 24.142860412597656,3.8571434020996094 24.142860412597656,3.8571434020996094 20.828582763671875,21.971424102783203 20.828582763671875,21.971424102783203 20.828582763671875,21.971424102783203 16.971435546875,21.971424102783203 16.971435546875,21.971424102783203 16.971435546875,21.971424102783203 14.428573608398438,3.8571434020996094 14.428573608398438,3.8571434020996094 z"
+                    Fill="{StaticResource IconFillColorLight}" />
             </Grid>
         </Grid>
     </Viewbox>
@@ -1495,50 +1487,42 @@
                     Fill="{StaticResource IconFillColorLight}" />
             </Grid>
             <Grid
-                Width="28"
-                Height="28"
+                Width="36"
+                Height="36"
                 Opacity="1"
-                Margin="67,10,0,0"
+                Margin="66,10,0,0"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top">
                 <Path
                     Margin="0,0,0,0"
                     HorizontalAlignment="Left"
                     VerticalAlignment="Top"
-                    Height="28"
-                    Width="28"
+                    Height="36"
+                    Width="36"
                     Stretch="Fill"
                     Opacity="1"
-                    Data="M 28,28 C28,28 0,28 0,28 0,28 0,0 0,0 0,0 28,0 28,0 28,0 28,28 28,28 z"
+                    Data="M 36,36 C36,36 0,36 0,36 0,36 0,0 0,0 0,0 36,0 36,0 36,0 36,36 36,36 z"
                     Fill="{DynamicResource AlertIconBackgroundError}" />
-                <Grid
-                    Width="6"
-                    Height="22"
-                    Opacity="1"
-                    Margin="12,3,0,0"
+                <Path
+                    Margin="15,26,0,0"
                     HorizontalAlignment="Left"
-                    VerticalAlignment="Top">
-                    <Path
-                        Margin="0,17.600000381469727,0,0"
-                        HorizontalAlignment="Left"
-                        VerticalAlignment="Top"
-                        Height="4.399999618530273"
-                        Width="5.400001525878906"
-                        Stretch="Fill"
-                        Opacity="1"
-                        Data="M 0,17.600000381469727 C0,17.600000381469727 0,22 0,22 0,22 5.400001525878906,22 5.400001525878906,22 5.400001525878906,22 5.400001525878906,17.600000381469727 5.400001525878906,17.600000381469727 5.400001525878906,17.600000381469727 0,17.600000381469727 0,17.600000381469727 0,17.600000381469727 0,17.600000381469727 0,17.600000381469727 z"
-                        Fill="{StaticResource IconFillColorLight}" />
-                    <Path
-                        Margin="0,0,0,0"
-                        HorizontalAlignment="Left"
-                        VerticalAlignment="Top"
-                        Height="15.64444351196289"
-                        Width="6"
-                        Stretch="Fill"
-                        Opacity="1"
-                        Data="M 0,0 C0,0 6,0 6,0 6,0 4.200004577636719,15.64444351196289 4.200004577636719,15.64444351196289 4.200004577636719,15.64444351196289 1.2000045776367188,15.64444351196289 1.2000045776367188,15.64444351196289 1.2000045776367188,15.64444351196289 0,0 0,0 z"
-                        Fill="{StaticResource IconFillColorLight}" />
-                </Grid>
+                    VerticalAlignment="Top"
+                    Height="6"
+                    Width="8"
+                    Stretch="Fill"
+                    Opacity="1"
+                    Data="M 15,26 C15,26 15,32 15,32 15,32 23,32 23,32 23,32 23,26 23,26 23,26 15,26 15,26 15,26 15,26 15,26 z"
+                    Fill="{StaticResource IconFillColorLight}" />
+                <Path
+                    Margin="14.428573608398438,3.8571434020996094,0,0"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Height="18.114280700683594"
+                    Width="9.714286804199219"
+                    Stretch="Fill"
+                    Opacity="1"
+                    Data="M 14.428573608398438,3.8571434020996094 C14.428573608398438,3.8571434020996094 24.142860412597656,3.8571434020996094 24.142860412597656,3.8571434020996094 24.142860412597656,3.8571434020996094 20.828582763671875,21.971424102783203 20.828582763671875,21.971424102783203 20.828582763671875,21.971424102783203 16.971435546875,21.971424102783203 16.971435546875,21.971424102783203 16.971435546875,21.971424102783203 14.428573608398438,3.8571434020996094 14.428573608398438,3.8571434020996094 z"
+                    Fill="{StaticResource IconFillColorLight}" />
             </Grid>
          </Grid>
     </Viewbox>
