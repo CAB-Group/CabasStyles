@@ -197,10 +197,10 @@
     <Style x:Key="DynamicToolBarStyle" TargetType="{x:Type ToolBar}" BasedOn="{StaticResource {x:Type ToolBar}}">
         <Style.Resources>
             <DataTemplate x:Key="DynamicButtonToolBarItemTemplate" DataType="{x:Type shell:ButtonToolBarItem}">
-                <Button Style="{DynamicResource ResourceKey={x:Static ToolBar.ButtonStyleKey}}" Content="{Binding Icon}" ToolTip="{Binding ToolTip}" Command="{Binding Command}" Visibility="{Binding IsVisible, Converter={x:Static data:BoolToVisibilityConverter.Instance}}"/>
+                <Button Style="{DynamicResource ResourceKey={x:Static ToolBar.ButtonStyleKey}}" MinWidth="{Binding MinWidth}" Content="{Binding Icon}" ToolTip="{Binding ToolTip}" Command="{Binding Command}" Visibility="{Binding IsVisible, Converter={x:Static data:BoolToVisibilityConverter.Instance}}" IsEnabled="{Binding IsEnabled}"/>
             </DataTemplate>
             <DataTemplate x:Key="DynamicParentToolBarItemTemplate" DataType="{x:Type shell:ParentToolBarItem}">
-                <Menu Background="Transparent" Style="{DynamicResource ResourceKey={x:Static ToolBar.MenuStyleKey}}">
+                <Menu Background="Transparent" Style="{DynamicResource ResourceKey={x:Static ToolBar.MenuStyleKey}}" Visibility="{Binding IsVisible, Converter={x:Static data:BoolToVisibilityConverter.Instance}}" IsEnabled="{Binding IsEnabled}">
                     <MenuItem ItemsSource="{Binding Items}" ToolTip="{Binding ToolTip}" Background="Transparent">
                         <MenuItem.ItemContainerStyleSelector>
                             <shell:DynamicMenuItemContainerStyleSelector ButtonStyle="{StaticResource DynamicButtonMenuItemStyle}"
@@ -208,8 +208,8 @@
                             					SeparatorStyle="{StaticResource DynamicSeparatorMenuItemStyle}"/>
                         </MenuItem.ItemContainerStyleSelector>
                         <MenuItem.Header>
-                            <Grid>
-                                <ContentPresenter Content="{Binding Icon}"/>
+                            <Grid MinWidth="{Binding MinWidth}">
+                                <ContentPresenter Content="{Binding Icon}" />
                                 <ContentPresenter Content="{DynamicResource ArrowMenu}" />
                             </Grid>
                         </MenuItem.Header>

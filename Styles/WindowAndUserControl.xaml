@@ -13,7 +13,6 @@
         <Setter Property="TextElement.FontFamily" Value="{StaticResource DefaultFontFamily}"/>
         <Setter Property="TextElement.FontSize" Value="{StaticResource DefaultFontSize}"/>
         <Setter Property="TextElement.Foreground" Value="{StaticResource Text}"/>
-        <Setter Property="TextOptions.TextFormattingMode" Value="Ideal"/>
         <Setter Property="TextOptions.TextRenderingMode" Value="ClearType"/>
         <Setter Property="Background" Value="{StaticResource PageBackground}" />
     </Style>

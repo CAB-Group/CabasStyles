@@ -24,6 +24,7 @@
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
+        <Setter Property="IsTabStop" Value="False"/>
     </Style>
     <Style x:Key="DynamicMenuStyle" TargetType="{x:Type Menu}" BasedOn="{StaticResource {x:Type Menu}}">
         <Setter Property="Background" Value="{DynamicResource MenuApplication}"/>
